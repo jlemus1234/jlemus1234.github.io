@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, Helvetica;
+  background-color: white;
+}
+
+header{
+  border-width: 1px;
+  border-bottom-style: ridge;
+  border-color: gray;
+  overflow: hidden;
+  font-size: 25px;
+}
+
+.name {
+  margin: 2%;
+  float: left;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 2%;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav a{
+  text-decoration: none;
+  display: block;
+  float: right;
+  margin-left: 4%;
+}
+
+a:link, a:visited {
+  color: gray
+}
+
+a.current {
+  color:black
+}
+
+a:hover {
+  color: black;
+}
+
+#portrait {
+  float: left;
+  margin: 10%;
+
+}
