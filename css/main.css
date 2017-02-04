@@ -4,21 +4,35 @@ body {
 }
 
 header{
-  border-width: 1px;
-  border-bottom-style: ridge;
+  margin-top: 0;
+  border-style:solid;
+  border-bottom-width: 1px;
+  border-top-width: 3px;
+  border-left-width: 0px;
+  border-right-width: 0px;
   border-color: gray;
+  border-color: rgba(110, 110, 110, 0.5);
   overflow: hidden;
-  font-size: 25px;
+  font-size: 15px;
+}
+
+div {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .name {
   margin: 2%;
+  margin-left: 5%;
   float: left;
+  font-size: 25px;
+  color: rgb(116, 168, 168);
 }
 
 nav ul {
   list-style-type: none;
   margin: 2%;
+  margin-right: 5%;
   padding: 0;
   overflow: hidden;
 }
@@ -42,8 +56,18 @@ a:hover {
   color: black;
 }
 
-#portrait {
-  float: left;
-  margin: 10%;
+img.portrait {
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  bottom:0;
+}
+
+footer {
+  margin-top: 100px;
+  border-top-style:solid;
+  border-top-width: 1px;
+  border-color: gray;
+  border-color: rgba(110, 110, 110, 0.5);
 
 }
