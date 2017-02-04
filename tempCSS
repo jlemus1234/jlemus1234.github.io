@@ -1,0 +1,228 @@
+body{
+	font-family: Georgia, serif;
+	background: #1A1F2B url(../images/background.jpg);
+	margin:0;
+	padding:0;
+}
+
+p,h1,h2,h3,li{
+		margin: 5px 10px;
+}
+div#outerPage{
+	width:790px;
+	margin: 0 auto;
+	background: #30395C;
+}
+
+div#header{
+	height: 110px;
+	position: relative;
+	font-family: "Apple Chancery", Algerian, "Blackadder ITC";
+}
+
+#header #mainMenu{
+	position: absolute;
+	left:50px;
+	bottom: 0;
+	width: 780px;
+}
+#mainMenu ul{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+
+#mainMenu li{
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#mainMenu li a:link, #mainMenu li a:visited{
+	font-family: "Trebuchet MS", sans-serif;
+	display: block;
+	color: #aaa;
+	text-decoration: none;
+	padding: 0 15px 0 15px; /*top right bottom left */
+	background: #aaa url(../images/smenugradient.jpeg) no-repeat left;
+	line-height:25px;
+	border: none;
+	margin-right: 10px;
+}
+
+#mainMenu li a:hover, #mainMenu li a:active{
+	color: #f8b449;
+	background-position: left top;
+}
+
+#mainMenu li a.current{
+	height: 25px;
+	line-height: 20px;
+	background: #344152;
+
+}
+
+#mainMenu li a.current:hover{
+	margin-top: -5px;
+	height: 30px;
+	line-height: 25px;
+	cursor:default;
+}
+
+div#page{
+	background: #85A5CC;
+	padding: 5px;
+}
+
+
+h1{
+	text-align: center;
+	font-family: "Brush Script MT";
+	color: #43464C ;
+}
+
+h2{
+	text-align: center;
+	font-family: "Apple Chancery", Algerian, "Blackadder ITC";
+	color: #D3DCF2;
+}
+
+a:link, a:visited{
+	text-decoration:none;
+	color: #000000;
+}
+
+a:hover, a:active{
+	color: #87CEFF;
+	border-bottom: 1px dashed #566440;
+	}
+
+p{
+	line-height:30px;
+	padding: 10px;
+}
+
+
+
+
+/* index CSS start */
+
+
+
+
+
+
+
+/* my future CSS start */
+
+
+
+
+
+/* my schedule CSS start */
+table{
+	margin: 0 auto;
+	background-color: #000000;
+	border: 2px solid #000033;
+	width: 500px;
+}
+
+
+
+th{
+	color:#ADD5F7;
+	text-align: left;
+	background-color: #16193B;
+}
+th.center, td.center{
+	text-align: center;
+}
+
+
+tr.color1{
+	background-color: #4682B4;
+}
+
+tr.color2{
+	background-color: #499DF5;
+}
+
+td{
+	color: #F0F8FF;
+	padding: 5px;
+}
+
+
+
+
+
+/* my favorite sites CSS start */
+
+
+
+img{float: left;}
+
+
+ol.center {
+	list-style-type:upper-roman;
+	margin-left: 5px;
+	line-height:25px;
+}
+
+
+
+
+
+
+
+
+/* why? CSS start */
+
+
+
+
+
+
+div#photo{
+
+	border: 2px double #1C2640;
+
+	background-color: #4E6AB2;
+
+	margin: 0 auto;
+
+	width: 250px;
+
+	float: right;
+
+	font-size: xx-small;
+
+	text-align: center;
+
+	padding: 5px;
+
+	margin: 5px;
+}
+
+
+
+div#photo2{
+
+	border: 2px double #1C2640;
+
+	background-color: #4E6AB2;
+
+	margin: 0 auto;
+
+	width: 250px;
+
+	float: left;
+
+	font-size: xx-small;
+
+	text-align: center;
+
+	padding:5px;
+
+	margin: 10px;
+}
