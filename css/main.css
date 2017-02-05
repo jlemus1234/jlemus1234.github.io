@@ -3,6 +3,12 @@ body {
   background-color: white;
 }
 
+
+div {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 header{
   margin-top: 0;
   border-style:solid;
@@ -14,11 +20,6 @@ header{
   border-color: rgba(110, 110, 110, 0.5);
   overflow: hidden;
   font-size: 15px;
-}
-
-div {
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .name {
@@ -54,6 +55,7 @@ a.current {
 
 a:hover {
   color: black;
+  font-size: 17px;
 }
 
 img.portrait {
@@ -61,6 +63,8 @@ img.portrait {
   margin-top: 5%;
   margin-bottom: 10%;
   bottom:0;
+  border-style: solid;
+  border-color: rgb(116, 168, 168);
 }
 
 footer {
@@ -69,5 +73,16 @@ footer {
   border-top-width: 1px;
   border-color: gray;
   border-color: rgba(110, 110, 110, 0.5);
+}
 
+h4 {
+  color: rgb(66, 118, 118);
+}
+
+.current {
+  color: rgb(116, 168, 168);
+}
+
+.pageTitles {
+  color: rgb(116, 168, 168);
 }
