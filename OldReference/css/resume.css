@@ -1,0 +1,17 @@
+.resume{
+    background-color: white;
+    
+  }
+  div .resume{
+    width: 100%;
+    height: 100%;
+    margin-left: 21%;
+    float: right;
+  }
+  
+  .resume div {
+  }
+  
+  .resume ul{
+    list-style-type: none;
+  }

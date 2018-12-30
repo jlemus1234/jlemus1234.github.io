@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, Helvetica;
+  background-color: white;
+}
+
+header{
+  margin-top: 0;
+  border-style:solid;
+  border-bottom-width: 1px;
+  border-top-width: 3px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color: gray;
+  border-color: rgba(110, 110, 110, 0.5);
+  overflow: hidden;
+  font-size: 15px;
+}
+
+
+.otherSites{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  */
+}
+
+
+.otherSites a:link, .otherSites a:visited{
+  /*color: white;*/
+  color: rgb(66, 118, 118);
+}
+
+.otherSites a:hover{
+  color: black;
+}
+
+.otherSites img{
+  width: 25px;
+  height: 25px;
+}
+
+.otherSites a{
+  margin: 0 20px;
+}
+
+#otherSitesContainer{
+  margin: 0 -20px;
+}
+
+.nameDiv{
+  width: 100%;
+  margin: auto;
+  margin-top: 0%;
+  text-align: center;
+/*  font-size: 25px;*/
+  font-size: 2vw;
+  color: rgb(66, 118, 118);
+}
+
+.nameDiv li{
+  float: left;
+  width: 33%;
+}
+
+.nameDiv li a{
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.name {
+  font-size: 1.2em;
+  margin: 1%;
+
+}
+
+nav {
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(66, 118, 118)
+
+}
+
+nav li {
+  float: right;
+  border-right: 1px solid #bbb;
+}
+
+nav li:first-child{
+  border-right: none;
+}
+
+nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a.current {
+  background-color: white;
+  color:black
+}
+
+nav a:hover {
+  color: black;
+  /*font-size: 17px;*/
+}
+
+
+
+img.portrait {
+ /* position: relative;*/
+  /*
+  margin-top: 5%;
+  margin-bottom: 10%;
+  */
+  /*
+  margin-top: 50px;
+  */
+  margin-top: 3%;
+  display: flex;
+  width: 20%; 
+  max-width: 300px;
+  min-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: white;
+  /* border-radius: 10px; */
+  border-radius: 50%;
+
+}
+
+h4 {
+  color: rgb(66, 118, 118);
+}
+
+.content {
+  
+  width: 90%;
+ /* background-color: black;*/
+  background-color: white;
+  height: 500px;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+
+  margin-top: -4px;
+  
+  /*width: 100%;*/
+}
+
+
+#honors {
+  border: 0;
+}
+
+
+
+.current {
+  color: rgb(116, 168, 168);
+}
+
+.pageTitles {
+  color: rgb(116, 168, 168);
+}
