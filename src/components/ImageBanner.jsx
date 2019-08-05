@@ -1,25 +1,29 @@
 import React from 'react'
 
 
-class NamePanel extends React.Component {
+class ImageBanner extends React.Component {
     constructor(props){
         super(props);
 
         this.state = {
             
         };
-
-        <div>
-            
-
-        </div>
     }
 
 
 
     render(){
-        return <div></div>;
+        return (
+        <div>
+            {/* Testing */}
+            <div> 
+                <p>Test writing something</p>
+            </div>
+
+
+        </div>
+        )
     }
 }
 
-export default NamePanel;
+export default ImageBanner;
