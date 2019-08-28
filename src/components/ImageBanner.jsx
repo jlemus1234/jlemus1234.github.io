@@ -18,6 +18,7 @@ class ImageBanner extends React.Component {
             {/* Testing */}
             <div> 
                 <p>Test writing something</p>
+                
             </div>
 
 
