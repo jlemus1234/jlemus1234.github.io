@@ -2,6 +2,8 @@ import React from 'react'
 import Image from '../components/image'
 
 import githublogo from './../images/Icons/github.svg'
+import linkedinlogo from './../images/Icons/linkedin.svg'
+import emaillogo from './../images/Icons/gmail.svg'
 
 class ConnectedSites extends React.Component {
     constructor(props) {
@@ -19,24 +21,12 @@ class ConnectedSites extends React.Component {
             <div>
                 {/* Testing */}
                 <div>
-                    <div class="userBanner">
-                        <img class="portrait" src="images/me.PNG" alt="face shot"></img>
-                        <div class="nameDiv">
-                            <h6 class="name"> Jose Arturo Lemus Ortiz</h6>
-                            <div class="otherSites" id="otherSitesContainer">
-                                <img src={githublogo} alt="githublogo"/>
-                                {//<Image />
-                                }
-                               { /* <a href="https://github.com/jlemus1234"><img class="link" src="E:\Work\GitHub\jlemus1234.github.io\src\images\Icons\github.svg"></img></a>
-                                <a href="https://www.linkedin.com/in/jose-lemus-404328157/"><img class="link" src="E:\Work\GitHub\jlemus1234.github.io\src\images\Icons\linkedin.svg"></img></a>
-                                <a href="mailto: jlemus1234@gmail.com"><img class="link" src="../images/Icons/gmail.svg"></img></a>
-                                */}
-                            </div>
-                        </div>
+                    <div class="otherSites" id="otherSitesContainer">
+                        <a href="https://github.com/jlemus1234"><img class="link" src={githublogo} alt="GitHub Logo"></img></a>
+                        <a href="https://www.linkedin.com/in/jose-lemus-404328157/"><img class="link" src={linkedinlogo} alt="LinkedIn Logo"></img></a>
+                        <a href="mailto: jlemus1234@gmail.com"><img class="link" src={emaillogo} alt="E-Mail Logo"></img></a>
                     </div>
                 </div>
-
-
             </div>
         )
     }

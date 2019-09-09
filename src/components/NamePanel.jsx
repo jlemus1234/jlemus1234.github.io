@@ -13,7 +13,11 @@ class NamePanel extends React.Component {
 
 
     render(){
-        return <div></div>;
+        return (
+            <div class="nameDiv">
+                <h6 class="name"> Jose Arturo Lemus Ortiz</h6>
+            </div>
+        )
     }
 }
 
