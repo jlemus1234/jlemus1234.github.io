@@ -2,11 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+//import Image from '../components/image'
 import SEO from '../components/seo'
 import NamePanel from '../components/NamePanel'
 
 import ProjectWindow from '../components/ProjectWindow'
+
+import headshot from './../images/me.png'
 
 
 import ImageBanner from '../components/ImageBanner'
@@ -18,7 +20,7 @@ const IndexPage = () => (
 
     <NamePanel/>
     
-    <ImageBanner>
+    <ImageBanner bannerImage={headshot}>
     </ImageBanner>
 
     <ConnectedSites>

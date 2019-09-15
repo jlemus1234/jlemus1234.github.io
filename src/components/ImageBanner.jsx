@@ -1,6 +1,5 @@
 import React from 'react'
-
-import headshot from './../images/me.png'
+import bannerImage from './../images/senior.jpg'
 
 class ImageBanner extends React.Component {
     constructor(props) {
@@ -17,12 +16,17 @@ class ImageBanner extends React.Component {
         return (
             <div>
                 {/* Testing */}
-                <div class="userBanner">
-                    <img class="portrait" src={headshot} alt="Head shot"></img>
+                <div class="banner">
+                    <img class="portrait" src={this.props.bannerImage} alt="Banner Image"></img>
                 </div>
             </div>
         )
     }
 }
+
+ImageBanner.defaultProps = {
+    bannerImage: bannerImage,
+}
+
 
 export default ImageBanner;
