@@ -26,8 +26,14 @@ class ImageBanner extends React.Component {
 
 
 
+
     render() {
         return (
+
+            // create function that swaps which photo to display...
+            // lets just say there are four of them
+            // swap through after a few seconds...
+
             <div>
                 {/* Testing */}
                 <div style={bannerStyling} class="banner">
