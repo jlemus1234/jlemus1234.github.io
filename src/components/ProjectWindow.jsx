@@ -1,6 +1,27 @@
 import React from 'react'
 
 import vidTest from '../images/clips/testClip3.mp4'
+import imgTest from '../images/me.png'
+
+
+const projectWindowStyle = {
+    background: 'black',
+    width: '30%',
+    borderRadius: '25px',
+    
+
+
+}
+
+const headerStyle = {
+    color: 'white',
+    textAlign: 'center'
+}
+
+const descriptionStyle = {
+    color: 'white',
+    textAlign: 'center'
+}
 
 class ProjectWindow extends React.Component {
     constructor(props){
@@ -11,15 +32,45 @@ class ProjectWindow extends React.Component {
     }
 
     render(){
+        console.log(this.props)
         return (
-            <div id="video">
-                <video playsinline controls muted autoPlay loop width="320" height="240">
-                    <source src={vidTest} type="video/mp4"></source>
-                    Your browser does not support the video tag
-                </video>
+            <div style={projectWindowStyle} id = "projectWindow">
+
+            <div style = {headerStyle}>
+                <h1> 
+                {this.props.title}
+                </h1>
             </div>
+
+
+            <div id="video">
+                <a href="https://github.com/jlemus1234">
+                    <video muted autoPlay loop width="100%">
+                        {//width="320" height="240"
+                        }
+                        <source src={this.props.videoSource} type="video/mp4"></source>
+                        <img src ={this.props.imageSource}></img>
+                        Your browser does not support the video tag
+                    </video>
+                </a>
+            </div>
+
+            <div style = {descriptionStyle}>
+            <p>
+                {this.props.description}
+            </p>
+            </div>
+
+            </div>
+
         )
     }
 }
 
+ProjectWindow.defaultProps = {
+    videoSource: vidTest,
+    imageSource: imgTest,
+    title: 'title',
+    description: 'description',
+}
 export default ProjectWindow;

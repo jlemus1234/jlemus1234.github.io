@@ -6,9 +6,12 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import NamePanel from '../components/NamePanel'
 
+import ProjectsPanel from '../components/ProjectsPanel'
 import ProjectWindow from '../components/ProjectWindow'
 
+
 import headshot from './../images/me.png'
+
 
 
 import ImageBanner from '../components/ImageBanner'
@@ -26,9 +29,10 @@ const IndexPage = () => (
     <ConnectedSites>
     </ConnectedSites>
 
-    <ProjectWindow>
-    </ProjectWindow>
-
+    <ProjectsPanel>
+      <ProjectWindow>
+      </ProjectWindow>
+    </ProjectsPanel>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
