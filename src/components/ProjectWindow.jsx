@@ -31,10 +31,15 @@ class ProjectWindow extends React.Component {
         };
     }
 
+    //style={{...projectWindowStyle, ...this.props.alignmentDir}}
     render(){
-        console.log(this.props)
+        console.log(this.props);
+        console.log("Project Window is rendering");
+        {console.log(this.props.alignmentProp)}
         return (
-            <div style={projectWindowStyle} id = "projectWindow">
+            <div style = {{...projectWindowStyle,...this.props.alignmentProp}} id = "projectWindow">
+
+
 
             <div style = {headerStyle}>
                 <h1> 

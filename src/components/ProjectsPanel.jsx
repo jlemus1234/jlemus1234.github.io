@@ -21,7 +21,30 @@ class ProjectsPanel extends React.Component {
     renderChildren(){
         // can't remember what this does...
         // may just be passing 
-        return React.Children.map(this.props.children, child => React.cloneElement(child, {alignmentDir: "Right"}));
+        // adding an extra set of brackets just creates a closure instead of just 
+        // returning the element needed
+
+        //function cloneWithDirect(child, i)
+
+        return React.Children.map(this.props.children, (child, i) => {
+            //console.log("render children is running")
+            //return React.cloneElement(child, {alignmentDir: "Right"})
+            // set direction items float in
+            if(i % 2 == 0){
+                //React.cloneElement(child, {float: "right"})
+                console.log("right child")
+                const alignmentProp = {float: 'right'};
+                return React.cloneElement(child, {alignmentDir: alignmentProp})
+            }else{
+                console.log("left child")
+                const alignmentProp = {float: 'left'};
+                return React.cloneElement(child, {alignmentDir: alignmentProp})
+                //React.cloneElement(child, {float: "left"})
+            }
+//         return React.Children.map(this.props.children, (child, i) => 
+//            React.cloneElement(child, {alignmentDir: "Right"})); 
+
+        })
     }
 
     render(){

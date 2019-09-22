@@ -36,8 +36,8 @@ class ImageBanner extends React.Component {
 
             <div>
                 {/* Testing */}
-                <div style={bannerStyling} class="banner">
-                    <img style = {bannerImageStyling} class="bannerImage" src={this.props.bannerImage} alt="Banner Image"></img>
+                <div style={bannerStyling} className="banner">
+                    <img style = {bannerImageStyling} className="bannerImage" src={this.props.bannerImage} alt="Banner Image"></img>
                 </div>
             </div>
         )

@@ -29,9 +29,12 @@ const IndexPage = () => (
     <ConnectedSites>
     </ConnectedSites>
 
+{/* <ProjectWindow></ProjectWindow> */}
+
+
     <ProjectsPanel>
-      <ProjectWindow>
-      </ProjectWindow>
+      <ProjectWindow></ProjectWindow>
+      <ProjectWindow></ProjectWindow>
     </ProjectsPanel>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>

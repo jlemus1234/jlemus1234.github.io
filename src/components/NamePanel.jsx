@@ -14,8 +14,8 @@ class NamePanel extends React.Component {
 
     render(){
         return (
-            <div class="nameDiv">
-                <h6 class="name"> Jose Arturo Lemus Ortiz</h6>
+            <div className="nameDiv">
+                <h6 className="name"> Jose Arturo Lemus Ortiz</h6>
             </div>
         )
     }
