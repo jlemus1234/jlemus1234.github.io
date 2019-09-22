@@ -5,12 +5,11 @@ import imgTest from '../images/me.png'
 
 
 const projectWindowStyle = {
+    display: 'block',
     background: 'black',
     width: '30%',
     borderRadius: '25px',
-    float: 'right'    
-
-
+    //float: 'right'    
 }
 
 const headerStyle = {
@@ -35,9 +34,10 @@ class ProjectWindow extends React.Component {
     render(){
         console.log(this.props);
         console.log("Project Window is rendering");
-        {console.log(this.props.alignmentProp)}
+        console.log(this.props.float)
+        console.log(this.props.alignmentDir)
         return (
-            <div style = {{...projectWindowStyle,...this.props.alignmentProp}} id = "projectWindow">
+            <div style = {{...projectWindowStyle,...this.props.alignmentDir}} id = "projectWindow">
 
 
 
