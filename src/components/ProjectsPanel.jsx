@@ -34,12 +34,20 @@ class ProjectsPanel extends React.Component {
                 console.log("right child")
                 const alignmentProp = {float: 'right'};
                 //return React.cloneElement(child, alignmentProp)
-                return React.cloneElement(child, {alignmentDir: alignmentProp})
+                return (
+                    <div>
+                    {React.cloneElement(child, {alignmentDir: alignmentProp})}
+                    </div>
+                )
             }else{
                 console.log("left child")
                 const alignmentProp = {float: 'left'};
                 //return React.cloneElement(child, alignmentProp)
-                return React.cloneElement(child, {alignmentDir: alignmentProp})
+                return (
+                    <div>
+                    {React.cloneElement(child, {alignmentDir: alignmentProp})}
+                    </div>
+                )
             }
 //         return React.Children.map(this.props.children, (child, i) => 
 //            React.cloneElement(child, {alignmentDir: "Right"})); 
