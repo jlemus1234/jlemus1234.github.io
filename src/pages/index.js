@@ -33,7 +33,7 @@ const IndexPage = () => (
     </div>
 
     <ProjectsPanel>
-      <ProjectWindow videoSource={testvid2} title="My project" description="Here is a video me dying" ></ProjectWindow>
+      <ProjectWindow videoSource={testvid1} title="My project" description="Here is a video me dying" ></ProjectWindow>
       <ProjectWindow></ProjectWindow>
       <ProjectWindow></ProjectWindow>
       <ProjectWindow></ProjectWindow>
