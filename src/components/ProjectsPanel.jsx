@@ -32,19 +32,19 @@ class ProjectsPanel extends React.Component {
             // set direction items float in
             if(i % 2 == 0){
                 console.log("right child")
-                const alignmentProp = {float: 'right'};
+                const alignmentProp = {float: 'left'};
                 //return React.cloneElement(child, alignmentProp)
                 return (
-                    <div>
+                    <div style={{display:'inline-block'}}>
                     {React.cloneElement(child, {alignmentDir: alignmentProp})}
                     </div>
                 )
             }else{
                 console.log("left child")
-                const alignmentProp = {float: 'left'};
+                const alignmentProp = {float: 'right'};
                 //return React.cloneElement(child, alignmentProp)
                 return (
-                    <div>
+                    <div style={{display:'inline-block'}}>
                     {React.cloneElement(child, {alignmentDir: alignmentProp})}
                     </div>
                 )

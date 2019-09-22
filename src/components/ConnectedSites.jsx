@@ -10,6 +10,7 @@ const otherSitesStyle = {
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
+    height: '25px',
     background:'gray'
 };
 

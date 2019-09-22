@@ -26,16 +26,18 @@ const IndexPage = () => (
     <ImageBanner bannerImage={headshot}>
     </ImageBanner>
 
+    <div style = {{marginBottom: '50px'}}>
     <ConnectedSites>
     </ConnectedSites>
-
-{/* <ProjectWindow></ProjectWindow> */}
-
+    </div>
 
     <ProjectsPanel>
       <ProjectWindow></ProjectWindow>
       <ProjectWindow></ProjectWindow>
+      <ProjectWindow></ProjectWindow>
+      <ProjectWindow></ProjectWindow>
     </ProjectsPanel>
+
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )

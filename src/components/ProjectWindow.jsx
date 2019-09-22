@@ -7,7 +7,7 @@ import imgTest from '../images/me.png'
 const projectWindowStyle = {
     display: 'block',
     background: 'black',
-    width: '30%',
+    width: '45%',
     borderRadius: '25px',
     //float: 'right'    
 }
