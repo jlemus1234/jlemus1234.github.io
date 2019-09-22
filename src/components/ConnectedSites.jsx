@@ -15,6 +15,8 @@ const otherSitesStyle = {
 };
 
 const logoStyle = {
+    display: 'block',
+    marginLeft: '50%'
 };
 
 
@@ -39,9 +41,9 @@ class ConnectedSites extends React.Component {
                 {/* Testing */}
                 <div>
                     <div style={otherSitesStyle} className="otherSites" id="otherSitesContainer">
-                        <a href="https://github.com/jlemus1234"><img className="link" src={githublogo} alt="GitHub Logo"></img></a>
-                        <a href="https://www.linkedin.com/in/jose-lemus-404328157/"><img className="link" src={linkedinlogo} alt="LinkedIn Logo"></img></a>
-                        <a href="mailto: jlemus1234@gmail.com"><img className="link" src={emaillogo} alt="E-Mail Logo"></img></a>
+                        <a href="https://github.com/jlemus1234"><img style={logoStyle} className="link" src={githublogo} alt="GitHub Logo"></img></a>
+                        <a href="https://www.linkedin.com/in/jose-lemus-404328157/"><img style={logoStyle} className="link" src={linkedinlogo} alt="LinkedIn Logo"></img></a>
+                        <a href="mailto: jlemus1234@gmail.com"><img style={logoStyle} className="link" src={emaillogo} alt="E-Mail Logo"></img></a>
                     </div>
                 </div>
             </div>
