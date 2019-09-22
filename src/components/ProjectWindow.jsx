@@ -8,7 +8,7 @@ const projectWindowStyle = {
     background: 'black',
     width: '30%',
     borderRadius: '25px',
-    
+    float: 'right'    
 
 
 }
