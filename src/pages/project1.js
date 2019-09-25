@@ -7,6 +7,8 @@ import ProjectPage from '../components/ProjectPage'
 
 const Project1Page = () => (
     <Layout>
+        <Link to='/'>Home</Link>
+
         <ProjectPage></ProjectPage>
     </Layout>
 )

@@ -35,6 +35,10 @@ const SubsectionTitleStyle = {
     marginTop: '30px'
 }
 
+const ContentBufferStyle ={
+    margin: '30px'
+}
+
 class ProjectPage extends React.Component {
     constructor(props) {
         super(props);
@@ -77,6 +81,8 @@ class ProjectPage extends React.Component {
         <h3 style={SubsectionTitleStyle}>More Info</h3>
         <div style={AdditionalInfoStyle} className="AdditionalInformation">{this.props.AdditionalInformation}</div>
         </div>
+
+        <div style={ContentBufferStyle}></div>
 
         </div>
         )

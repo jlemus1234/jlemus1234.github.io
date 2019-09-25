@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {Link} from 'gatsby'
+
 import vidTest from '../images/clips/testClip3.mp4'
 import imgTest from '../images/me.png'
 
@@ -49,7 +51,7 @@ class ProjectWindow extends React.Component {
 
 
             <div id="video">
-                <a href="https://github.com/jlemus1234">
+{/*                 <a href="https://github.com/jlemus1234">
                     <video muted autoPlay loop width="100%">
                         {//width="320" height="240"
                         }
@@ -57,7 +59,18 @@ class ProjectWindow extends React.Component {
                         <img src ={this.props.imageSource}></img>
                         Your browser does not support the video tag
                     </video>
-                </a>
+                </a> */}
+
+                <Link to={this.props.linkTo}>
+                    <video muted autoPlay loop width="100%">
+                        {//width="320" height="240"
+                        }
+                        <source src={this.props.videoSource} type="video/mp4"></source>
+                        <img src ={this.props.imageSource}></img>
+                        Your browser does not support the video tag
+                    </video>
+                </Link>
+
             </div>
 
             <div style = {descriptionStyle}>
@@ -77,5 +90,6 @@ ProjectWindow.defaultProps = {
     imageSource: imgTest,
     title: 'title',
     description: 'description',
+    linkTo: '/'
 }
 export default ProjectWindow;
