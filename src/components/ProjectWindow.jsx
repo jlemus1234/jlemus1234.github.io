@@ -8,9 +8,10 @@ import imgTest from '../images/me.png'
 
 const projectWindowStyle = {
     display: 'block',
-    background: 'black',
-    width: '45%',
+    background: 'gray',
+    width: '60%',
     borderRadius: '25px',
+    marginBottom: '70px'
     //float: 'right'    
 }
 

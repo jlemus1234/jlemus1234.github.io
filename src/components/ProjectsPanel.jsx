@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 const ProjectsPanelStyle = {
     display: 'inline-block',
-    width: '100%'
+    width: '100%',
 }
 
 class ProjectsPanel extends React.Component {

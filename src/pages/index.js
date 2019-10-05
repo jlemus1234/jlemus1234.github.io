@@ -39,7 +39,7 @@ const IndexPage = () => (
       <ProjectWindow></ProjectWindow>
     </ProjectsPanel>
 
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/resume/">Resume</Link>
   </Layout>
 )
 
