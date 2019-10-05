@@ -11,7 +11,6 @@ import ProjectWindow from '../components/ProjectWindow'
 
 import headshot from './../images/me.png'
 import testvid1 from './../images/clips/testClip2.mp4'
-import testvid2 from './../images/clips/testClip3.mp4'
 
 
 
