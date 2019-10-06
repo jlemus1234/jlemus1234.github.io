@@ -11,44 +11,60 @@ class ResumeJob extends React.Component {
 
     render() {
         return (
-            <div style={styles.resumeSection}>
-                <h3 style={styles.resumeHeading}> {this.props.title} </h3>
-                <div style={styles.resumeContent}>
-                    {this.props.children}
+            <div style={styles.container}>
+                <div style={styles.employerAndTimePeriod}>
+                    <div style={styles.employerLocation}>
+                    <p style={styles.employer}>{this.props.employer}</p> 
+                    <p style={styles.location}>, </p>
+                    <p style={styles.location}>{this.props.city + ", " + this.props.state}</p>
+                    </div>
+                    <div style={styles.dates}>
+                    <p>{this.props.startDate + " - " + this.props.endDate} </p>
+                    </div>
                 </div>
+                <p>{this.props.jobTitle}</p>
+                {this.props.children}
             </div>
         )
     }
 }
 
 const styles = {
-    resumeHeading: {
-        display: 'inline-block',
-        float: 'left',
-        marginRight: '50px',
-        width: '25%',
-        color: 'black'
+    container:{
+        width: '100%'
+    },
+    employerAndTimePeriod:{
+        display: 'flex',
+        width: '100%',
+        justifyContent: 'space-between'
+    },
+
+    employerLocation:{
+        //display: 'inline-block',
+        //width: '100%'
+    },
+    employer:{
+        display:'inline'
+    },
+    location:{
+        display: 'inline',
 
     },
-    resumeContent: {
-        display: 'inline-block',
-        float: 'right',
-        //width: '50%'
-    },
-    resumeSection: {
-        display: 'flex',
-        marginBottom: '50px'
-    },
+    dates:{
+        display:'inline-block',
+        //align:'right'
+    }
 }
 
-ResumeSection.defaultProps = {
+
+ResumeJob.defaultProps = {
     employer: 'employer',
     jobTitle: 'job title',
     city: 'city',
     state: 'state',
     startDate: 'start date',
     endDate: 'end date',
-    
+
 
     children: 'nothing'
 

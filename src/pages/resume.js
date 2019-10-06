@@ -1,7 +1,7 @@
 import { withPrefix } from 'gatsby'
 import React from 'react'
 import ResumeSection from '../components/ResumeSection'
-
+import ResumeJob from '../components/ResumeJob'
 const Resume = () => (
     <div>
         <div>
@@ -65,54 +65,9 @@ const Resume = () => (
         </ResumeSection>
 
         <ResumeSection title="Experience">
-            <div>
-            <div>
-                <h3>Lemus Painting, Mamaroneck, NY</h3>
-                <p>March 2011 - Present</p>
-            </div>
-            <p>Assistant</p>
-            <ul>
-                <li>Wrote invoices, scheduled off-site work</li>
-                <li>Engish-Spanish translator</li>
-            </ul>
-            </div>
+            <ResumeJob employer="Lemus Painting" city="Mamaroneck" state="NY" 
+            startDate="March 2011" endDate="Present" jobTitle="Assistant"></ResumeJob>
 
-            <div>
-                <div>
-                    <h3>Insight Venture Partners, New York City, NY</h3>
-                    <p>May 2015 - August 2015</p>
-                </div>
-                <p>Database Intern</p>
-                <ul>
-                    <li>Researched private companies and updated information on a database</li>
-                    <li>Helped improve a web interface for a database</li>
-                </ul>
-            </div>
-
-            <div>
-                <div>
-                    <h3>Freelance work, Rye, NY</h3>
-                    <p>May 2014 - OCtober 2014</p>
-                </div>
-                <div>
-                    <ul>
-                        <li>Taught customers how to use Microsoft Office software and complete basic tasks</li>
-                        <li>Updated computers and checked for malware</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <h3></h3>
-                </div>
-            </div>
-
-
-
-            <div>
-
-            </div>
 
         </ResumeSection>
     </div>

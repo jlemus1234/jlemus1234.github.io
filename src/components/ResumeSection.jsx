@@ -33,7 +33,7 @@ const styles = {
     resumeContent: {
         display: 'inline-block',
         float: 'right',
-        //width: '50%'
+        width: '100%'
     },
     resumeSection: {
         display: 'flex',
