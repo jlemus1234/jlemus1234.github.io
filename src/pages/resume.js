@@ -31,8 +31,9 @@ const Resume = () => (
         </ResumeSection>
 
         <ResumeSection title="Skills">
-            <p>Programming Languages: C, C++, MATLAB, HTML, CSS, JavaScript, Python, SQL</p>
-            <p>Related Software: Git, Heroku, MongoDB</p>
+            <p>Programming Languages: C, Python, Javascript, HTML, CSS, SQL, MATLAB</p>
+            <p>FrameWorks, APIs: React, Express</p>
+            <p>Related Software: Git, PostgreSQL, MongoDB</p>
         </ResumeSection>
 
         <ResumeSection title="Relevant Courses">
@@ -44,18 +45,18 @@ const Resume = () => (
         <ResumeSection title="Projects">
             <h3>Distributed Hash Table</h3>
             <ul>
-                <li>Wrote a C program that creates a decentralized, distributed system used to upload and download to nodes using SHA1 hashes as keys, and TCP for transfers</li>
+                <li>Wrote a C program that creates a decentralized, distributed system used to upload and download data to nodes using SHA1 hashes as keys, and TCP for transfers</li>
             </ul>
 
             <h3>Inactivity and Slouching Detector</h3>
             <ul>
-                <li>Built and IoT device that logs the time a user spends sitting and monitors slouching</li>
+                <li>Built an IoT device that logs the time a user spends sitting and monitors slouching</li>
                 <li>Created a website that plots the data on a website using Google Charts</li>
             </ul>
 
             <h3>Port Scan and Password Detector</h3>
             <ul>
-                <li>Wrote a python script that detects ongoing pot scans and passwords sent in cleartext usign the pcapy module, and scapy</li>
+                <li>Wrote a python script that detects ongoing pot scans and passwords sent in cleartext using the pcapy module, and scapy</li>
             </ul>
 
             <h3>Music Guessing Game</h3>
@@ -74,6 +75,18 @@ const Resume = () => (
                 </ul>
             </ResumeJob>
 
+            <ResumeJob employer="JumboCode" jobTitle="Front End Developer" city="Medford" state="MA"
+            startDate="September 2018" endDate="May 2019">
+                <ul>
+                    <li>Built components displaying information on free resource centers located across
+                        the United States using React and the Google Maps platform
+                    </li>
+                    <li>
+                        Helped team members debug their components
+                    </li>
+                </ul>
+            </ResumeJob>
+
             <ResumeJob employer="Spot.IM" jobTitle="Research and Development Intern" city="New York City" state="NY" 
             startDate="June 2018" endDate="August 2018">
 
@@ -83,7 +96,7 @@ const Resume = () => (
             startDate="May 2015" endDate="August 2015">
                 <ul>
                     <li>Researched private companies and updated information on a database</li>
-                    <li>Helped improve a web interface for a database</li>
+                    <li>Provided feedback to improve the web interface for a database</li>
                 </ul>
             </ResumeJob>
 
@@ -100,7 +113,7 @@ const Resume = () => (
             endDate="August 2013">
                 <ul>
                     <li>Communicated effectively with cooks and customers</li>
-                    <li>Rewarded by management for providing good service to a mystery shopper</li>
+                    <li>Rewarded by management for providing hospitable service to a mystery shopper</li>
                 </ul>
             </ResumeJob>
         </ResumeSection>
