@@ -47,23 +47,23 @@ const Resume = () => (
         </ResumeSection>
 
         <ResumeSection title="Projects">
-            <h3>Distributed Hash Table</h3>
+            <p>Distributed Hash Table</p>
             <ul>
                 <li>Wrote a C program that creates a decentralized, distributed system used to upload and download data to nodes using SHA1 hashes as keys, and TCP for transfers</li>
             </ul>
 
-            <h3>Inactivity and Slouching Detector</h3>
+            <p>Inactivity and Slouching Detector</p>
             <ul>
                 <li>Built an IoT device that logs the time a user spends sitting and monitors slouching</li>
                 <li>Created a website that plots the data on a website using Google Charts</li>
             </ul>
 
-            <h3>Port Scan and Password Detector</h3>
+            <p>Port Scan and Password Detector</p>
             <ul>
                 <li>Wrote a python script that detects ongoing pot scans and passwords sent in cleartext using the pcapy module, and scapy</li>
             </ul>
 
-            <h3>Music Guessing Game</h3>
+            <p>Music Guessing Game</p>
             <ul>
                 <li>Created a website for guessing the names of songs using Spotify and Facebook APIs, and worked on the backed storing user data on a MongoDB instance</li>
             </ul>
