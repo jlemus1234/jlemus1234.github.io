@@ -14,13 +14,11 @@ class ResumeJob extends React.Component {
             <div style={styles.container}>
                 <div style={styles.employerAndTimePeriod}>
                     <div style={styles.employerLocation}>
-                    <p style={styles.employer}>{this.props.employer}</p> 
-                    <p style={styles.location}>, </p>
-                    <p style={styles.location}>{this.props.city + ", " + this.props.state}</p>
+                        <p style={styles.employer}>{this.props.employer}</p>
+                        <p style={styles.location}>, </p>
+                        <p style={styles.location}>{this.props.city + ", " + this.props.state}</p>
                     </div>
-                    <div style={styles.dates}>
-                    <p>{this.props.startDate + " - " + this.props.endDate} </p>
-                    </div>
+                    <p>{this.props.startDate + " - " + this.props.endDate}</p>
                 </div>
                 <p>{this.props.jobTitle}</p>
                 {this.props.children}
@@ -30,28 +28,28 @@ class ResumeJob extends React.Component {
 }
 
 const styles = {
-    container:{
+    container: {
         width: '100%'
     },
-    employerAndTimePeriod:{
+    employerAndTimePeriod: {
         display: 'flex',
         width: '100%',
         justifyContent: 'space-between'
     },
 
-    employerLocation:{
+    employerLocation: {
         //display: 'inline-block',
         //width: '100%'
     },
-    employer:{
-        display:'inline'
+    employer: {
+        display: 'inline'
     },
-    location:{
+    location: {
         display: 'inline',
 
     },
-    dates:{
-        display:'inline-block',
+    dates: {
+        display: 'inline-block',
         //align:'right'
     }
 }
