@@ -20,7 +20,7 @@ class ResumeJob extends React.Component {
                     </div>
                     <p>{this.props.startDate + " - " + this.props.endDate}</p>
                 </div>
-                <p>{this.props.jobTitle}</p>
+                <p style={styles.jobTitle}>{this.props.jobTitle}</p>
                 {this.props.children}
             </div>
         )
@@ -42,8 +42,14 @@ const styles = {
         //width: '100%'
     },
     employer: {
-        display: 'inline'
+        display: 'inline',
+        fontWeight: 'bold'
+
     },
+    jobTitle: {
+        fontStyle: 'italic'
+    },
+
     location: {
         display: 'inline',
 

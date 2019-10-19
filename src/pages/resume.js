@@ -107,7 +107,7 @@ const Resume = () => (
 
         <ResumeSection title="Other skills">
             <p>Languages: Native English and Spanish speaker, beginner German</p>
-            
+            <p>Hobbies: Calligraphy, writing, exercise</p>
         </ResumeSection>
     </div>
 );
