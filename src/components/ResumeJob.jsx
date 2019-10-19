@@ -18,7 +18,7 @@ class ResumeJob extends React.Component {
                         <p style={styles.location}>, </p>
                         <p style={styles.location}>{this.props.city + ", " + this.props.state}</p>
                     </div>
-                    <p>{this.props.startDate + " - " + this.props.endDate}</p>
+                    <p style={styles.dates}>{this.props.startDate + " - " + this.props.endDate}</p>
                 </div>
                 <p style={styles.jobTitle}>{this.props.jobTitle}</p>
                 {this.props.children}
@@ -29,33 +29,40 @@ class ResumeJob extends React.Component {
 
 const styles = {
     container: {
-        width: '100%'
+        width: '100%',
     },
     employerAndTimePeriod: {
         display: 'flex',
         width: '100%',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        //marginBottom: '0',
+        //height: '10px'
     },
 
     employerLocation: {
         //display: 'inline-block',
         //width: '100%'
+        //marginBottom: '0'
     },
     employer: {
         display: 'inline',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        //marginBottom: '0'
 
     },
     jobTitle: {
-        fontStyle: 'italic'
+        fontStyle: 'italic',
+        marginBottom: '0'
     },
 
     location: {
         display: 'inline',
+        //marginBottom: '0'
 
     },
     dates: {
         display: 'inline-block',
+        marginBottom: '0'
         //align:'right'
     }
 }
