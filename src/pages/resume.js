@@ -1,9 +1,13 @@
-import { withPrefix } from 'gatsby'
+import { withPrefix, Link } from 'gatsby'
 import React from 'react'
 import ResumeSection from '../components/ResumeSection'
 import ResumeJob from '../components/ResumeJob'
 const Resume = () => (
+    <>
     <div>
+        <Link to="index.js">Back</Link>
+    </div>
+    <div style={styles.resume}>
         <div>
             <a style={styles.pdfLink}
                 rel="noopener noreferrer"
@@ -14,7 +18,7 @@ const Resume = () => (
         <div>
             <h1>Resume</h1>
             <div style={styles.contactInfo}>
-                <p>(914)575-7469</p>
+                <p>(914) 575-7469</p>
                 <a href="mailto: jose.lemus@tufts.edu">jose.lemus@tufts.edu</a>
                 <a href="https://github.com/jlemus1234">https://github.com/jlemus1234</a>
 
@@ -71,7 +75,7 @@ const Resume = () => (
                 <ul>
                 <li>Wrote invoices, scheduled off-site work</li>
                 <li>Translated English and Spanish</li>
-                <li>Painted walls, removed wallpaper, and performed other related services</li>
+                <li>Painted, removed wallpaper, and performed other related services</li>
                 </ul>
             </ResumeJob>
 
@@ -79,17 +83,18 @@ const Resume = () => (
             startDate="September 2018" endDate="May 2019">
                 <ul>
                     <li>Built components displaying information on free resource centers located across
-                        the United States using React and the Google Maps platform
-                    </li>
-                    <li>
-                        Helped team members debug their components
-                    </li>
+                        the United States using React and the Google Maps platform</li>
+                    <li>Helped team members debug their code</li>
                 </ul>
             </ResumeJob>
 
             <ResumeJob employer="Spot.IM" jobTitle="Research and Development Intern" city="New York City" state="NY" 
             startDate="June 2018" endDate="August 2018">
-
+                <ul>
+                    <li>Built a marketing dashboard idenifying trends across the Spot.IM platform using
+                        NodeJS, PostgreSQL, Watson Natural Language Understanding, React and Redux</li>
+                    <li>Presented project progress to executives and management</li>
+                </ul>
             </ResumeJob>
 
             <ResumeJob employer="Insight Venture Partners" jobTitle="Database Intern" city="New York City" state="NY"
@@ -113,6 +118,7 @@ const Resume = () => (
             endDate="August 2013">
                 <ul>
                     <li>Communicated effectively with cooks and customers</li>
+                    <li>Collected payments, packaged food, cleaned and stocked stations</li>
                     <li>Rewarded by management for providing hospitable service to a mystery shopper</li>
                 </ul>
             </ResumeJob>
@@ -123,6 +129,7 @@ const Resume = () => (
             <p>Hobbies: Calligraphy, writing, exercise</p>
         </ResumeSection>
     </div>
+    </>
 );
 
 const styles = {
@@ -132,6 +139,9 @@ const styles = {
     contactInfo: {
         display: 'flex',
         justifyContent: 'space-between',
+    },
+    resume:{
+        fontFamily: 'Arial, sansSerif'
     }
 
 }
