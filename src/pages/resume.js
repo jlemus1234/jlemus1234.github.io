@@ -1,6 +1,7 @@
 import { withPrefix, Link } from 'gatsby'
 import React from 'react'
 import ResumeSection from '../components/ResumeSection'
+import ResumeProject from '../components/ResumeProject'
 import ResumeJob from '../components/ResumeJob'
 const Resume = () => (
     <>
@@ -12,7 +13,7 @@ const Resume = () => (
             <a style={styles.pdfLink}
                 rel="noopener noreferrer"
                 href={withPrefix('/Resume.pdf')}
-                target="_blank"> View PDF version
+                target="_blank"> View one-page PDF version
             </a>
         </div>
         <div>
@@ -35,8 +36,8 @@ const Resume = () => (
         </ResumeSection>
 
         <ResumeSection title="Skills">
-            <p>Programming Languages: C, Python, Javascript, HTML, CSS, SQL, MATLAB</p>
-            <p>FrameWorks, APIs: React, Express</p>
+            <p>Programming Languages: C, Python, Javascript, HTML, CSS, SQL</p>
+            <p>Frameworks, APIs: React, Express</p>
             <p>Related Software: Git, PostgreSQL, MongoDB</p>
         </ResumeSection>
 
@@ -47,7 +48,12 @@ const Resume = () => (
         </ResumeSection>
 
         <ResumeSection title="Projects">
-            <p>Distributed Hash Table</p>
+            <ResumeProject projectName="SwimSense"></ResumeProject>
+            <ResumeProject projectName="Distributed Hash Table"></ResumeProject>
+            <ResumeProject projectName="Inactivity and Slouching Detector"></ResumeProject>
+            <ResumeProject projectName="Port Scan and Password Detector"></ResumeProject>
+            <ResumeProject projectName="Music Guessing Game"></ResumeProject>
+{/*             <p>Distributed Hash Table</p>
             <ul>
                 <li>Wrote a C program that creates a decentralized, distributed system used to upload and download data to nodes using SHA1 hashes as keys, and TCP for transfers</li>
             </ul>
@@ -66,7 +72,7 @@ const Resume = () => (
             <p>Music Guessing Game</p>
             <ul>
                 <li>Created a website for guessing the names of songs using Spotify and Facebook APIs, and worked on the backed storing user data on a MongoDB instance</li>
-            </ul>
+            </ul> */}
         </ResumeSection>
 
         <ResumeSection title="Experience">
@@ -127,6 +133,7 @@ const Resume = () => (
         <ResumeSection title="Other skills">
             <p>Languages: Native English and Spanish speaker, beginner German</p>
             <p>Hobbies: Calligraphy, writing, exercise</p>
+            <p>Previous programming languages: MATLAB, C++</p>
         </ResumeSection>
     </div>
     </>
