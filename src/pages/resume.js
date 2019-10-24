@@ -29,10 +29,10 @@ const Resume = () => (
 
             <ResumeSection title="Education and Honors">
                 <div>
-                    <p>Tufts University, Medford, MA </p>
-                    <p>Bachelor of Science in Computer Science, May 2019</p>
-                    <p>GPA: 3.30</p>
-                    <p>Questbridge Scholar, Dean's List</p>
+                    <p style={styles.education}>Tufts University, Medford, MA </p>
+                    <p style={styles.education}>Bachelor of Science in Computer Science, May 2019</p>
+                    <p style={styles.education}>GPA: 3.30</p>
+                    <p style={styles.education}>Questbridge Scholar, Dean's List</p>
                 </div>
             </ResumeSection>
 
@@ -156,6 +156,10 @@ const styles = {
     resume: {
         fontFamily: 'Arial, sansSerif'
     },
+    education: {
+        display: 'block',
+        marginBottom: '0'
+    }
 
 }
 
