@@ -32,10 +32,10 @@ const IndexPage = () => (
     </div>
 
     <ProjectsPanel>
-      <ProjectWindow linkTo='/project1/' videoSource={testvid1} title="My project" description="Here is a video me dying" ></ProjectWindow>
-      <ProjectWindow></ProjectWindow>
-      <ProjectWindow></ProjectWindow>
-      <ProjectWindow></ProjectWindow>
+      <ProjectWindow linkTo='/SwimSense/' videoSource={testvid1} title="SwimSense" description="An aid for blind swimmers"></ProjectWindow>
+      <ProjectWindow linkTo='/BisexualResourceCenter/' title="BRC" description="Find a support group"></ProjectWindow>
+      <ProjectWindow linkTo='/SenSit' title="SenSit" description="Combat inactivity and poor posture"></ProjectWindow>
+      <ProjectWindow linkTo='/MIXR' title="MIXR" description="Guess the singers of popular songs"></ProjectWindow>
     </ProjectsPanel>
 
     <Link to="/resume/">Resume</Link>

@@ -6,7 +6,7 @@ import ResumeJob from '../components/ResumeJob'
 const Resume = () => (
     <>
         <div>
-            <Link to="index.js">Back</Link>
+            <Link to="/">Back</Link>
         </div>
         <div style={styles.resume}>
             <div>
@@ -74,26 +74,6 @@ const Resume = () => (
                         <li>Created a website for guessing song names using Spotify and Facebook APIs, and worked on the backend storing user data on a MongoDB instance.</li>
                     </ul>
                 </ResumeProject>
-                {/*             <p>Distributed Hash Table</p>
-            <ul>
-                <li>Wrote a C program that creates a decentralized, distributed system used to upload and download data to nodes using SHA1 hashes as keys, and TCP for transfers</li>
-            </ul>
-
-            <p>Inactivity and Slouching Detector</p>
-            <ul>
-                <li>Built an IoT device that logs the time a user spends sitting and monitors slouching</li>
-                <li>Created a website that plots the data on a website using Google Charts</li>
-            </ul>
-
-            <p>Port Scan and Password Detector</p>
-            <ul>
-                <li>Wrote a python script that detects ongoing pot scans and passwords sent in cleartext using the pcapy module, and scapy</li>
-            </ul>
-
-            <p>Music Guessing Game</p>
-            <ul>
-                <li>Created a website for guessing the names of songs using Spotify and Facebook APIs, and worked on the backed storing user data on a MongoDB instance</li>
-            </ul> */}
             </ResumeSection>
 
             <ResumeSection title="Experience">
