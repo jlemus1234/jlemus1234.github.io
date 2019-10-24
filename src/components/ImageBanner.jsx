@@ -1,14 +1,16 @@
 import React from 'react'
 import bannerImage from './../images/senior.jpg'
 
-const bannerStyling = {
+const styles = {
+    bannerStyling : {
     background: 'black',
     display: 'flex',
     justifyContent:'center',
     alignItems: 'center'
-};
+    },
 
-const bannerImageStyling = {    
+    bannerImageStyling : { 
+    }   
     
 };
 
@@ -36,8 +38,8 @@ class ImageBanner extends React.Component {
 
             <div>
                 {/* Testing */}
-                <div style={bannerStyling} className="banner">
-                    <img style = {bannerImageStyling} className="bannerImage" src={this.props.bannerImage} alt="Banner Image"></img>
+                <div style={styles.bannerStyling} className="banner">
+                    <img style = {styles.bannerImageStyling} className="bannerImage" src={this.props.bannerImage} alt="Banner Image"></img>
                 </div>
             </div>
         )

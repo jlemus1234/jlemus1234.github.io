@@ -6,17 +6,19 @@ import linkedinlogo from './../images/Icons/linkedin.svg'
 import emaillogo from './../images/Icons/gmail.svg'
 
 
-const otherSitesStyle = {
+const styles = {
+    otherSitesStyle : {
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
     height: '25px',
     background:'gray'
-};
+    },
 
-const logoStyle = {
+    logoStyle : {
     display: 'block',
     marginLeft: '50%'
+    }
 };
 
 
@@ -40,10 +42,10 @@ class ConnectedSites extends React.Component {
             <div>
                 {/* Testing */}
                 <div>
-                    <div style={otherSitesStyle} className="otherSites" id="otherSitesContainer">
-                        <a href="https://github.com/jlemus1234"><img style={logoStyle} className="link" src={githublogo} alt="GitHub Logo"></img></a>
-                        <a href="https://www.linkedin.com/in/jose-lemus-404328157/"><img style={logoStyle} className="link" src={linkedinlogo} alt="LinkedIn Logo"></img></a>
-                        <a href="mailto: jlemus1234@gmail.com"><img style={logoStyle} className="link" src={emaillogo} alt="E-Mail Logo"></img></a>
+                    <div style={styles.otherSitesStyle} className="otherSites" id="otherSitesContainer">
+                        <a href="https://github.com/jlemus1234"><img style={styles.logoStyle} className="link" src={githublogo} alt="GitHub Logo"></img></a>
+                        <a href="https://www.linkedin.com/in/jose-lemus-404328157/"><img style={styles.logoStyle} className="link" src={linkedinlogo} alt="LinkedIn Logo"></img></a>
+                        <a href="mailto: jlemus1234@gmail.com"><img style={styles.logoStyle} className="link" src={emaillogo} alt="E-Mail Logo"></img></a>
                     </div>
                 </div>
             </div>

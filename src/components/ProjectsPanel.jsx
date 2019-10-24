@@ -2,9 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 
-const ProjectsPanelStyle = {
-    display: 'inline-block',
-    width: '100%',
+const styles = {
+    ProjectsPanel : {
+        display: 'inline-block',
+        width: '100%',
+    }
 }
 
 class ProjectsPanel extends React.Component {
@@ -57,7 +59,7 @@ class ProjectsPanel extends React.Component {
 
     render(){
         return (
-            <div style = {ProjectsPanelStyle} className = "ProjectsPanel">
+            <div style = {styles.ProjectsPanel} className = "ProjectsPanel">
                 {this.renderChildren()}
             </div>
         )
