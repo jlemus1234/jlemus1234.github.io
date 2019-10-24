@@ -8,6 +8,8 @@ import NamePanel from '../components/NamePanel'
 import ProjectsPanel from '../components/ProjectsPanel'
 import ProjectWindow from '../components/ProjectWindow'
 
+import TitledList from '../components/TitledList'
+
 
 import headshot from './../images/me.png'
 import testvid1 from './../images/clips/testClip2.mp4'
@@ -22,6 +24,9 @@ const IndexPage = () => (
     
 
     <NamePanel/>
+
+    
+    {/* <TitledList title="Test list" listArray={["ok","how","about","them","apples"]}/> */}
     
     <ImageBanner bannerImage={headshot}>
     </ImageBanner>
