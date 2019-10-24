@@ -4,40 +4,41 @@ import React from 'react'
 import defaultImage from '../images/me.png'
 import defaultVideo from '../images/clips/testClip2.mp4'
 
-const TitleStyle = {
-    textAlign: 'center',
+
+const styles = {
+    Title : {
+        textAlign: 'center',
+    },
+
+    Collaborators : {
+        textAlign: 'center',
+    },
+
+    VideoCaption : {
+        background:  'gray',
+        paddingBottom: '15px',
+        borderRadius: '30px',
+    },
+    
+    Abstract : {
+    },
+
+    Description : {
+    },
+
+    AdditionalInfo : {
+    },
+
+    SubsectionTitle : {
+        textAlign: 'center',
+        marginTop: '30px'
+    },
+
+    ContentBuffer : {
+        margin: '30px'
+    }
 }
 
-const CollaboratorsStyle = {
-    textAlign: 'center',
-}
-
-const VideoCaptionStyle = {
-    background:  'gray',
-    paddingBottom: '15px',
-    borderRadius: '30px',
-}
-
-const AbstractStyle = {
-
-}
-
-const DescriptionStyle = {
-
-}
-
-const AdditionalInfoStyle = {
-
-}
-
-const SubsectionTitleStyle = {
-    textAlign: 'center',
-    marginTop: '30px'
-}
-
-const ContentBufferStyle ={
-    margin: '30px'
-}
 
 class ProjectPage extends React.Component {
     constructor(props) {
@@ -53,7 +54,7 @@ class ProjectPage extends React.Component {
         return(
         <div className="ProjectPage">
 
-        <div style={VideoCaptionStyle} className="VideoCaptionContainer">
+        <div style={styles.VideoCaption} className="VideoCaptionContainer">
         <div className = "VideoImage">
             <video muted autoPlay loop width="100%">
                 <source src={this.props.Video}></source>
@@ -63,26 +64,26 @@ class ProjectPage extends React.Component {
         <div><p>{this.props.Caption}</p></div>
         </div>
 
-        <div style={TitleStyle} className="Title"><h1>{this.props.Title}</h1></div>
+        <div style={styles.Title} className="Title"><h1>{this.props.Title}</h1></div>
 
-        <div style={CollaboratorsStyle} className="Collaborators">{this.props.Collaborators}</div>
+        <div style={styles.Collaborators} className="Collaborators">{this.props.Collaborators}</div>
 
         <div>
-        <h3 style={SubsectionTitleStyle}>Abstract</h3>
-        <div style={AbstractStyle} className="Abstract">{this.props.Abstract}</div>
+        <h3 style={styles.SubsectionTitle}>Abstract</h3>
+        <div style={styles.Abstract} className="Abstract">{this.props.Abstract}</div>
         </div>
 
         <div>
-        <h3 style={SubsectionTitleStyle}>Summary</h3>
-        <div style={DescriptionStyle} className="Description">{this.props.Description}</div>
+        <h3 style={styles.SubsectionTitle}>Summary</h3>
+        <div style={styles.Description} className="Description">{this.props.Description}</div>
         </div>
 
         <div>
-        <h3 style={SubsectionTitleStyle}>More Info</h3>
-        <div style={AdditionalInfoStyle} className="AdditionalInformation">{this.props.AdditionalInformation}</div>
+        <h3 style={styles.SubsectionTitle}>More Info</h3>
+        <div style={styles.AdditionalInfo} className="AdditionalInformation">{this.props.AdditionalInformation}</div>
         </div>
 
-        <div style={ContentBufferStyle}></div>
+        <div style={styles.ContentBuffer}></div>
 
         </div>
         )

@@ -5,24 +5,25 @@ import {Link} from 'gatsby'
 import vidTest from '../images/clips/testClip3.mp4'
 import imgTest from '../images/me.png'
 
+const styles = {
+    projectWindowStyle : {
+        display: 'block',
+        background: 'gray',
+        width: '60%',
+        borderRadius: '25px',
+        marginBottom: '70px'
+    },
 
-const projectWindowStyle = {
-    display: 'block',
-    background: 'gray',
-    width: '60%',
-    borderRadius: '25px',
-    marginBottom: '70px'
-    //float: 'right'    
-}
+    headerStyle : {
+        color: 'white',
+        textAlign: 'center'
 
-const headerStyle = {
-    color: 'white',
-    textAlign: 'center'
-}
+    },
 
-const descriptionStyle = {
-    color: 'white',
-    textAlign: 'center'
+    descriptionStyle : {
+        color: 'white',
+        textAlign: 'center'
+    }
 }
 
 class ProjectWindow extends React.Component {
@@ -40,11 +41,11 @@ class ProjectWindow extends React.Component {
         console.log(this.props.float)
         console.log(this.props.alignmentDir)
         return (
-            <div style = {{...projectWindowStyle,...this.props.alignmentDir}} id = "projectWindow">
+            <div style = {{...styles.projectWindowStyle,...this.props.alignmentDir}} id = "projectWindow">
 
 
 
-            <div style = {headerStyle}>
+            <div style = {styles.headerStyle}>
                 <h1> 
                 {this.props.title}
                 </h1>
@@ -74,7 +75,7 @@ class ProjectWindow extends React.Component {
 
             </div>
 
-            <div style = {descriptionStyle}>
+            <div style = {styles.descriptionStyle}>
             <p>
                 {this.props.description}
             </p>
