@@ -3,6 +3,7 @@ import React from 'react'
 import ResumeSection from '../components/ResumeSection'
 import ResumeProject from '../components/ResumeProject'
 import ResumeJob from '../components/ResumeJob'
+import TitledList from '../components/TitledList'
 const Resume = () => (
     <>
         <div>
@@ -36,9 +37,12 @@ const Resume = () => (
             </ResumeSection>
 
             <ResumeSection title="Skills">
-                <p>Programming Languages: C, Python, Javascript, HTML, CSS, SQL</p>
+                <TitledList title="Programming Languages" listArray={["C", "Python", "Javascript", "HTML", "CSS", "SQL"]}/>
+                <TitledList title="Frameworks, APIs" listArray={["React", "Express"]} />
+                <TitledList title="Related Software" listArray={["Git", "PostgreSQL", "MongoDB"]}/>
+{/*                 <p>Programming Languages: C, Python, Javascript, HTML, CSS, SQL</p>
                 <p>Frameworks, APIs: React, Express</p>
-                <p>Related Software: Git, PostgreSQL, MongoDB</p>
+                <p>Related Software: Git, PostgreSQL, MongoDB</p> */}
             </ResumeSection>
 
             <ResumeSection title="Relevant Courses">
@@ -132,9 +136,10 @@ const Resume = () => (
             </ResumeSection>
 
             <ResumeSection title="Other skills">
-                <p>Languages: Native English and Spanish speaker, beginner German</p>
-                <p>Hobbies: Calligraphy, writing, exercise</p>
-                <p>Previous programming languages: MATLAB, C++</p>
+                <TitledList title="Languages" listArray={["Native English", "native Spanish", "beginner German"]}/>
+                <TitledList title="Hobbies" listArray={["Calligraphy", "writing", "exercise"]}/>
+                <TitledList title="Previous programming languages" listArray={["MATLAB", "C++", "Erlang", "Java"]}/>
+
             </ResumeSection>
         </div>
     </>
@@ -150,7 +155,7 @@ const styles = {
     },
     resume: {
         fontFamily: 'Arial, sansSerif'
-    }
+    },
 
 }
 

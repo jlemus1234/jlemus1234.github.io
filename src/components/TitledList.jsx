@@ -27,10 +27,10 @@ class TitledList extends React.Component {
         }
 
         return(
-            <>
-            <p>{this.props.title}</p>
-            <p>{expandedString}</p>
-            </>
+            <div style={styles.container}>
+                <p style={styles.title}>{this.props.title}: </p>
+                <p style={styles.listContents}>{expandedString}</p>
+            </div>
         )
     }
 }
@@ -43,9 +43,14 @@ TitledList.defaultProps = {
 
 const styles = {
     title : {
-
+        display: 'inline',
+        fontWeight: 'bold'
     },
     listContents:{
+        display: 'inline'
+
+    },
+    container:{
 
     }
 }
