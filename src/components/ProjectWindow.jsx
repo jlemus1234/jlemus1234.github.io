@@ -36,11 +36,9 @@ class ProjectWindow extends React.Component {
 
     //style={{...projectWindowStyle, ...this.props.alignmentDir}}
     render(){
-        console.log(this.props);
-        console.log("Project Window is rendering");
-        console.log(this.props.float)
-        console.log(this.props.alignmentDir)
+
         return (
+            <Link to={this.props.linkTo}>
             <div style = {{...styles.projectWindowStyle,...this.props.alignmentDir}} id = "projectWindow">
 
 
@@ -53,25 +51,12 @@ class ProjectWindow extends React.Component {
 
 
             <div id="video">
-{/*                 <a href="https://github.com/jlemus1234">
-                    <video muted autoPlay loop width="100%">
-                        {//width="320" height="240"
-                        }
-                        <source src={this.props.videoSource} type="video/mp4"></source>
-                        <img src ={this.props.imageSource}></img>
-                        Your browser does not support the video tag
-                    </video>
-                </a> */}
 
-                <Link to={this.props.linkTo}>
                     <video muted autoPlay loop width="100%">
-                        {//width="320" height="240"
-                        }
                         <source src={this.props.videoSource} type="video/mp4"></source>
                         <img src ={this.props.imageSource}></img>
                         Your browser does not support the video tag
                     </video>
-                </Link>
 
             </div>
 
@@ -82,6 +67,7 @@ class ProjectWindow extends React.Component {
             </div>
 
             </div>
+            </Link>
 
         )
     }

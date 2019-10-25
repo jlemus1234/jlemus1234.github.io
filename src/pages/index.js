@@ -10,6 +10,7 @@ import ProjectWindow from '../components/ProjectWindow'
 
 import TitledList from '../components/TitledList'
 
+import ProjectWindowOverlay from '../components/ProjectWindowOverlay'
 
 import headshot from './../images/me.png'
 import testvid1 from './../images/clips/testClip2.mp4'
@@ -37,6 +38,8 @@ const IndexPage = () => (
     </div>
 
     <ProjectsPanel>
+      <ProjectWindowOverlay linkTo='/SwimSense/' videoSource={testvid1} title="SwimSense" description="An aid for blind swimmers"/>
+
       <ProjectWindow linkTo='/SwimSense/' videoSource={testvid1} title="SwimSense" description="An aid for blind swimmers"></ProjectWindow>
       <ProjectWindow linkTo='/BisexualResourceCenter/' title="BRC" description="Find a support group"></ProjectWindow>
       <ProjectWindow linkTo='/SenSit' title="SenSit" description="Combat inactivity and poor posture"></ProjectWindow>
