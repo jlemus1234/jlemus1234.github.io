@@ -38,7 +38,7 @@ const styles = {
     container: {
         display: 'flex',
         width: '100%',
-        background: 'gray',
+        background: 'rgb(181, 188, 199)',
         justifyContent: 'center'
     },
 
@@ -46,13 +46,11 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     width: '50%',
-    //height: '25px',
     marginBottom: '0'
     },
 
     logoStyle : {
     display: 'block',
-    //marginLeft: '50%',
     height: '25px',
     width: '25px',
     marginBottom: '0'

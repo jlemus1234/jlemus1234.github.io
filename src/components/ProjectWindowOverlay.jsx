@@ -18,8 +18,10 @@ const styles = {
         width: '100%',
         position:'absolute',
         top: '0',
-        color: 'white',
+
+        color: 'rgb(181, 188, 199)',
         textAlign: 'center',
+
         marginBottom: '0'
     },
 
@@ -29,9 +31,10 @@ const styles = {
         position: 'absolute',
         bottom: '5%',
 
-        color: 'white',
+        color: 'rgb(181, 188, 199)',
         textAlign: 'center',
         fontWeight: 'bold',
+
         marginBottom: '0'
     }
 }

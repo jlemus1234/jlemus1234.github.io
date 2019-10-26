@@ -8,7 +8,7 @@ import imgTest from '../images/me.png'
 const styles = {
     projectWindowStyle : {
         display: 'block',
-        background: 'gray',
+        background: 'rgb(181, 188, 199)',
         width: '60%',
         borderRadius: '25px',
         marginBottom: '70px'

@@ -15,7 +15,7 @@ const styles = {
     },
 
     VideoCaption : {
-        background:  'gray',
+        background: 'rgb(181, 188, 199)',
         paddingBottom: '15px',
         borderRadius: '30px',
     },

@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
   <div
     style={{
       // Sets the color for the header
-      background: `rebeccapurple`,
+      background: 'rgb(181, 188, 199)',
       marginBottom: `1.45rem`,
     }}
   >

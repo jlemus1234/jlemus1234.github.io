@@ -4,6 +4,7 @@ import bannerImage from './../images/senior.jpg'
 const styles = {
     bannerStyling : {
     background: 'black',
+    //background: 'rgb(181, 188, 199)',
     display: 'flex',
     justifyContent:'center',
     alignItems: 'center'
@@ -31,11 +32,9 @@ class ImageBanner extends React.Component {
 
     render() {
         return (
-
             // create function that swaps which photo to display...
             // lets just say there are four of them
             // swap through after a few seconds...
-
             <div>
                 {/* Testing */}
                 <div style={styles.bannerStyling} className="banner">
