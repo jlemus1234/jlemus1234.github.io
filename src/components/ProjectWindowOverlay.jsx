@@ -7,37 +7,32 @@ import imgTest from '../images/me.png'
 
 const styles = {
     projectWindowStyle: {
-        //display: 'block',
-        background: 'gray',
+        background: 'white',
         width: '60%',
-        //borderRadius: '25px',
-        //marginBottom: '70px',
-        position: 'relative'
+        position: 'relative',
+        marginBottom: '30px'
     },
 
-    headerStyle: {
+    headerPara: {
         display: 'block',
         width: '100%',
-        position: 'absolute',
+        position:'absolute',
         top: '0',
         color: 'white',
         textAlign: 'center',
-        //marginBottom: '0'
-    },
-
-    descriptionStyle: {
-        display: 'block',
-        width: '100%',
-        position: 'absolute',
-        bottom:'0',
-        color: 'white',
-        textAlign: 'center',
-        //marginBottom: '0'
+        marginBottom: '0'
     },
 
     descriptionPara: {
-        marginBottom: '0',
-        fontWeight: 'bold'
+        display: 'block',
+        width: '100%',
+        position: 'absolute',
+        bottom: '5%',
+
+        color: 'white',
+        textAlign: 'center',
+        fontWeight: 'bold',
+        marginBottom: '0'
     }
 }
 
@@ -59,17 +54,17 @@ class ProjectWindow extends React.Component {
                             Your browser does not support the video tag
                         </video>
 
-                        <div style={styles.headerStyle}>
-                            <h1>
+                        {/* <div style={styles.headerStyle}> */}
+                            <h1 style={styles.headerPara}>
                                 {this.props.title}
                             </h1>
-                        </div>
+                        {/* </div> */}
 
-                        <div style={styles.descriptionStyle}>
+                        {/* <div style={styles.descriptionStyle}> */}
                             <p style={styles.descriptionPara}>
                                 {this.props.description}
                             </p>
-                        </div>
+                        {/* </div> */}
                 </div>
             </Link>
 
