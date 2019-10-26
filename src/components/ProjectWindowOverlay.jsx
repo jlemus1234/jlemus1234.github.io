@@ -16,21 +16,28 @@ const styles = {
     },
 
     headerStyle: {
-        //display: 'absolute',
+        display: 'block',
+        width: '100%',
         position: 'absolute',
         top: '0',
         color: 'white',
         textAlign: 'center',
-        marginBottom: '0'
-
+        //marginBottom: '0'
     },
 
     descriptionStyle: {
+        display: 'block',
+        width: '100%',
         position: 'absolute',
         bottom:'0',
         color: 'white',
         textAlign: 'center',
-        marginBottom: '0'
+        //marginBottom: '0'
+    },
+
+    descriptionPara: {
+        marginBottom: '0',
+        fontWeight: 'bold'
     }
 }
 
@@ -59,7 +66,7 @@ class ProjectWindow extends React.Component {
                         </div>
 
                         <div style={styles.descriptionStyle}>
-                            <p>
+                            <p style={styles.descriptionPara}>
                                 {this.props.description}
                             </p>
                         </div>
