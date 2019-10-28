@@ -8,16 +8,18 @@ import defaultVideo from '../images/clips/testClip2.mp4'
 const styles = {
     Title : {
         textAlign: 'center',
+        marginBottom: '10px'
     },
 
     Collaborators : {
         textAlign: 'center',
+        marginBottom: '30px'
     },
 
     VideoCaption : {
         background: 'rgb(181, 188, 199)',
-        paddingBottom: '15px',
-        borderRadius: '30px',
+        //paddingBottom: '15px',
+        //borderRadius: '30px',
     },
     
     Abstract : {
@@ -54,6 +56,10 @@ class ProjectPage extends React.Component {
         return(
         <div className="ProjectPage">
 
+        <h1 style={styles.Title}>{this.props.Title}</h1>
+        <p style={styles.Collaborators}>{this.props.Collaborators}</p>
+
+
         <div style={styles.VideoCaption} className="VideoCaptionContainer">
         <div className = "VideoImage">
             <video muted autoPlay loop width="100%">
@@ -63,10 +69,6 @@ class ProjectPage extends React.Component {
         </div>
         <div><p>{this.props.Caption}</p></div>
         </div>
-
-        <div style={styles.Title} className="Title"><h1>{this.props.Title}</h1></div>
-
-        <div style={styles.Collaborators} className="Collaborators">{this.props.Collaborators}</div>
 
         <div>
         <h3 style={styles.SubsectionTitle}>Abstract</h3>

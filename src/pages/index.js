@@ -4,11 +4,8 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 //import Image from '../components/image'
 import SEO from '../components/seo'
-import NamePanel from '../components/NamePanel'
 import ProjectsPanel from '../components/ProjectsPanel'
 import ProjectWindow from '../components/ProjectWindow'
-
-import TitledList from '../components/TitledList'
 
 import ProjectWindowOverlay from '../components/ProjectWindowOverlay'
 
@@ -21,14 +18,7 @@ import ImageBanner from '../components/ImageBanner'
 import ConnectedSites from '../components/ConnectedSites'
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    
-
-    <NamePanel/>
-
-    
-    {/* <TitledList title="Test list" listArray={["ok","how","about","them","apples"]}/> */}
-    
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />    
     <ImageBanner bannerImage={headshot}>
     </ImageBanner>
 
@@ -44,6 +34,7 @@ const IndexPage = () => (
       <ProjectWindow linkTo='/BisexualResourceCenter/' title="BRC" description="Find a support group"></ProjectWindow>
       <ProjectWindow linkTo='/SenSit' title="SenSit" description="Combat inactivity and poor posture"></ProjectWindow>
       <ProjectWindow linkTo='/MIXR' title="MIXR" description="Guess the singers of popular songs"></ProjectWindow>
+      <ProjectWindow linkTo='/TongueInterface' title="Tongue Interface" description="Control with your tongue"></ProjectWindow>
     </ProjectsPanel>
 
     <Link to="/resume/">Resume</Link>
