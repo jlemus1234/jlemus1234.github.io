@@ -1,6 +1,8 @@
 
 import React from 'react'
 import ProjectPage from '../components/ProjectPage'
+import {Link} from 'gatsby'
+import Layout from '../components/layout'
 
 class TongueInterface extends React.Component{
     constructor(props){
@@ -12,7 +14,17 @@ class TongueInterface extends React.Component{
 
     render(){
         return(
-            <ProjectPage></ProjectPage>
+            <Layout>
+            <Link to='/'>Home</Link>
+            <ProjectPage
+            Title = "Tongue Interface"
+            Caption = ""
+            Collaborators = "Jose Lemus, Woodbury Shortbridge"
+            Abstract = ""
+            Description = ""
+            >
+            </ProjectPage>
+            </Layout>
         )
     }
 
