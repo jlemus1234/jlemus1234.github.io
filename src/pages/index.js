@@ -25,9 +25,11 @@ import testvid1 from './../images/clips/testClip2.mp4'
 
 const IndexPage = () => (
   <Layout>
+  
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-    <Link to="/resume/">Resume</Link>
+    <Link to="/resume/" style={{display:'block', marginBottom:'10px'}}>Resume</Link>
+
 
     <ImageBanner bannerImage={collabImg} style={{height: '400px'}}>
     </ImageBanner>

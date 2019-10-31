@@ -4,8 +4,9 @@ import ResumeSection from '../components/ResumeSection'
 import ResumeProject from '../components/ResumeProject'
 import ResumeJob from '../components/ResumeJob'
 import TitledList from '../components/TitledList'
+import Layout from '../components/layout'
 const Resume = () => (
-    <>
+    <Layout>
         <div>
             <Link to="/">Back</Link>
         </div>
@@ -142,7 +143,7 @@ const Resume = () => (
 
             </ResumeSection>
         </div>
-    </>
+    </Layout>
 );
 
 const styles = {
