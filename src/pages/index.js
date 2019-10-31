@@ -30,7 +30,7 @@ const IndexPage = () => (
 
     <Link to="/resume/" style={{display:'block', marginBottom:'10px'}}>Resume</Link>
 
-
+    {/* height: '400px' */}
     <ImageBanner bannerImage={collabImg} style={{height: '400px'}}>
     </ImageBanner>
 
