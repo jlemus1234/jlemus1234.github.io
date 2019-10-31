@@ -7,8 +7,10 @@ const styles = {
     //background: 'rgb(181, 188, 199)',
     display: 'flex',
     justifyContent:'center',
-    alignItems: 'center'
-    },
+    alignItems: 'center',
+    borderRadius: '10px 10px 0 0',
+
+},
 
     bannerImageStyling : { 
     }   
@@ -35,12 +37,9 @@ class ImageBanner extends React.Component {
             // create function that swaps which photo to display...
             // lets just say there are four of them
             // swap through after a few seconds...
-            <div>
-                {/* Testing */}
                 <div style={styles.bannerStyling} className="banner">
                     <img style = {styles.bannerImageStyling} className="bannerImage" src={this.props.bannerImage} alt="Banner Image"></img>
                 </div>
-            </div>
         )
     }
 }

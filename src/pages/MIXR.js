@@ -35,6 +35,9 @@ const MIXR = () => (
                     I worked on getting basic login features working, storing and retrieving scores as well as other user data, and
                     hosting the website. 
                     "
+
+                    AdditionalInformation=""
+
         >
         </ProjectPage>
     </Layout>

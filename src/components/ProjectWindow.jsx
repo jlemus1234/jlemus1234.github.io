@@ -11,10 +11,14 @@ const styles = {
         background: 'rgb(181, 188, 199)',
         width: '60%',
         borderRadius: '25px',
-        marginBottom: '70px'
+        marginBottom: '70px',
+
+        fontFamily: 'Arial, sansSerif'
     },
 
     headerPara:{
+        fontFamily: 'Arial, sansSerif',
+
         display: 'inline-block',
         width: '100%',
 
@@ -29,6 +33,8 @@ const styles = {
     },
 
     descriptionPara:{
+        fontFamily: 'Arial, sansSerif',
+
         display: 'block',
         width: '100%',
 

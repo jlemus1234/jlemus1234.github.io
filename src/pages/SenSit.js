@@ -33,6 +33,10 @@ const SenSit = () => (
         used an Arduino and Raspberry Pi. I was also able to improve the companion website for the device. 
         Version 2 came out to be much smaller, more robust, and energy efficient.
         "
+
+        AdditionalInformation=""
+
+
         ></ProjectPage>
     </Layout>
 )

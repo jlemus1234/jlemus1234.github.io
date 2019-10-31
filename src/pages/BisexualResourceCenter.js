@@ -42,7 +42,8 @@ const BisexualResourceCenter = () => (
                     user for better accuracy. 
                     The tongue interface allowed for two main controls, moving left or right."
         
-        
+                    AdditionalInformation=""
+
         ></ProjectPage>
     </Layout>
 )

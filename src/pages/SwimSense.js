@@ -18,6 +18,7 @@ const SwimSense = () => (
         <ProjectPage
         Title="SwimSense"
         Video={finalVideo}
+        Caption=""
         Image={posterimg}
         Collaborators="Jose Lemus, Tara Mackenzie, Samantha Levy, and Tommaso Lombardo in collaboration with HRC"
         Abstract="

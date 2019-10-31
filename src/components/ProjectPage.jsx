@@ -4,34 +4,46 @@ import React from 'react'
 import defaultImage from '../images/me.png'
 import defaultVideo from '../images/clips/testClip2.mp4'
 
+const fonts = 'Arial, sansSerif'
 
 const styles = {
+    ProjectPage : {
+        fontFamily: fonts
+    },
+
     Title : {
+        fontFamily: fonts,
         textAlign: 'center',
-        marginBottom: '10px'
+        marginBottom: '10px',
     },
 
     Collaborators : {
+        fontFamily: fonts,
         textAlign: 'center',
         marginBottom: '30px'
     },
 
     VideoCaption : {
         background: 'rgb(181, 188, 199)',
+        //borderRadius: '10px 10px 10px 10px',
         //paddingBottom: '15px',
         //borderRadius: '30px',
     },
     
     Abstract : {
+        fontFamily: fonts,
     },
 
     Description : {
+        fontFamily: fonts,
     },
 
     AdditionalInfo : {
+        fontFamily: fonts,
     },
 
     SubsectionTitle : {
+        fontFamily: fonts,
         textAlign: 'center',
         marginTop: '30px'
     },
@@ -54,7 +66,7 @@ class ProjectPage extends React.Component {
 
     render(){
         return(
-        <div className="ProjectPage">
+        <div style={styles.ProjectPage}>
 
         <h1 style={styles.Title}>{this.props.Title}</h1>
         <p style={styles.Collaborators}>{this.props.Collaborators}</p>
