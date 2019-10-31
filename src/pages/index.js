@@ -6,27 +6,30 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ProjectsPanel from '../components/ProjectsPanel'
 import ProjectWindow from '../components/ProjectWindow'
-
+import ImageBanner from '../components/ImageBanner'
+import ConnectedSites from '../components/ConnectedSites'
 import ProjectWindowOverlay from '../components/ProjectWindowOverlay'
 
+// Assets
 import headshot from './../images/me.png'
-import testvid1 from './../images/clips/testClip2.mp4'
-
+import collabImg from '../assets/SwimSense/SwimSense8.jpg'
+// demo video clips
 import BRCVid from '../assets/BRC/BRCDemo.mp4'
 import SwimSenseVid from '../assets/SwimSense/SwimDemo.mp4'
 import SenSitVid from '../assets/SenSit/SenSitDemo.mp4'
 import MIXRVid from '../assets/MIXR/MIXRDemo.mp4'
 import TIVid from '../assets/TongueInterface/TongueInterfaceDemo.mp4'
 
-import ImageBanner from '../components/ImageBanner'
-import ConnectedSites from '../components/ConnectedSites'
+import testvid1 from './../images/clips/testClip2.mp4'
+
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
     <Link to="/resume/">Resume</Link>
 
-    <ImageBanner bannerImage={headshot}>
+    <ImageBanner bannerImage={collabImg} style={{height: '400px'}}>
     </ImageBanner>
 
     <div style = {{marginBottom: '50px'}}>
