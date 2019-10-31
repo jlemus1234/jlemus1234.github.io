@@ -14,27 +14,52 @@ const styles = {
         marginBottom: '70px'
     },
 
+    headerPara:{
+        display: 'inline-block',
+        width: '100%',
+
+        textAlign: 'center',
+        color: 'rgb(0, 0, 0)',
+        fontWeight: 'bold',
+
+ 
+        marginBottom: '5px',
+
+
+    },
+
+    descriptionPara:{
+        display: 'block',
+        width: '100%',
+
+        textAlign: 'center',
+        color: 'rgb(0, 0, 0)',
+        fontWeight: 'bold',
+
+        marginBottom: '5px',
+
+    }
+/* 
     headerStyle : {
         color: 'white',
-        textAlign: 'center'
+        textAlign: 'center',
+        marginBottom: '0'
 
     },
 
     descriptionStyle : {
         color: 'white',
         textAlign: 'center'
-    }
+    } */
 }
 
 class ProjectWindow extends React.Component {
     constructor(props){
-        // required props include a name and an image/video
         super(props);
         this.state = {
         };
     }
 
-    //style={{...projectWindowStyle, ...this.props.alignmentDir}}
     render(){
 
         return (
@@ -43,14 +68,13 @@ class ProjectWindow extends React.Component {
 
 
 
-            <div style = {styles.headerStyle}>
-                <h1> 
+            {/* <div style = {styles.headerStyle}> */}
+                <h1 style={styles.headerPara}> 
                 {this.props.title}
                 </h1>
-            </div>
+            {/* </div> */}
 
 
-            <div id="video">
 
                     <video muted autoPlay loop width="100%">
                         <source src={this.props.videoSource} type="video/mp4"></source>
@@ -58,13 +82,12 @@ class ProjectWindow extends React.Component {
                         Your browser does not support the video tag
                     </video>
 
-            </div>
 
-            <div style = {styles.descriptionStyle}>
-            <p>
+            {/* <div style = {styles.descriptionStyle}> */}
+            <p style={styles.descriptionPara}> 
                 {this.props.description}
             </p>
-            </div>
+            {/* </div> */}
 
             </div>
             </Link>
