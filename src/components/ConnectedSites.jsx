@@ -39,7 +39,11 @@ const styles = {
         display: 'flex',
         width: '100%',
         background: 'rgb(181, 188, 199)',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        paddingTop: '10px',
+        paddingBottom: '10px',
+
+        borderRadius: '0 0 10px 10px'
     },
 
     otherSitesStyle : {
