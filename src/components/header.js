@@ -8,6 +8,10 @@ const Header = ({ siteTitle }) => (
       // Sets the color for the header
       background: 'rgb(181, 188, 199)',
       marginBottom: `1.45rem`,
+      // adding
+      //display: 'flex',
+      //justifyContent: 'space-between'
+
     }}
   >
     <div
@@ -15,9 +19,15 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        //adding
+        display: 'flex',
+        justifyContent: 'space-between'
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0,
+      // adding 
+      display: 'inline-block'
+      }}>
         <Link
           to="/"
           style={{
@@ -28,7 +38,37 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+
+    {/* </div> */}
+
+    <div style={{
+      display: 'flex',
+      justifyContent: 'space-between'
+    }}>
+      <p style={{
+        marginRight:'10px'
+      }}>
+        <Link
+        to="/AboutMe"
+        style={{
+          color: 'black',
+        }}
+        >
+        About Me
+        </Link>
+      </p>
+      <p>
+        <Link
+        to="/resume"
+        style={{
+          color: 'black'
+        }}
+        >Resume
+        </Link>
+      </p>
     </div>
+
+        </div>
   </div>
 )
 

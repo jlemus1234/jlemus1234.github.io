@@ -7,21 +7,21 @@ import TitledList from '../components/TitledList'
 import Layout from '../components/layout'
 const Resume = () => (
     <Layout>
-        <div>
+{/*         <div>
             <Link to="/">Back</Link>
-        </div>
+        </div> */}
         <div style={styles.resume}>
             <div>
                 <a style={styles.pdfLink}
                     rel="noopener noreferrer"
                     href={withPrefix('/Resume.pdf')}
-                    target="_blank"> View one-page PDF version
-            </a>
+                    target="_blank"> View single-page PDF
+                </a>
             </div>
             <div>
-                <h1>Jose Arturo Lemus Ortiz</h1>
+                {/* <h1>Jose Arturo Lemus Ortiz</h1> */}
                 <div style={styles.contactInfo}>
-                    <p>(914) 575-7469</p>
+                    <p>1 (914) 575-7469</p>
                     <a href="mailto: jose.lemus@tufts.edu">jose.lemus@tufts.edu</a>
                     <a href="https://github.com/jlemus1234">https://github.com/jlemus1234</a>
 
@@ -94,7 +94,7 @@ const Resume = () => (
                 <ResumeJob employer="JumboCode" jobTitle="Front End Developer" city="Medford" state="MA"
                     startDate="September 2018" endDate="May 2019">
                     <ul>
-                        <li>Built components displaying information on free resource centers located across
+                        <li>Built components displaying information on resource centers located across
                         the United States using React and the Google Maps platform</li>
                         <li>Helped team members debug their code</li>
                     </ul>
@@ -148,10 +148,13 @@ const Resume = () => (
 
 const styles = {
     pdfLink: {
-        float: 'right'
+        display: 'block',
+        float: 'right',
+        marginBottom: '20px'
     },
     contactInfo: {
         display: 'flex',
+        width: '100%',
         justifyContent: 'space-between',
     },
     resume: {
