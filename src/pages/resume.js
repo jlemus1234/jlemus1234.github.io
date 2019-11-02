@@ -5,18 +5,22 @@ import ResumeProject from '../components/ResumeProject'
 import ResumeJob from '../components/ResumeJob'
 import TitledList from '../components/TitledList'
 import Layout from '../components/layout'
+
+import pdfIcon from '../images/Icons/AdobePDFIcon.png'
+
 const Resume = () => (
     <Layout>
 {/*         <div>
             <Link to="/">Back</Link>
         </div> */}
         <div style={styles.resume}>
-            <div>
+            <div style={styles.pdf}>
                 <a style={styles.pdfLink}
                     rel="noopener noreferrer"
                     href={withPrefix('/Resume.pdf')}
-                    target="_blank"> View single-page PDF
+                    target="_blank"> View PDF
                 </a>
+                <img style={styles.pdfIcon} src={pdfIcon}/>
             </div>
             <div>
                 {/* <h1>Jose Arturo Lemus Ortiz</h1> */}
@@ -147,8 +151,15 @@ const Resume = () => (
 );
 
 const styles = {
+    pdf: {
+        //display: 'inline'
+    },
+    pdfIcon: {
+        display: 'inline',
+        float: 'right'
+    },
     pdfLink: {
-        display: 'block',
+        display: 'inline',
         float: 'right',
         marginBottom: '20px'
     },
@@ -158,7 +169,7 @@ const styles = {
         justifyContent: 'space-between',
     },
     resume: {
-        fontFamily: 'Arial, sansSerif'
+        fontFamily: 'Arial, sansSerif',
     },
     education: {
         display: 'block',

@@ -14,8 +14,10 @@ import ImageSlideShow from '../components/ImageSlideShow'
 
 // Assets
 import headshot from './../images/me.png'
-import collabImg from '../assets/SwimSense/SwimSense8.jpg'
-
+import cbImg from '../assets/SwimSense/SwimSense8.jpg'
+import cbImg2 from '../assets/SwimSense/SwimSense7.jpg'
+import cbImg3 from '../assets/SwimSense/SwimSense5.jpg'
+import cbImg4 from '../assets/SwimSense/SwimSense2.jpg'
 
 // demo video clips
 import BRCVid from '../assets/BRC/BRCDemo.mp4'
@@ -39,10 +41,9 @@ const IndexPage = () => (
 
     {/* <Link to="/resume/" style={{display:'block', marginBottom:'10px'}}>Resume</Link> */}
 
-    {/* <ImageSlideShow imageList={[headshot, collabImg]}> </ImageSlideShow> */}
+    <ImageSlideShow style={{height:'400px'}} imageList={[headshot, cbImg, cbImg2, cbImg3, cbImg4]}> </ImageSlideShow>
     {/* height: '400px' */}
-    <ImageBanner bannerImage={collabImg} style={{height: '400px'}}>
-    </ImageBanner>
+    {/* <ImageBanner bannerImage={cbImg} style={{height: '400px'}}></ImageBanner> */}
 
     <div style = {{marginBottom: '50px'}}>
     <ConnectedSites>
