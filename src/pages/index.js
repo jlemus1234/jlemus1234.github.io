@@ -10,9 +10,13 @@ import ImageBanner from '../components/ImageBanner'
 import ConnectedSites from '../components/ConnectedSites'
 import ProjectWindowOverlay from '../components/ProjectWindowOverlay'
 
+import ImageSlideShow from '../components/ImageSlideShow'
+
 // Assets
 import headshot from './../images/me.png'
 import collabImg from '../assets/SwimSense/SwimSense8.jpg'
+
+
 // demo video clips
 import BRCVid from '../assets/BRC/BRCDemo.mp4'
 import SwimSenseVid from '../assets/SwimSense/SwimDemo.mp4'
@@ -35,6 +39,7 @@ const IndexPage = () => (
 
     {/* <Link to="/resume/" style={{display:'block', marginBottom:'10px'}}>Resume</Link> */}
 
+    <ImageSlideShow imageList={[headshot, collabImg]}> </ImageSlideShow>
     {/* height: '400px' */}
     <ImageBanner bannerImage={collabImg} style={{height: '400px'}}>
     </ImageBanner>
