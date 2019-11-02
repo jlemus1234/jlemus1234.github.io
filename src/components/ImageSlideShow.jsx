@@ -66,7 +66,7 @@ class ImageBanner extends React.Component {
             console.log('should be creating the timer')
             this.timerID = setInterval(
                 // ()=>{console.log('Timer triggered')} , 5000
-                ()=>this.changePic(), 5000
+                this.changePic, 5000
             )
         }
 
