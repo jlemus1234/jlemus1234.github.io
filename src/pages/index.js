@@ -39,7 +39,7 @@ const IndexPage = () => (
 
     {/* <Link to="/resume/" style={{display:'block', marginBottom:'10px'}}>Resume</Link> */}
 
-    <ImageSlideShow imageList={[headshot, collabImg]}> </ImageSlideShow>
+    {/* <ImageSlideShow imageList={[headshot, collabImg]}> </ImageSlideShow> */}
     {/* height: '400px' */}
     <ImageBanner bannerImage={collabImg} style={{height: '400px'}}>
     </ImageBanner>

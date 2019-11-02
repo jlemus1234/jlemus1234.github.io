@@ -10,7 +10,7 @@ import MIXRVid from '../assets/MIXR/MIXRDemo.mp4'
 
 const MIXR = () => (
     <Layout>
-        <Link to='/'>Home</Link>
+        {/* <Link to='/'>Home</Link> */}
         <ProjectPage
                     Title = "MIXR"
                     Caption = ""

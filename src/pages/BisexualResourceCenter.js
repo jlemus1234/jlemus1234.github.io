@@ -10,7 +10,7 @@ import BRCVid from '../assets/BRC/BRCDemo.mp4'
 
 const BisexualResourceCenter = () => (
     <Layout>
-        <Link to='/'>Home</Link>
+        {/* <Link to='/'>Home</Link> */}
         <ProjectPage
                     Title = "Bisexual Resource Center"
                     Caption = ""

@@ -21,8 +21,8 @@ const styles = {
         maxHeight: '100%',
         marginBottom: '0',
         objectFit: 'contain'
-    }   
-    
+    },
+
 };
 
 // add cycle through images
@@ -33,7 +33,6 @@ class ImageBanner extends React.Component {
         super(props);
 
         this.state = {
-            pic:testImage,
             imageIndex: 0
         };
 
@@ -43,17 +42,13 @@ class ImageBanner extends React.Component {
 
     changePic(){
         console.log('ChangePic was triggered')
-        let newIndex = -1;
-        if(this.state.imageIndex === this.props.imageList.length-1){ // the current imageIndex is at the last
+        let newIndex = this.state.imageIndex;
+        if (newIndex === this.props.imageList.length - 1){
             newIndex = 0;
         }else{
-            newIndex = this.state.imageIndex + 1;
+            newIndex++;
         }
-        console.log('Finished if statement in changepic')
-        this.setState({
-            imageIndex: newIndex,
-            pic: this.props.imageList[newIndex]
-        })
+        this.setState({imageIndex: newIndex})
         console.log('Should be finished with changePic')
 
     }
@@ -62,7 +57,7 @@ class ImageBanner extends React.Component {
     componentDidMount(){
         // only create timer if imageList exists
         console.log('Component was mounted')
-        if (Array.isArray(this.props.imageList) && this.props.imageList.length){
+        if (Array.isArray(this.props.imageList) && this.props.imageList.length > 1){
             console.log('should be creating the timer')
             this.timerID = setInterval(
                 // ()=>{console.log('Timer triggered')} , 5000
@@ -72,7 +67,6 @@ class ImageBanner extends React.Component {
 
     }
 
-    // load single static image if that's passed in
     // load array of images and start a timer if that's passed in
 
     componentWillUnmount(){
@@ -80,29 +74,19 @@ class ImageBanner extends React.Component {
 
     }
 
-    // {styles.bannerImageStyling}
-
     render() {
-        // Nothing passed in
-        if (this.props.bannerImage === null){
-            // If nothing passed in, display test default
-        }else{
-            this.setState({pic: this.props.bannerImage})
-        }
-
         return (
             // create function that swaps which photo to display...
             // lets just say there are four of them
             // swap through after a few seconds...
                 <div style={{...styles.bannerStyling, ...this.props.style}} className="banner">
-                    <img style = {styles.bannerImageStyling} className="bannerImage" src={this.state.pic} alt="Banner Image"></img>
+                    <img style = {styles.bannerImageStyling} className="bannerImage" src={this.props.imageList[this.state.imageIndex]} alt="Banner Image"></img>
                 </div>
         )
     }
 }
 
 ImageBanner.defaultProps = {
-    bannerImage: null,
     imageList: []
 }
 

@@ -20,7 +20,7 @@ class TongueInterface extends React.Component{
     render(){
         return(
             <Layout>
-            <Link to='/'>Home</Link>
+            {/* <Link to='/'>Home</Link> */}
             <ProjectPage
             Title = "Tongue Interface"
             Caption = ""
