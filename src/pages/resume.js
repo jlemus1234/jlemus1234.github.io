@@ -18,9 +18,10 @@ const Resume = () => (
                 <a style={styles.pdfLink}
                     rel="noopener noreferrer"
                     href={withPrefix('/Resume.pdf')}
-                    target="_blank"> View PDF
+                    target="_blank"> 
+                    <img style={styles.pdfIcon} src={pdfIcon}/>
+                    View PDF
                 </a>
-                <img style={styles.pdfIcon} src={pdfIcon}/>
             </div>
             <div>
                 {/* <h1>Jose Arturo Lemus Ortiz</h1> */}
@@ -156,7 +157,9 @@ const styles = {
     },
     pdfIcon: {
         display: 'inline',
-        float: 'right'
+        marginRight: '5px',
+        marginBottom: '0'
+        //float: 'left'
     },
     pdfLink: {
         display: 'inline',

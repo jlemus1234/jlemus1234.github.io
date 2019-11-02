@@ -6,13 +6,12 @@ const NavigationBar = (currentPage) => (
         display: 'flex',
         justifyContent: 'space-between'
       }}>
-        <p>
+        <p style={{
+            marginRight: '10px'
+            }}>
             <Link
             to="/"
-            style={{
-                color:'black',
-                marginRight: '10px'
-            }}
+            style={style.links}
             >
             Home
             </Link>
@@ -23,26 +22,29 @@ const NavigationBar = (currentPage) => (
         }}>
           <Link
           to="/AboutMe"
-          style={{
-            color: 'black',
-          }}
+          style={style.links}
           >
           About Me
           </Link>
         </p>
         <p style={{
-            //marginRight: '10px'
         }}>
           <Link
           to="/resume"
-          style={{
-            color: 'black'
-          }}
+          style={style.links}
           >Resume
           </Link>
         </p>
       </div>
 )
+
+const style={
+    links:{
+        color: 'black',
+        textDecoration: 'none'
+        
+    }
+}
 
 export default NavigationBar;
 
