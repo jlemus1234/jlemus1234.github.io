@@ -2,6 +2,8 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import NavigationBar from '../components/NavigationBar'
+
 const Header = ({ siteTitle }) => (
   <div
     style={{
@@ -41,7 +43,8 @@ const Header = ({ siteTitle }) => (
 
     {/* </div> */}
 
-    <div style={{
+      <NavigationBar></NavigationBar>
+{/*       <div style={{
       display: 'flex',
       justifyContent: 'space-between'
     }}>
@@ -66,7 +69,7 @@ const Header = ({ siteTitle }) => (
         >Resume
         </Link>
       </p>
-    </div>
+    </div> */}
 
         </div>
   </div>

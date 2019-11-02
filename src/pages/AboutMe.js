@@ -12,9 +12,20 @@ const AboutMe = () => (
     <Layout>
     <h1>About Me</h1>
         <ImageSlideShow style={{height: '400px'}} imageList={[collabImg, headshot]}> </ImageSlideShow>
-
+    
+    <div style={style.text}>
+    <p>
+        Hello I'm Jose Lemus. I like to tinker with computers. 
+    </p>
+    </div>
     </Layout>
 );
 
+const style = {
+    text : {
+        marginTop: '50px',
+        marginBottom: '50px'
+    }
+}
 
 export default AboutMe;
