@@ -14,7 +14,6 @@ import testimg from '../assets/SwimSense/SwimSense.jpg'
 
 const SwimSense = () => (
     <Layout>
-        {/* <Link to='/'>Home</Link> */}
         <ProjectPage
         Title="SwimSense"
         Video={finalVideo}

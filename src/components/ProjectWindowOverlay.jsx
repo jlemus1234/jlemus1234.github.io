@@ -41,7 +41,6 @@ const styles = {
 
 class ProjectWindow extends React.Component {
     constructor(props) {
-        // required props include a name and an image/video
         super(props);
         this.state = {
         };
@@ -57,17 +56,13 @@ class ProjectWindow extends React.Component {
                             Your browser does not support the video tag
                         </video>
 
-                        {/* <div style={styles.headerStyle}> */}
                             <h1 style={styles.headerPara}>
                                 {this.props.title}
                             </h1>
-                        {/* </div> */}
 
-                        {/* <div style={styles.descriptionStyle}> */}
                             <p style={styles.descriptionPara}>
                                 {this.props.description}
                             </p>
-                        {/* </div> */}
                 </div>
             </Link>
 

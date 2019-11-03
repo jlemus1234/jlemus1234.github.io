@@ -12,10 +12,6 @@ const Header = ({siteTitle, currentPage}) => (
       // Sets the color for the header
       background: 'rgb(181, 188, 199)',
       marginBottom: `1.45rem`,
-      // adding
-      //display: 'flex',
-      //justifyContent: 'space-between'
-
     }}
   >
     <div
@@ -42,8 +38,6 @@ const Header = ({siteTitle, currentPage}) => (
           {siteTitle}
         </Link>
       </h1>
-
-    {/* </div> */}
 
       <NavigationBar
       pageList={[["Home", "/"],["About Me", "/AboutMe"], ["Resume", "/resume"]]}

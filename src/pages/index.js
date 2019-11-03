@@ -19,7 +19,7 @@ import cbImg2 from '../assets/SwimSense/SwimSense7.jpg'
 import cbImg3 from '../assets/SwimSense/SwimSense5.jpg'
 import cbImg4 from '../assets/SwimSense/SwimSense2.jpg'
 
-// demo video clips
+// Demo video clips
 import BRCVid from '../assets/BRC/BRCDemo.mp4'
 import SwimSenseVid from '../assets/SwimSense/SwimDemo.mp4'
 import SenSitVid from '../assets/SenSit/SenSitDemo.mp4'
@@ -39,11 +39,8 @@ const IndexPage = () => (
   }}>  */}
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-    {/* <Link to="/resume/" style={{display:'block', marginBottom:'10px'}}>Resume</Link> */}
 
     <ImageSlideShow style={{height:'400px'}} imageList={[headshot, cbImg, cbImg2, cbImg3, cbImg4]}> </ImageSlideShow>
-    {/* height: '400px' */}
-    {/* <ImageBanner bannerImage={cbImg} style={{height: '400px'}}></ImageBanner> */}
 
     <div style = {{marginBottom: '50px'}}>
     <ConnectedSites>
@@ -51,14 +48,12 @@ const IndexPage = () => (
     </div>
 
     <ProjectsPanel>
-      {/* <ProjectWindowOverlay linkTo='/SwimSense/' videoSource={testvid1} title="SwimSense" description="An aid for blind swimmers"/> */}
       <ProjectWindow linkTo='/SwimSense/' videoSource={SwimSenseVid} title="SwimSense" description="An aid for blind swimmers"></ProjectWindow>
       <ProjectWindow linkTo='/BisexualResourceCenter/' videoSource={BRCVid} title="BRC" description="Find a support group"></ProjectWindow>
       <ProjectWindow linkTo='/SenSit' videoSource={SenSitVid} title="SenSit" description="Combat inactivity and poor posture"></ProjectWindow>
       <ProjectWindow linkTo='/TongueInterface' videoSource={TIVid} title="Tongue Interface" description="Control with your tongue"></ProjectWindow>
       <ProjectWindow linkTo='/MIXR' videoSource={MIXRVid} title="MIXR" description="Guess the singers of popular songs"></ProjectWindow>
     </ProjectsPanel>
-    {/* </div> */}
   </Layout>
 )
 

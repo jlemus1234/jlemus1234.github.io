@@ -27,10 +27,8 @@ const styles = {
         display: 'block',
         fontWeight: 'bold',
         marginBottom: '0'
-        //marginBottom: '0'
     }
 }
-
 
 ResumeProject.defaultProps = {
     projectName: 'Project name',

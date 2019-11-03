@@ -39,7 +39,6 @@ const styles = {
         display: 'flex',
         width: '100%',
         background: 'rgb(181, 188, 199)',
-        //background: 'rgb()',
         justifyContent: 'center',
         paddingTop: '10px',
         paddingBottom: '10px',

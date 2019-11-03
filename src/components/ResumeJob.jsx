@@ -35,20 +35,13 @@ const styles = {
         display: 'flex',
         width: '100%',
         justifyContent: 'space-between',
-        //marginBottom: '0',
-        //height: '10px'
     },
 
     employerLocation: {
-        //display: 'inline-block',
-        //width: '100%'
-        //marginBottom: '0'
     },
     employer: {
         display: 'inline',
         fontWeight: 'bold',
-        //marginBottom: '0'
-
     },
     jobTitle: {
         fontStyle: 'italic',
@@ -57,16 +50,12 @@ const styles = {
 
     location: {
         display: 'inline',
-        //marginBottom: '0'
-
     },
     dates: {
         display: 'inline-block',
         marginBottom: '0'
-        //align:'right'
     }
 }
-
 
 ResumeJob.defaultProps = {
     employer: 'employer',

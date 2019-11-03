@@ -10,7 +10,6 @@ import SenSitVid from '../assets/SenSit/SenSitDemo.mp4'
 
 const SenSit = () => (
     <Layout>
-        {/* <Link to='/'>Home</Link> */}
         <ProjectPage 
         Title="SenSit"
         Caption=""

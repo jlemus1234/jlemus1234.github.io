@@ -25,9 +25,6 @@ const styles = {
 
     VideoCaption : {
         background: 'rgb(181, 188, 199)',
-        //borderRadius: '10px 10px 10px 10px',
-        //paddingBottom: '15px',
-        //borderRadius: '30px',
     },
     
     Abstract : {

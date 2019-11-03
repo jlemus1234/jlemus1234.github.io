@@ -22,9 +22,6 @@ const styles = {
     
 };
 
-// add cycle through images
-// fix styling at some point
-
 class ImageBanner extends React.Component {
     constructor(props) {
         super(props);
@@ -34,14 +31,8 @@ class ImageBanner extends React.Component {
         };
     }
 
-
-    // {styles.bannerImageStyling}
-
     render() {
         return (
-            // create function that swaps which photo to display...
-            // lets just say there are four of them
-            // swap through after a few seconds...
                 <div style={{...styles.bannerStyling, ...this.props.style}} className="banner">
                     <img style = {styles.bannerImageStyling} className="bannerImage" src={this.props.bannerImage} alt="Banner Image"></img>
                 </div>

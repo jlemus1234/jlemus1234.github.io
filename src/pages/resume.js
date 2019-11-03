@@ -10,9 +10,6 @@ import pdfIcon from '../images/Icons/AdobePDFIcon.png'
 
 const Resume = () => (
     <Layout currentPage='/resume'>
-{/*         <div>
-            <Link to="/">Back</Link>
-        </div> */}
         <div style={styles.resume}>
             <div style={styles.pdf}>
                 <a style={styles.pdfLink}
@@ -24,7 +21,6 @@ const Resume = () => (
                 </a>
             </div>
             <div>
-                {/* <h1>Jose Arturo Lemus Ortiz</h1> */}
                 <div style={styles.contactInfo}>
                     <p>1 (914) 575-7469</p>
                     <a href="mailto: jose.lemus@tufts.edu">jose.lemus@tufts.edu</a>
@@ -46,9 +42,6 @@ const Resume = () => (
                 <TitledList title="Programming Languages" listArray={["C", "Python", "Javascript", "HTML", "CSS", "SQL"]}/>
                 <TitledList title="Frameworks, APIs" listArray={["React", "Express"]} />
                 <TitledList title="Related Software" listArray={["Git", "PostgreSQL", "MongoDB"]}/>
-{/*                 <p>Programming Languages: C, Python, Javascript, HTML, CSS, SQL</p>
-                <p>Frameworks, APIs: React, Express</p>
-                <p>Related Software: Git, PostgreSQL, MongoDB</p> */}
             </ResumeSection>
 
             <ResumeSection title="Relevant Courses">
@@ -153,13 +146,11 @@ const Resume = () => (
 
 const styles = {
     pdf: {
-        //display: 'inline'
     },
     pdfIcon: {
         display: 'inline',
         marginRight: '5px',
         marginBottom: '0'
-        //float: 'left'
     },
     pdfLink: {
         display: 'inline',

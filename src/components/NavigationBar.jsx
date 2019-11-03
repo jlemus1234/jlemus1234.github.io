@@ -1,9 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
 
-// home, aboutme, resume
-// p around a link element
-//const NavigationBar = (currentPage) => (
 class NavigationBar extends React.Component {
     constructor(props){
         super(props);
@@ -12,7 +9,6 @@ class NavigationBar extends React.Component {
     }
 
     addLinks(){
-        console.log("Add links was called")
         let bar = []
         for(var i = 0; i < this.props.pageList.length; i++){
             bar.push(
@@ -29,16 +25,11 @@ class NavigationBar extends React.Component {
                 </p>
             )
         }
-        console.log("Finished adding links")
-        console.log(bar)
         return bar
     }
 
     createNavBar(){
-        // Check if the arrays that make up the array are the proper size and type (array)
         // pageList is an array and not empty
-        console.log("Made it to createNavBar")
-        console.log(this.props.pageList)
         if(Array.isArray(this.props.pageList) && this.props.pageList.length > 0){
             // every element inside it is an array of size two
             for(var i = 0; i < this.props.pageList.length; i++){
@@ -49,9 +40,7 @@ class NavigationBar extends React.Component {
             }
             console.log("Problem with outer array")
         }
-
         console.log("PageList error: Check that prop is passed in correctly")
-
     }
 
 
@@ -64,9 +53,6 @@ class NavigationBar extends React.Component {
         )
     }
 }
-
-
-
 
 const style={
     links:{
@@ -89,8 +75,7 @@ const style={
 }
 
 NavigationBar.defaultProps = {
-    // make it an array of two element string arrays
-    // [[name, page]]
+    // array of two element string arrays [[name, page]]
     pageList: [],
     currentPage: ''
 }

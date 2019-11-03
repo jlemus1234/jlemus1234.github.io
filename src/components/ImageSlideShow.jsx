@@ -1,9 +1,5 @@
 import React from 'react'
 
-
-//import bannerImage from './../images/senior.jpg'
-import testImage from './../images/senior.jpg'
-
 const styles = {
     bannerStyling : {
     background: 'black',
@@ -25,10 +21,7 @@ const styles = {
 
 };
 
-// add cycle through images
-// fix styling at some point
-
-class ImageBanner extends React.Component {
+class ImageSlideShow extends React.Component {
     constructor(props) {
         super(props);
 
@@ -56,18 +49,13 @@ class ImageBanner extends React.Component {
 
     componentDidMount(){
         // only create timer if imageList exists
-        console.log('Component was mounted')
         if (Array.isArray(this.props.imageList) && this.props.imageList.length > 1){
-            console.log('should be creating the timer')
             this.timerID = setInterval(
-                // ()=>{console.log('Timer triggered')} , 5000
                 this.changePic, 5000
             )
         }
 
     }
-
-    // load array of images and start a timer if that's passed in
 
     componentWillUnmount(){
         clearInterval(this.timerID)
@@ -76,9 +64,6 @@ class ImageBanner extends React.Component {
 
     render() {
         return (
-            // create function that swaps which photo to display...
-            // lets just say there are four of them
-            // swap through after a few seconds...
                 <div style={{...styles.bannerStyling, ...this.props.style}} className="banner">
                     <img style = {styles.bannerImageStyling} className="bannerImage" src={this.props.imageList[this.state.imageIndex]} alt="Banner Image"></img>
                 </div>
@@ -86,9 +71,9 @@ class ImageBanner extends React.Component {
     }
 }
 
-ImageBanner.defaultProps = {
+ImageSlideShow.defaultProps = {
     imageList: []
 }
 
 
-export default ImageBanner;
+export default ImageSlideShow;
