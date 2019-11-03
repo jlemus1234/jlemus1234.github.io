@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import defaultImage from '../images/me.png'
 import defaultVideo from '../images/clips/testClip2.mp4'
@@ -7,45 +5,45 @@ import defaultVideo from '../images/clips/testClip2.mp4'
 const fonts = 'Arial, sansSerif'
 
 const styles = {
-    ProjectPage : {
+    ProjectPage: {
         fontFamily: fonts
     },
 
-    Title : {
+    Title: {
         fontFamily: fonts,
         textAlign: 'center',
         marginBottom: '10px',
     },
 
-    Collaborators : {
+    Collaborators: {
         fontFamily: fonts,
         textAlign: 'center',
         marginBottom: '30px'
     },
 
-    VideoCaption : {
+    VideoCaption: {
         background: 'rgb(181, 188, 199)',
     },
-    
-    Abstract : {
+
+    Abstract: {
         fontFamily: fonts,
     },
 
-    Description : {
+    Description: {
         fontFamily: fonts,
     },
 
-    AdditionalInfo : {
+    AdditionalInfo: {
         fontFamily: fonts,
     },
 
-    SubsectionTitle : {
+    SubsectionTitle: {
         fontFamily: fonts,
         textAlign: 'center',
         marginTop: '30px'
     },
 
-    ContentBuffer : {
+    ContentBuffer: {
         margin: '30px'
     }
 }
@@ -56,47 +54,45 @@ class ProjectPage extends React.Component {
         super(props);
 
         this.state = {
-            
-            
-        }
+        };
     }
 
-    render(){
-        return(
-        <div style={styles.ProjectPage}>
+    render() {
+        return (
+            <div style={styles.ProjectPage}>
 
-        <h1 style={styles.Title}>{this.props.Title}</h1>
-        <p style={styles.Collaborators}>{this.props.Collaborators}</p>
+                <h1 style={styles.Title}>{this.props.Title}</h1>
+                <p style={styles.Collaborators}>{this.props.Collaborators}</p>
 
 
-        <div style={styles.VideoCaption} className="VideoCaptionContainer">
-        <div className = "VideoImage">
-            <video muted autoPlay loop width="100%">
-                <source src={this.props.Video}></source>
-                <img src={this.props.Image}></img>
-            </video>
-        </div>
-        <div><p>{this.props.Caption}</p></div>
-        </div>
+                <div style={styles.VideoCaption} className="VideoCaptionContainer">
+                    <div className="VideoImage">
+                        <video muted autoPlay loop width="100%">
+                            <source src={this.props.Video}></source>
+                            <img src={this.props.Image}></img>
+                        </video>
+                    </div>
+                    <div><p>{this.props.Caption}</p></div>
+                </div>
 
-        <div>
-        <h3 style={styles.SubsectionTitle}>Abstract</h3>
-        <div style={styles.Abstract} className="Abstract">{this.props.Abstract}</div>
-        </div>
+                <div>
+                    <h3 style={styles.SubsectionTitle}>Abstract</h3>
+                    <div style={styles.Abstract} className="Abstract">{this.props.Abstract}</div>
+                </div>
 
-        <div>
-        <h3 style={styles.SubsectionTitle}>Summary</h3>
-        <div style={styles.Description} className="Description">{this.props.Description}</div>
-        </div>
+                <div>
+                    <h3 style={styles.SubsectionTitle}>Summary</h3>
+                    <div style={styles.Description} className="Description">{this.props.Description}</div>
+                </div>
 
-        <div>
-        <h3 style={styles.SubsectionTitle}>More Info</h3>
-        <div style={styles.AdditionalInfo} className="AdditionalInformation">{this.props.AdditionalInformation}</div>
-        </div>
+                <div>
+                    <h3 style={styles.SubsectionTitle}>More Info</h3>
+                    <div style={styles.AdditionalInfo} className="AdditionalInformation">{this.props.AdditionalInformation}</div>
+                </div>
 
-        <div style={styles.ContentBuffer}></div>
+                <div style={styles.ContentBuffer}></div>
 
-        </div>
+            </div>
         )
     }
 }

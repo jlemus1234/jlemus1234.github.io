@@ -1,8 +1,5 @@
 import React from 'react'
-import {Link } from 'gatsby'
-
 import Layout from '../components/layout'
-import SEO from '../components/seo'
 import ProjectPage from '../components/ProjectPage'
 
 // Assets
@@ -27,9 +24,7 @@ const BisexualResourceCenter = () => (
                     Zhitong Zhang,
                     Camile Calabrese,
                     Eragon Ma"
-
                     Video={BRCVid}
-
                     Abstract ="Object recognition used to create a tongue-based interface.
                                 By moving your tongue either left or right, you play a simple game 
                                 and try to dodge obstacles for as long as possible. "
@@ -40,7 +35,6 @@ const BisexualResourceCenter = () => (
                     was built into the website, so that a series of images can be collected from the 
                     user for better accuracy. 
                     The tongue interface allowed for two main controls, moving left or right."
-        
                     AdditionalInformation=""
 
         ></ProjectPage>

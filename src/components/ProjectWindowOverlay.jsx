@@ -1,7 +1,7 @@
 import React from 'react'
-
 import { Link } from 'gatsby'
 
+// Assets
 import vidTest from '../images/clips/testClip3.mp4'
 import imgTest from '../images/me.png'
 
@@ -16,7 +16,7 @@ const styles = {
     headerPara: {
         display: 'block',
         width: '100%',
-        position:'absolute',
+        position: 'absolute',
         top: '0',
 
         color: 'rgb(181, 188, 199)',
@@ -49,20 +49,20 @@ class ProjectWindow extends React.Component {
     render() {
         return (
             <Link to={this.props.linkTo}>
-            <div style={{ ...styles.projectWindowStyle, ...this.props.alignmentDir }} id="projectWindow">
-                        <video muted autoPlay loop width="100%">
-                            <source src={this.props.videoSource} type="video/mp4"></source>
-                            <img src={this.props.imageSource}></img>
-                            Your browser does not support the video tag
+                <div style={{ ...styles.projectWindowStyle, ...this.props.alignmentDir }} id="projectWindow">
+                    <video muted autoPlay loop width="100%">
+                        <source src={this.props.videoSource} type="video/mp4"></source>
+                        <img src={this.props.imageSource}></img>
+                        Your browser does not support the video tag
                         </video>
 
-                            <h1 style={styles.headerPara}>
-                                {this.props.title}
-                            </h1>
+                    <h1 style={styles.headerPara}>
+                        {this.props.title}
+                    </h1>
 
-                            <p style={styles.descriptionPara}>
-                                {this.props.description}
-                            </p>
+                    <p style={styles.descriptionPara}>
+                        {this.props.description}
+                    </p>
                 </div>
             </Link>
 

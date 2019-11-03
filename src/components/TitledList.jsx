@@ -8,25 +8,25 @@ class TitledList extends React.Component {
         }
     }
 
-    checkStringArray(a){
+    checkStringArray(a) {
         return a.every((i) => typeof i === "string");
     }
 
-    render(){
+    render() {
         let expandedString = ""
 
-        if (this.props.listArray != null){
-            if(this.checkStringArray(this.props.listArray)){
+        if (this.props.listArray != null) {
+            if (this.checkStringArray(this.props.listArray)) {
                 expandedString = this.props.listArray.join(", ")
-            }else{
+            } else {
                 expandedString = "List contained non-string"
             }
-        }else{
+        } else {
             // for testing purposes
             expandedString = "No list provided"
         }
 
-        return(
+        return (
             <div style={styles.container}>
                 <p style={styles.title}>{this.props.title}: </p>
                 <p style={styles.listContents}>{expandedString}</p>
@@ -42,15 +42,15 @@ TitledList.defaultProps = {
 
 
 const styles = {
-    title : {
+    title: {
         display: 'inline',
         fontWeight: 'bold'
     },
-    listContents:{
+    listContents: {
         display: 'inline'
 
     },
-    container:{
+    container: {
 
     }
 }

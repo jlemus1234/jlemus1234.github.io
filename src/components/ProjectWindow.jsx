@@ -1,12 +1,12 @@
 import React from 'react'
 
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 
 import vidTest from '../images/clips/testClip3.mp4'
 import imgTest from '../images/me.png'
 
 const styles = {
-    projectWindowStyle : {
+    projectWindowStyle: {
         display: 'block',
         background: 'rgb(181, 188, 199)',
         width: '60%',
@@ -16,7 +16,7 @@ const styles = {
         fontFamily: 'Arial, sansSerif'
     },
 
-    headerPara:{
+    headerPara: {
         fontFamily: 'Arial, sansSerif',
 
         display: 'inline-block',
@@ -25,11 +25,11 @@ const styles = {
         textAlign: 'center',
         color: 'rgb(0, 0, 0)',
         fontWeight: 'bold',
- 
+
         marginBottom: '5px',
     },
 
-    descriptionPara:{
+    descriptionPara: {
         fontFamily: 'Arial, sansSerif',
 
         display: 'block',
@@ -45,33 +45,28 @@ const styles = {
 }
 
 class ProjectWindow extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
         };
     }
 
-    render(){
-
+    render() {
         return (
             <Link to={this.props.linkTo}>
-            <div style = {{...styles.projectWindowStyle,...this.props.alignmentDir}} id = "projectWindow">
-
-                <h1 style={styles.headerPara}> 
-                {this.props.title}
-                </h1>
-
+                <div style={{ ...styles.projectWindowStyle, ...this.props.alignmentDir }} id="projectWindow">
+                    <h1 style={styles.headerPara}>
+                        {this.props.title}
+                    </h1>
                     <video muted autoPlay loop width="100%">
                         <source src={this.props.videoSource} type="video/mp4"></source>
-                        <img src ={this.props.imageSource}></img>
+                        <img src={this.props.imageSource}></img>
                         Your browser does not support the video tag
                     </video>
-
-            <p style={styles.descriptionPara}> 
-                {this.props.description}
-            </p>
-
-            </div>
+                    <p style={styles.descriptionPara}>
+                        {this.props.description}
+                    </p>
+                </div>
             </Link>
 
         )

@@ -1,11 +1,9 @@
-import { withPrefix } from 'gatsby'
 import React from 'react'
 
 class ResumeProject extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
         };
     }
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from '../components/image'
 
+// Assets
 import githublogo from './../images/Icons/github.svg'
 import linkedinlogo from './../images/Icons/linkedin.svg'
 import emaillogo from './../images/Icons/gmail.svg'
@@ -19,17 +19,15 @@ class ConnectedSites extends React.Component {
         };
     }
 
-
-
     render() {
         return (
-                <div style={styles.container}>
-                    <div style={styles.otherSitesStyle} className="otherSites" id="otherSitesContainer">
-                        <a style={styles.link} href="https://github.com/jlemus1234"><img style={styles.logoStyle} src={githublogo} alt="GitHub Logo"></img></a>
-                        <a style={styles.link} href="https://www.linkedin.com/in/jose-lemus-404328157/"><img style={styles.logoStyle} src={linkedinlogo} alt="LinkedIn Logo"></img></a>
-                        <a style={styles.link} href="mailto: jlemus1234@gmail.com"><img style={styles.logoStyle} src={emaillogo} alt="E-Mail Logo"></img></a>
-                    </div>
+            <div style={styles.container}>
+                <div style={styles.otherSitesStyle} className="otherSites" id="otherSitesContainer">
+                    <a style={styles.link} href="https://github.com/jlemus1234"><img style={styles.logoStyle} src={githublogo} alt="GitHub Logo"></img></a>
+                    <a style={styles.link} href="https://www.linkedin.com/in/jose-lemus-404328157/"><img style={styles.logoStyle} src={linkedinlogo} alt="LinkedIn Logo"></img></a>
+                    <a style={styles.link} href="mailto: jlemus1234@gmail.com"><img style={styles.logoStyle} src={emaillogo} alt="E-Mail Logo"></img></a>
                 </div>
+            </div>
         )
     }
 }
@@ -46,21 +44,21 @@ const styles = {
         borderRadius: '0 0 10px 10px'
     },
 
-    otherSitesStyle : {
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '50%',
-    marginBottom: '0'
+    otherSitesStyle: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        width: '50%',
+        marginBottom: '0'
     },
 
-    logoStyle : {
-    display: 'block',
-    height: '25px',
-    width: '25px',
-    marginBottom: '0'
+    logoStyle: {
+        display: 'block',
+        height: '25px',
+        width: '25px',
+        marginBottom: '0'
     },
 
-    link : {
+    link: {
         marginBottom: '0'
     }
 };
@@ -68,7 +66,7 @@ const styles = {
 
 
 ConnectedSites.defaultProps = {
-    
+
 }
 
 export default ConnectedSites;

@@ -1,26 +1,26 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 
 class NavigationBar extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
         };
     }
 
-    addLinks(){
+    addLinks() {
         let bar = []
-        for(var i = 0; i < this.props.pageList.length; i++){
+        for (var i = 0; i < this.props.pageList.length; i++) {
             bar.push(
-                <p style={{
-                    marginRight: i < this.props.pageList.length-1? '10px': '0px',
-                    fontWeight: this.props.pageList[i][1] === this.props.currentPage? 'bold' : ''
-                    }}>
+                <p key={i} style={{
+                    marginRight: i < this.props.pageList.length - 1 ? '10px' : '0px',
+                    fontWeight: this.props.pageList[i][1] === this.props.currentPage ? 'bold' : ''
+                }}>
                     <Link
-                    to={this.props.pageList[i][1]}
-                    style={style.links}
+                        to={this.props.pageList[i][1]}
+                        style={style.links}
                     >
-                    {this.props.pageList[i][0]}
+                        {this.props.pageList[i][0]}
                     </Link>
                 </p>
             )
@@ -28,12 +28,12 @@ class NavigationBar extends React.Component {
         return bar
     }
 
-    createNavBar(){
+    createNavBar() {
         // pageList is an array and not empty
-        if(Array.isArray(this.props.pageList) && this.props.pageList.length > 0){
+        if (Array.isArray(this.props.pageList) && this.props.pageList.length > 0) {
             // every element inside it is an array of size two
-            for(var i = 0; i < this.props.pageList.length; i++){
-                if(Array.isArray(this.props.pageList[i]) && this.props.pageList[i].length === 2){
+            for (var i = 0; i < this.props.pageList.length; i++) {
+                if (Array.isArray(this.props.pageList[i]) && this.props.pageList[i].length === 2) {
                     return (this.addLinks())
                 }
                 console.log("Problem with inner array")
@@ -44,9 +44,9 @@ class NavigationBar extends React.Component {
     }
 
 
-    render(){
+    render() {
 
-        return(
+        return (
             <div style={style.container}>
                 {this.createNavBar()}
             </div>
@@ -54,21 +54,21 @@ class NavigationBar extends React.Component {
     }
 }
 
-const style={
-    links:{
+const style = {
+    links: {
         color: 'black',
-        textDecoration: 'none'   
+        textDecoration: 'none'
     },
 
-    linkPMargin:{
+    linkPMargin: {
         marginRight: '10px'
     },
 
-    currentPage:{
+    currentPage: {
         textWeight: 'bold'
     },
 
-    container:{
+    container: {
         display: 'flex',
         justifyContent: 'space-between'
     }

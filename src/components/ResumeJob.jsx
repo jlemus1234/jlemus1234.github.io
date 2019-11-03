@@ -1,4 +1,3 @@
-import { withPrefix } from 'gatsby'
 import React from 'react'
 
 class ResumeJob extends React.Component {

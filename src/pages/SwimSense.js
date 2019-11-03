@@ -1,16 +1,10 @@
 import React from 'react'
-import {Link } from 'gatsby'
-
 import Layout from '../components/layout'
-import SEO from '../components/seo'
 import ProjectPage from '../components/ProjectPage'
-
 
 // Assets
 import finalVideo from '../assets/SwimSense/inclusivedesign.mp4'
 import posterimg from '../assets/SwimSense/poster.jpg'
-
-import testimg from '../assets/SwimSense/SwimSense.jpg'
 
 const SwimSense = () => (
     <Layout>

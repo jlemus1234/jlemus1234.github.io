@@ -1,4 +1,4 @@
-import { withPrefix, Link } from 'gatsby'
+import { withPrefix} from 'gatsby'
 import React from 'react'
 import ResumeSection from '../components/ResumeSection'
 import ResumeProject from '../components/ResumeProject'
@@ -6,6 +6,7 @@ import ResumeJob from '../components/ResumeJob'
 import TitledList from '../components/TitledList'
 import Layout from '../components/layout'
 
+// Assets
 import pdfIcon from '../images/Icons/AdobePDFIcon.png'
 
 const Resume = () => (

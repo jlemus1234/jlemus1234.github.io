@@ -1,19 +1,14 @@
-
 import React from 'react'
 import ProjectPage from '../components/ProjectPage'
-import {Link} from 'gatsby'
 import Layout from '../components/layout'
 
 // Assets
 import TIVid from '../assets/TongueInterface/TongueInterfaceDemo.mp4'
 
-
-
 class TongueInterface extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-
         };
     }
 
