@@ -30,7 +30,7 @@ import testvid1 from './../images/clips/testClip2.mp4'
 
 
 const IndexPage = () => (
-  <Layout>
+  <Layout currentPage='/'>
 {/*    <div style={{
     margin: '0 auto',
     maxWidth: 960,

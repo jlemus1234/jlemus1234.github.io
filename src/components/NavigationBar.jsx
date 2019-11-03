@@ -16,7 +16,10 @@ class NavigationBar extends React.Component {
         let bar = []
         for(var i = 0; i < this.props.pageList.length; i++){
             bar.push(
-                <p>
+                <p style={{
+                    marginRight: i < this.props.pageList.length-1? '10px': '0px',
+                    fontWeight: this.props.pageList[i][1] === this.props.currentPage? 'bold' : ''
+                    }}>
                     <Link
                     to={this.props.pageList[i][1]}
                     style={style.links}
@@ -88,7 +91,8 @@ const style={
 NavigationBar.defaultProps = {
     // make it an array of two element string arrays
     // [[name, page]]
-    pageList: []
+    pageList: [],
+    currentPage: ''
 }
 
 export default NavigationBar;

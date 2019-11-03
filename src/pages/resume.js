@@ -9,7 +9,7 @@ import Layout from '../components/layout'
 import pdfIcon from '../images/Icons/AdobePDFIcon.png'
 
 const Resume = () => (
-    <Layout>
+    <Layout currentPage='/resume'>
 {/*         <div>
             <Link to="/">Back</Link>
         </div> */}

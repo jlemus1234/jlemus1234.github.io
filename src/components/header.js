@@ -1,10 +1,12 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import Location from '@reach/router'
 
 import NavigationBar from '../components/NavigationBar'
 
-const Header = ({ siteTitle }) => (
+
+const Header = ({siteTitle, currentPage}) => (
   <div
     style={{
       // Sets the color for the header
@@ -45,34 +47,8 @@ const Header = ({ siteTitle }) => (
 
       <NavigationBar
       pageList={[["Home", "/"],["About Me", "/AboutMe"], ["Resume", "/resume"]]}
-      
-      />
-{/*       <div style={{
-      display: 'flex',
-      justifyContent: 'space-between'
-    }}>
-      <p style={{
-        marginRight:'10px'
-      }}>
-        <Link
-        to="/AboutMe"
-        style={{
-          color: 'black',
-        }}
-        >
-        About Me
-        </Link>
-      </p>
-      <p>
-        <Link
-        to="/resume"
-        style={{
-          color: 'black'
-        }}
-        >Resume
-        </Link>
-      </p>
-    </div> */}
+      currentPage={currentPage}
+    />
 
         </div>
   </div>
