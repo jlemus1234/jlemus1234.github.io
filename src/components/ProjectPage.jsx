@@ -85,10 +85,10 @@ class ProjectPage extends React.Component {
                     <div style={styles.Description} className="Description">{this.props.Description}</div>
                 </div>
 
-                <div>
+                {/* <div>
                     <h3 style={styles.SubsectionTitle}>More Info</h3>
                     <div style={styles.AdditionalInfo} className="AdditionalInformation">{this.props.AdditionalInformation}</div>
-                </div>
+                </div> */}
 
                 <div style={styles.ContentBuffer}></div>
 
