@@ -69,7 +69,7 @@ class ProjectPage extends React.Component {
                     <div className="VideoImage">
                         <video muted autoPlay loop width="100%">
                             <source src={this.props.Video}></source>
-                            <img src={this.props.Image}></img>
+                            <img src={this.props.Image} alt="Project demo"></img>
                         </video>
                     </div>
                     <div><p>{this.props.Caption}</p></div>

@@ -60,7 +60,7 @@ class ProjectWindow extends React.Component {
                     </h1>
                     <video muted autoPlay loop width="100%">
                         <source src={this.props.videoSource} type="video/mp4"></source>
-                        <img src={this.props.imageSource}></img>
+                        <img src={this.props.imageSource} alt="Project demo"></img>
                         Your browser does not support the video tag
                     </video>
                     <p style={styles.descriptionPara}>

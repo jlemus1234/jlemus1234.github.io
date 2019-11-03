@@ -17,7 +17,7 @@ const Resume = () => (
                     rel="noopener noreferrer"
                     href={withPrefix('/Resume.pdf')}
                     target="_blank"> 
-                    <img style={styles.pdfIcon} src={pdfIcon}/>
+                    <img style={styles.pdfIcon} src={pdfIcon} alt="PDF icon"/>
                     View PDF
                 </a>
             </div>

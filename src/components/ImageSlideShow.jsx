@@ -59,7 +59,7 @@ class ImageSlideShow extends React.Component {
     render() {
         return (
             <div style={{ ...styles.bannerStyling, ...this.props.style }} className="banner">
-                <img style={styles.bannerImageStyling} className="bannerImage" src={this.props.imageList[this.state.imageIndex]} alt="Banner Image"></img>
+                <img style={styles.bannerImageStyling} className="bannerImage" src={this.props.imageList[this.state.imageIndex]} alt="Banner"></img>
             </div>
         )
     }

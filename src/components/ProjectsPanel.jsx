@@ -17,7 +17,7 @@ class ProjectsPanel extends React.Component {
     // make its children alternate left and right
     renderChildren() {
         return React.Children.map(this.props.children, (child, i) => {
-            if (i % 2 == 0) {
+            if (i % 2 === 0) {
                 const alignmentProp = { float: 'left' };
                 return (
                     <div style={{ display: 'inline-block' }}>
