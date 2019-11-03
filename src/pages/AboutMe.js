@@ -9,7 +9,7 @@ import collabImg from '../assets/SwimSense/SwimSense8.jpg'
 
 const AboutMe = () => (
     <Layout currentPage="/AboutMe">
-        <h1>About Me</h1>
+        <h1 style={style.title}>About Me</h1>
         <ImageSlideShow style={{ height: '400px' }} imageList={[collabImg, headshot]}> </ImageSlideShow>
         <div style={style.text}>
             <p>
@@ -23,6 +23,10 @@ const style = {
     text: {
         marginTop: '50px',
         marginBottom: '50px'
+    },
+    title: {
+        textAlign: 'center'
+
     }
 }
 

@@ -31,7 +31,7 @@ class ImageSlideShow extends React.Component {
     }
 
     changePic() {
-        console.log('ChangePic was triggered')
+        //console.log('ChangePic was triggered')
         let newIndex = this.state.imageIndex;
         if (newIndex === this.props.imageList.length - 1) {
             newIndex = 0;
@@ -39,7 +39,7 @@ class ImageSlideShow extends React.Component {
             newIndex++;
         }
         this.setState({ imageIndex: newIndex })
-        console.log('Should be finished with changePic')
+        //console.log('Should be finished with changePic')
     }
 
     componentDidMount() {
