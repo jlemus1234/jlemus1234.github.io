@@ -43,7 +43,10 @@ const Header = ({ siteTitle }) => (
 
     {/* </div> */}
 
-      <NavigationBar></NavigationBar>
+      <NavigationBar
+      pageList={[["Home", "/"],["About Me", "/AboutMe"], ["Resume", "/resume"]]}
+      
+      />
 {/*       <div style={{
       display: 'flex',
       justifyContent: 'space-between'

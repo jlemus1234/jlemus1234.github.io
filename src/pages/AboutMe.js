@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 
 import ImageSlideShow from '../components/ImageSlideShow'
 
+import NavigationBar from '../components/NavigationBar'
+
 // Assets
 import headshot from './../images/me.png'
 import collabImg from '../assets/SwimSense/SwimSense8.jpg'
@@ -10,6 +12,11 @@ import collabImg from '../assets/SwimSense/SwimSense8.jpg'
 
 const AboutMe = () => (
     <Layout>
+      <NavigationBar
+      pageList={[["Home", "/"],["About Me", "/AboutMe"], ["Resume", "/resume"]]}
+      
+      />
+
     <h1>About Me</h1>
         <ImageSlideShow style={{height: '400px'}} imageList={[collabImg, headshot]}> </ImageSlideShow>
     
