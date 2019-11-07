@@ -8,7 +8,8 @@ const Header = ({siteTitle, currentPage}) => (
   <div
     style={{
       // Sets the color for the header
-      background: 'rgb(181, 188, 199)',
+      //background: 'rgb(181, 188, 199)',
+      background: 'rgb(240,240,240)',
       marginBottom: `1.45rem`,
     }}
   >

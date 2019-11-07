@@ -7,6 +7,8 @@ import ProjectWindow from '../components/ProjectWindow'
 import ConnectedSites from '../components/ConnectedSites'
 import ImageSlideShow from '../components/ImageSlideShow'
 
+import WideBanner from '../components/WideBanner'
+
 // Assets
 import headshot from './../images/me.png'
 import cbImg from '../assets/SwimSense/SwimSense8.jpg'
@@ -30,6 +32,7 @@ const IndexPage = () => (
   }}>  */}
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
+    {/* <WideBanner style={{width: '100%'}}></WideBanner> */}
 
     <ImageSlideShow style={{ height: '400px' }} imageList={[headshot, cbImg, cbImg2, cbImg3, cbImg4]}> </ImageSlideShow>
 

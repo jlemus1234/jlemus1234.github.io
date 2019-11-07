@@ -22,7 +22,9 @@ const styles = {
     },
 
     VideoCaption: {
-        background: 'rgb(181, 188, 199)',
+        // background: 'rgb(181, 188, 199)',
+        background: 'rgb(240,240,240)',
+
     },
 
     Abstract: {

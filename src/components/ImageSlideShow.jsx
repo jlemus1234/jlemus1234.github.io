@@ -7,7 +7,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: '10px 10px 0 0',
+        // borderRadius: '10px 10px 0 0',
         marginBottom: '0'
 
     },
