@@ -3,6 +3,8 @@ import React from 'react'
 const styles = {
     ProjectsPanel: {
         // display: 'inline-block',
+        margin: '0 auto',
+        maxWidth: 1366,
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-evenly'
@@ -27,7 +29,7 @@ class ProjectsPanelGrid extends React.Component {
             // if (i % 2 === 0) {
                 return (
                 // React.cloneElement(child, {alignmentDir: {width:'26%', margin:''}})
-                React.cloneElement(child, {alignmentDir: {width: 400, margin:''}})
+                React.cloneElement(child, {alignmentDir: {width: 500, margin:''}})
 
                 )
             }
