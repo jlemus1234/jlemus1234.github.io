@@ -165,6 +165,10 @@ const styles = {
     },
     resume: {
         fontFamily: 'Arial, sansSerif',
+        maxWidth: 1366,
+        minWidth: 590,
+        margin: '0 auto',
+
     },
     education: {
         display: 'block',

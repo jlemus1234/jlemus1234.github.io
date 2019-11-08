@@ -8,7 +8,8 @@ import imgTest from '../images/me.png'
 const styles = {
     link:{
         width: '60%',
-        display: 'block' // This makes the link's width control width of entire window
+        display: 'block', // This makes the link's width control width of entire window
+        textDecoration: 'none'
     },
     projectWindow: {
         display: 'block',

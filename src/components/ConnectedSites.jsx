@@ -36,19 +36,17 @@ const styles = {
     container: {
         display: 'flex',
         width: '100%',
-        // background: 'rgb(181, 188, 199)',
         background: 'rgb(240,240,240)',
         justifyContent: 'center',
         paddingTop: '10px',
         paddingBottom: '10px',
-
-        // borderRadius: '0 0 10px 10px'
     },
 
     otherSitesStyle: {
         display: 'flex',
         justifyContent: 'space-between',
         width: '50%',
+        maxWidth: 960,
         marginBottom: '0'
     },
 

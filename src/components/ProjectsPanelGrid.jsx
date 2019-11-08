@@ -3,8 +3,8 @@ import React from 'react'
 const styles = {
     ProjectsPanel: {
         // display: 'inline-block',
-        margin: '0 auto',
-        maxWidth: 1366,
+        //margin: '0 auto',
+        //maxWidth: 1366,
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-evenly'
