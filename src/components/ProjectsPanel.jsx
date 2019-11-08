@@ -3,7 +3,7 @@ import React from 'react'
 const styles = {
     ProjectsPanel: {
         display: 'inline-block',
-        width: '100%',
+        //width: '100%',
     }
 }
 
