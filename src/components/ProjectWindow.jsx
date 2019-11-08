@@ -6,7 +6,7 @@ import vidTest from '../images/clips/testClip3.mp4'
 import imgTest from '../images/me.png'
 
 const styles = {
-    link:{
+    link: {
         width: '60%',
         display: 'block', // This makes the link's width control width of entire window
         textDecoration: 'none'
@@ -57,8 +57,8 @@ class ProjectWindow extends React.Component {
 
     render() {
         return (
-            <Link style={{...styles.link, ...this.props.alignmentDir}} to={this.props.linkTo}> 
-                <div style={{ ...styles.projectWindow}} id="projectWindow">
+            <Link style={{ ...styles.link, ...this.props.alignmentDir }} to={this.props.linkTo}>
+                <div style={{ ...styles.projectWindow }} id="projectWindow">
                     <h1 style={styles.headerPara}>
                         {this.props.title}
                     </h1>
