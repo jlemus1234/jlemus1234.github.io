@@ -26,10 +26,9 @@ class ProjectsPanelGrid extends React.Component {
         return React.Children.map(this.props.children, (child, i) => {
             // if (i % 2 === 0) {
                 return (
-                    // <div style={{ display: 'block' }}>
-                    // <div style={{width:'30%'}}>
-                React.cloneElement(child, {alignmentDir: {width:'26%', margin:''}})
-                    // </div>
+                // React.cloneElement(child, {alignmentDir: {width:'26%', margin:''}})
+                React.cloneElement(child, {alignmentDir: {width: 400, margin:''}})
+
                 )
             }
         // }
