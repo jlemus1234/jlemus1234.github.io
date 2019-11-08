@@ -7,8 +7,6 @@ import NavigationBar from '../components/NavigationBar'
 const Header = ({siteTitle, currentPage}) => (
   <div
     style={{
-      // Sets the color for the header
-      //background: 'rgb(181, 188, 199)',
       background: 'rgb(240,240,240)',
       // marginBottom: `1.45rem`,
     }}
@@ -42,7 +40,6 @@ const Header = ({siteTitle, currentPage}) => (
       pageList={[["Home", "/"],["About Me", "/AboutMe"], ["Resume", "/resume"]]}
       currentPage={currentPage}
     />
-
         </div>
   </div>
 )

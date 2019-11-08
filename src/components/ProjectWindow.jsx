@@ -13,9 +13,7 @@ const styles = {
     },
     projectWindow: {
         display: 'block',
-        // background: 'rgb(181, 188, 199)',
         background: 'rgb(240,240,240)',
-        //width: '60%',
         borderRadius: '25px',
         marginBottom: '70px',
 

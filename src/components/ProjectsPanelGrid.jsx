@@ -2,14 +2,9 @@ import React from 'react'
 
 const styles = {
     ProjectsPanel: {
-        // display: 'inline-block',
-        //margin: '0 auto',
-        //maxWidth: 1366,
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'space-evenly'
-        //width: '100%',
-        
+        justifyContent: 'space-evenly'        
     }
 
 
