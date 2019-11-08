@@ -5,7 +5,7 @@ import SEO from '../components/seo'
 import ProjectWindow from '../components/ProjectWindow'
 import ConnectedSites from '../components/ConnectedSites'
 import ImageSlideShow from '../components/ImageSlideShow'
-
+import Container from '../components/Container'
 import ProjectsPanelGrid from '../components/ProjectsPanelGrid'
 // Assets
 import headshot from './../images/me.png'
@@ -15,11 +15,10 @@ import cbImg3 from '../assets/SwimSense/SwimSense5.jpg'
 import cbImg4 from '../assets/SwimSense/SwimSense2.jpg'
 
 import BRCVid from '../assets/BRC/BRCDemo.mp4'
-import SwimSenseVid from '../assets/SwimSense/SwimDemo.mp4'
+import SwimSenseVid from '../assets/SwimSense/SwimDemoShort.mp4'
 import SenSitVid from '../assets/SenSit/SenSitDemo.mp4'
 import MIXRVid from '../assets/MIXR/MIXRDemo.mp4'
 import TIVid from '../assets/TongueInterface/TongueInterfaceDemo.mp4'
-import Container from '../components/Container'
 
 const IndexPage = () => (
   <Layout currentPage='/'>
