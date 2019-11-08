@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../components/Container'
-
+import TextContainer from '../components/TextContainer'
 
 // Assets
 import defaultImage from '../images/me.png'
@@ -81,6 +81,7 @@ class ProjectPage extends React.Component {
                         <div><p>{this.props.Caption}</p></div>
                     </div>
 
+                    <TextContainer>
                     <div>
                         <h3 style={styles.SubsectionTitle}>Abstract</h3>
                         <div style={styles.Abstract} className="Abstract">{this.props.Abstract}</div>
@@ -97,6 +98,7 @@ class ProjectPage extends React.Component {
                 </div> */}
 
                     <div style={styles.ContentBuffer}></div>
+                    </TextContainer>
                 </div>
             </Container>
 
