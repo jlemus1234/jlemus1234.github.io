@@ -2,12 +2,15 @@ import React from 'react'
 
 const styles = {
     ProjectsPanel: {
-        display: 'inline-block',
-        width: '100%',
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-evenly'        
     }
+
+
 }
 
-class ProjectsPanel extends React.Component {
+class ProjectsPanelGrid extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,23 +19,17 @@ class ProjectsPanel extends React.Component {
 
     // make its children alternate left and right
     renderChildren() {
+
         return React.Children.map(this.props.children, (child, i) => {
-            if (i % 2 === 0) {
-                const alignmentProp = { float: 'left' };
+            // if (i % 2 === 0) {
                 return (
-                    <div style={{ display: 'inline-block' }}>
-                        {React.cloneElement(child, { alignmentDir: alignmentProp })}
-                    </div>
-                )
-            } else {
-                const alignmentProp = { float: 'right' };
-                return (
-                    <div style={{ display: 'inline-block' }}>
-                        {React.cloneElement(child, { alignmentDir: alignmentProp })}
-                    </div>
+                // React.cloneElement(child, {alignmentDir: {width:'26%', margin:''}})
+                React.cloneElement(child, {alignmentDir: {width: 500, margin:''}})
+
                 )
             }
-        })
+        // }
+        )
     }
 
     render() {
@@ -44,4 +41,8 @@ class ProjectsPanel extends React.Component {
     }
 }
 
-export default ProjectsPanel;
+ProjectsPanelGrid.defaultProps={
+    columns: 3,
+}
+
+export default ProjectsPanelGrid;

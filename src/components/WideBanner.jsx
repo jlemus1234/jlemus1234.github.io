@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 class WideBanner extends React.Component {
     constructor(props){
         super(props);

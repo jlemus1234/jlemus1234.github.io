@@ -1,12 +1,16 @@
 import React from 'react'
+import Container from '../components/Container'
+
+
+// Assets
 import defaultImage from '../images/me.png'
 import defaultVideo from '../images/clips/testClip2.mp4'
-
 const fonts = 'Arial, sansSerif'
 
 const styles = {
     ProjectPage: {
-        fontFamily: fonts
+        fontFamily: fonts,
+        marginTop: '10px'
     },
 
     Title: {
@@ -61,40 +65,41 @@ class ProjectPage extends React.Component {
 
     render() {
         return (
-            <div style={styles.ProjectPage}>
+            <Container>
+                <div style={styles.ProjectPage}>
 
-                <h1 style={styles.Title}>{this.props.Title}</h1>
-                <p style={styles.Collaborators}>{this.props.Collaborators}</p>
+                    <h1 style={styles.Title}>{this.props.Title}</h1>
+                    <p style={styles.Collaborators}>{this.props.Collaborators}</p>
 
-
-                <div style={styles.VideoCaption} className="VideoCaptionContainer">
-                    <div className="VideoImage">
-                        <video muted autoPlay loop width="100%">
-                            <source src={this.props.Video}></source>
-                            <img src={this.props.Image} alt="Project demo"></img>
-                        </video>
+                    <div style={styles.VideoCaption} className="VideoCaptionContainer">
+                        <div className="VideoImage">
+                            <video muted autoPlay loop width="100%">
+                                <source src={this.props.Video}></source>
+                                <img src={this.props.Image} alt="Project demo"></img>
+                            </video>
+                        </div>
+                        <div><p>{this.props.Caption}</p></div>
                     </div>
-                    <div><p>{this.props.Caption}</p></div>
-                </div>
 
-                <div>
-                    <h3 style={styles.SubsectionTitle}>Abstract</h3>
-                    <div style={styles.Abstract} className="Abstract">{this.props.Abstract}</div>
-                </div>
+                    <div>
+                        <h3 style={styles.SubsectionTitle}>Abstract</h3>
+                        <div style={styles.Abstract} className="Abstract">{this.props.Abstract}</div>
+                    </div>
 
-                <div>
-                    <h3 style={styles.SubsectionTitle}>Summary</h3>
-                    <div style={styles.Description} className="Description">{this.props.Description}</div>
-                </div>
+                    <div>
+                        <h3 style={styles.SubsectionTitle}>Summary</h3>
+                        <div style={styles.Description} className="Description">{this.props.Description}</div>
+                    </div>
 
-                {/* <div>
+                    {/* <div>
                     <h3 style={styles.SubsectionTitle}>More Info</h3>
                     <div style={styles.AdditionalInfo} className="AdditionalInformation">{this.props.AdditionalInformation}</div>
                 </div> */}
 
-                <div style={styles.ContentBuffer}></div>
+                    <div style={styles.ContentBuffer}></div>
+                </div>
+            </Container>
 
-            </div>
         )
     }
 }

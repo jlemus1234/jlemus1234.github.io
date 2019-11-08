@@ -6,11 +6,14 @@ import vidTest from '../images/clips/testClip3.mp4'
 import imgTest from '../images/me.png'
 
 const styles = {
-    projectWindowStyle: {
-        display: 'block',
-        // background: 'rgb(181, 188, 199)',
-        background: 'rgb(240,240,240)',
+    link: {
         width: '60%',
+        display: 'block', // This makes the link's width control width of entire window
+        textDecoration: 'none'
+    },
+    projectWindow: {
+        display: 'block',
+        background: 'rgb(240,240,240)',
         borderRadius: '25px',
         marginBottom: '70px',
 
@@ -54,8 +57,8 @@ class ProjectWindow extends React.Component {
 
     render() {
         return (
-            <Link to={this.props.linkTo}>
-                <div style={{ ...styles.projectWindowStyle, ...this.props.alignmentDir }} id="projectWindow">
+            <Link style={{ ...styles.link, ...this.props.alignmentDir }} to={this.props.linkTo}>
+                <div style={{ ...styles.projectWindow }} id="projectWindow">
                     <h1 style={styles.headerPara}>
                         {this.props.title}
                     </h1>
@@ -75,6 +78,7 @@ class ProjectWindow extends React.Component {
 }
 
 ProjectWindow.defaultProps = {
+    allignmentDir: {},
     videoSource: vidTest,
     imageSource: imgTest,
     title: 'title',

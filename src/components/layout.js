@@ -18,7 +18,7 @@ const Layout = ({ children, currentPage }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} currentPage={currentPage}/>
+        <Header siteTitle={data.site.siteMetadata.title} currentPage={currentPage} />
         <div
           style={{
             margin: `0 auto`,

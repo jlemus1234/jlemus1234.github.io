@@ -4,11 +4,9 @@ import React from 'react'
 
 import NavigationBar from '../components/NavigationBar'
 
-const Header = ({siteTitle, currentPage}) => (
+const Header = ({ siteTitle, currentPage }) => (
   <div
     style={{
-      // Sets the color for the header
-      //background: 'rgb(181, 188, 199)',
       background: 'rgb(240,240,240)',
       // marginBottom: `1.45rem`,
     }}
@@ -23,9 +21,10 @@ const Header = ({siteTitle, currentPage}) => (
         justifyContent: 'space-between'
       }}
     >
-      <h1 style={{ margin: 0,
-      // adding 
-      display: 'inline-block'
+      <h1 style={{
+        margin: 0,
+        // adding 
+        display: 'inline-block'
       }}>
         <Link
           to="/"
@@ -39,11 +38,10 @@ const Header = ({siteTitle, currentPage}) => (
       </h1>
 
       <NavigationBar
-      pageList={[["Home", "/"],["About Me", "/AboutMe"], ["Resume", "/resume"]]}
-      currentPage={currentPage}
-    />
-
-        </div>
+        pageList={[["Home", "/"], ["About Me", "/AboutMe"], ["Resume", "/resume"]]}
+        currentPage={currentPage}
+      />
+    </div>
   </div>
 )
 
