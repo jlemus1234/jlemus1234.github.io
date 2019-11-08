@@ -5,6 +5,7 @@ const styles = {
         // display: 'inline-block',
         display: 'flex',
         flexWrap: 'wrap',
+        justifyContent: 'space-evenly'
         //width: '100%',
         
     }
@@ -27,7 +28,7 @@ class ProjectsPanelGrid extends React.Component {
                 return (
                     // <div style={{ display: 'block' }}>
                     // <div style={{width:'30%'}}>
-                React.cloneElement(child, {alignmentDir: {width:'100%'}})
+                React.cloneElement(child, {alignmentDir: {width:'26%', margin:''}})
                     // </div>
                 )
             }

@@ -42,13 +42,13 @@ const IndexPage = () => (
     </div>
 
     {/* <div style={{maxWidth: 960, margin:'0 auto'}}>  */}
-    <ProjectsPanel>
+    <ProjectsPanelGrid>
       <ProjectWindow linkTo='/SwimSense/' videoSource={SwimSenseVid} title="SwimSense" description="An aid for blind swimmers"></ProjectWindow>
       <ProjectWindow linkTo='/BisexualResourceCenter/' videoSource={BRCVid} title="BRC" description="Find a support group"></ProjectWindow>
       <ProjectWindow linkTo='/SenSit' videoSource={SenSitVid} title="SenSit" description="Combat inactivity and poor posture"></ProjectWindow>
       <ProjectWindow linkTo='/TongueInterface' videoSource={TIVid} title="Tongue Interface" description="Control with your tongue"></ProjectWindow>
       <ProjectWindow linkTo='/MIXR' videoSource={MIXRVid} title="MIXR" description="Guess the singers of popular songs"></ProjectWindow>
-    </ProjectsPanel>
+    </ProjectsPanelGrid>
     {/* </div> */}
   </Layout>
 )
