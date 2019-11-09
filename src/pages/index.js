@@ -7,6 +7,8 @@ import ConnectedSites from '../components/ConnectedSites'
 import ImageSlideShow from '../components/ImageSlideShow'
 import Container from '../components/Container'
 import ProjectsPanelGrid from '../components/ProjectsPanelGrid'
+import ProjectWindowImage from '../components/ProjectWindowImage'
+
 // Assets
 import headshot from './../images/me.png'
 import cbImg from '../assets/SwimSense/SwimSense8.jpg'
@@ -32,6 +34,7 @@ const IndexPage = () => (
 
     <Container>
       <ProjectsPanelGrid>
+        <ProjectWindowImage></ProjectWindowImage>
         <ProjectWindow linkTo='/SwimSense/' videoSource={SwimSenseVid} title="SwimSense" description="An aid for blind swimmers"></ProjectWindow>
         <ProjectWindow linkTo='/BisexualResourceCenter/' videoSource={BRCVid} title="BRC" description="Find a support group"></ProjectWindow>
         <ProjectWindow linkTo='/SenSit' videoSource={SenSitVid} title="SenSit" description="Combat inactivity and poor posture"></ProjectWindow>
