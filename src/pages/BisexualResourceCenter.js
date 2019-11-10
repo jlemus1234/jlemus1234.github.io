@@ -4,6 +4,9 @@ import ProjectPage from '../components/ProjectPage'
 
 // Assets
 import BRCVid from '../assets/BRC/BRCDemo.mp4'
+// Images
+import BRC1 from '../assets/BRC/BRC1.png'
+import BRC3 from '../assets/BRC/BRC3.png'
 
 const BisexualResourceCenter = () => (
     <Layout>
@@ -25,16 +28,21 @@ const BisexualResourceCenter = () => (
                     Camile Calabrese,
                     Eragon Ma"
                     Video={BRCVid}
-                    Abstract ="Object recognition used to create a tongue-based interface.
-                                By moving your tongue either left or right, you play a simple game 
-                                and try to dodge obstacles for as long as possible. "
+                    Abstract ="A simple website that displays resource centers for bisexuals around the United States. 
+                    It helps a marginalized group of people find support and other individuals they can socialize and 
+                    interact with, or reach out to for help."
                     Description ="
-                    The tongue interface was created for user-interfaces course. 
-                    Went through a couple iterations. Tried to use a collection of images to train 
-                    the system before-hand, but it proved too unreliable. Ultimately, a training period 
-                    was built into the website, so that a series of images can be collected from the 
-                    user for better accuracy. 
-                    The tongue interface allowed for two main controls, moving left or right."
+                    This project was undertaken as part of the JumboCode club at Tufts University.
+                    The goal was to create a tool for the Bisexual Resource Center that could help individuals more 
+                    easily find organizations such as itself. Information gathered by BRC was used to create a database
+                    of resource centers. A website was created that contained a list of resource centers, separated by 
+                    states. A search bar, as well as menus that could be used to easily filter through different centers 
+                    were built to allow visitors to easily access this information. The website also displayed the resource 
+                    centers on a map, and displayed basic contact information for each of them.
+
+                    My role was primarily in the frontend, where I created each of the major components in the main page, 
+                    following the team’s design spec. Other team members then worked to stylize the components and tweak 
+                    their behavior."
                     AdditionalInformation=""
 
         ></ProjectPage>

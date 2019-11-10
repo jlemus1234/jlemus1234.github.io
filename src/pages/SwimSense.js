@@ -4,7 +4,13 @@ import ProjectPage from '../components/ProjectPage'
 
 // Assets
 import finalVideo from '../assets/SwimSense/inclusivedesign.mp4'
+
+// Images
 import posterimg from '../assets/SwimSense/poster.jpg'
+import SwimSense1 from '../assets/SwimSense/SwimSense.jpg'
+import SwimSense2 from '../assets/SwimSense/SwimSense2.jpg'
+import SwimSense3 from '../assets/SwimSense/SwimSense3.jpg'
+import SwimSense11 from '../assets/SwimSense/SwimSense11.png'
 
 const SwimSense = () => (
     <Layout>
@@ -35,10 +41,9 @@ const SwimSense = () => (
         "
         
         AdditionalInformation=""
-        >
-        </ProjectPage>
-        {/* <img src={testimg} alt="Banner Image"></img> */}
 
+        GalleryImages = {[SwimSense1, SwimSense2, SwimSense3, SwimSense11]}
+        />
     </Layout>
 )
 

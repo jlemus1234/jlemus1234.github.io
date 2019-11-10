@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout'
 import ImageSlideShow from '../components/ImageSlideShow'
-
 // Assets
 import headshot from './../images/me.png'
 import collabImg from '../assets/SwimSense/SwimSense8.jpg'
