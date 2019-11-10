@@ -77,7 +77,7 @@ class ProjectPage extends React.Component {
 
                     <div style={styles.VideoCaption} className="VideoCaptionContainer">
                         <div className="VideoImage">
-                            <video muted autoPlay loop controls="true" width="100%">
+                            <video muted autoPlay loop controls={true} width="100%">
                                 <source src={this.props.Video}></source>
                                 <img src={this.props.Image} alt="Project demo"></img>
                             </video>
@@ -102,16 +102,8 @@ class ProjectPage extends React.Component {
                 </div> */}
 
                     </TextContainer>
-
-                    <ImageGallery>
-                        <ImageGalleryEntry />
-                        <ImageGalleryEntry />
-                        <ImageGalleryEntry />
-                        <ImageGalleryEntry />
-                        <ImageGalleryEntry />
-                        <ImageGalleryEntry />
-                    </ImageGallery>
                 </div>
+                <ImageGallery imgList={this.props.GalleryImages}/>
             </Container>
         )
     }
@@ -127,7 +119,8 @@ ProjectPage.defaultProps = {
     Collaborators: 'Names of Collaborators', //May be better as a list
     Abstract: 'Quick summary of project and its goals',
     Description: 'In-depth description of project',
-    AdditionalInformation: 'Where to go for more information on the project'
+    AdditionalInformation: 'Where to go for more information on the project',
+    GalleryImages: []
 
 }
 

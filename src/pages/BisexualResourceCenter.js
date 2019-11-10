@@ -4,6 +4,9 @@ import ProjectPage from '../components/ProjectPage'
 
 // Assets
 import BRCVid from '../assets/BRC/BRCDemo.mp4'
+// Images
+import BRC1 from '../assets/BRC/BRC1.png'
+import BRC3 from '../assets/BRC/BRC3.png'
 
 const BisexualResourceCenter = () => (
     <Layout>
