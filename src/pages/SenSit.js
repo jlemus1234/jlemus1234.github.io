@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import ProjectPage from '../components/ProjectPage'
 
 // Assets
-import SenSitVid from '../assets/SenSit/SenSitDemo.mp4'
+import SenSitVid from '../assets/SenSit/SenSitDemo2.mp4'
 
 const SenSit = () => (
     <Layout>
