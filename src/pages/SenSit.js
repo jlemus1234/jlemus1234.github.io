@@ -3,7 +3,13 @@ import Layout from '../components/layout'
 import ProjectPage from '../components/ProjectPage'
 
 // Assets
-import SenSitVid from '../assets/SenSit/SenSitDemo.mp4'
+import SenSitVid from '../assets/SenSit/SenSitDemo2.mp4'
+
+// images
+import SenSit1 from '../assets/SenSit/SenSit1.jpg'
+import SenSit2 from '../assets/SenSit/SenSit2.jpg'
+import SenSit3 from '../assets/SenSit/SenSit3.jpg'
+import SenSit5 from '../assets/SenSit/SenSit5.jpg'
 
 const SenSit = () => (
     <Layout>
@@ -31,9 +37,9 @@ const SenSit = () => (
         "
 
         AdditionalInformation=""
+        GalleryImages={[SenSit1, SenSit2, SenSit3, SenSit5]}
 
-
-        ></ProjectPage>
+        />
     </Layout>
 )
 

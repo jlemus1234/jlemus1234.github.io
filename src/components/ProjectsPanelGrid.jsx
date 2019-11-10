@@ -4,10 +4,8 @@ const styles = {
     ProjectsPanel: {
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'space-evenly'        
+        justifyContent: 'space-evenly'
     }
-
-
 }
 
 class ProjectsPanelGrid extends React.Component {
@@ -17,19 +15,12 @@ class ProjectsPanelGrid extends React.Component {
         };
     }
 
-    // make its children alternate left and right
     renderChildren() {
-
         return React.Children.map(this.props.children, (child, i) => {
-            // if (i % 2 === 0) {
-                return (
-                // React.cloneElement(child, {alignmentDir: {width:'26%', margin:''}})
-                React.cloneElement(child, {alignmentDir: {width: 500, margin:''}})
-
-                )
-            }
-        // }
-        )
+            return (
+                React.cloneElement(child, { alignmentDir: { width: 500, margin: '' } })
+            )
+        })
     }
 
     render() {
@@ -39,10 +30,6 @@ class ProjectsPanelGrid extends React.Component {
             </div>
         )
     }
-}
-
-ProjectsPanelGrid.defaultProps={
-    columns: 3,
 }
 
 export default ProjectsPanelGrid;

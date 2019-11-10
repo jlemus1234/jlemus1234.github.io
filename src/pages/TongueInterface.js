@@ -5,6 +5,11 @@ import Layout from '../components/layout'
 // Assets
 import TIVid from '../assets/TongueInterface/TongueInterfaceDemo.mp4'
 
+import TI1 from '../assets/TongueInterface/Tongue1.png'
+import TI2 from '../assets/TongueInterface/Tongue2.png'
+import TI4 from '../assets/TongueInterface/Tongue4.png'
+
+
 class TongueInterface extends React.Component{
     constructor(props){
         super(props);
@@ -32,7 +37,7 @@ class TongueInterface extends React.Component{
             The tongue interface allowed for two main controls, moving left or right."
 
             AdditionalInformation=""
-
+            GalleryImages = {[TI1, TI2, TI4]}
             >
             </ProjectPage>
             </Layout>
