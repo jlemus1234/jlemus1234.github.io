@@ -14,7 +14,7 @@ class ImageGallery extends React.Component {
         let images = []
         for (var i = 0; i < this.props.imgList.length; i++) {
             images.push(
-                <ImageGalleryEntry imgSrc = {this.props.imgList[i]}/>
+                <ImageGalleryEntry key={this.props.imgList[i]} imgSrc = {this.props.imgList[i]}/>
             )
         }
         return images
