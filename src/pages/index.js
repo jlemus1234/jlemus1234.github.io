@@ -22,6 +22,15 @@ import SenSitVid from '../assets/SenSit/SenSitDemo.mp4'
 import MIXRVid from '../assets/MIXR/MIXRDemo.mp4'
 import TIVid from '../assets/TongueInterface/TongueInterfaceDemo.mp4'
 
+// Images
+import SenSit6 from '../assets/SenSit/SenSit6.png'
+import SenSit2 from '../assets/SenSit/SenSit2.jpg'
+import BRC1 from '../assets/BRC/BRC1.png'
+import BRC3 from '../assets/BRC/BRC3.png'
+import MIXR1 from '../assets/MIXR/MIXR1.png'
+import TI4 from '../assets/TongueInterface/Tongue4.png'
+import SwimSense13 from '../assets/SwimSense/SwimSense13.png'
+
 const IndexPage = () => (
   <Layout currentPage='/'>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -34,12 +43,17 @@ const IndexPage = () => (
 
     <Container>
       <ProjectsPanelGrid>
-        <ProjectWindowImage></ProjectWindowImage>
-        <ProjectWindow linkTo='/SwimSense/' videoSource={SwimSenseVid} title="SwimSense" description="An aid for blind swimmers"></ProjectWindow>
+        <ProjectWindowImage linkTo='/SwimSense/' imageSource={[SwimSense13]} title="SwimSense" description="An aid for blind swimmers"></ProjectWindowImage>
+        <ProjectWindowImage linkTo='/BisexualResourceCenter/' imageSource={[BRC1]} title="BRC" description="Find a support group"></ProjectWindowImage>
+        <ProjectWindowImage linkTo='/SenSit' imageSource={[SenSit6]} title="SenSit" description="Combat inactivity and poor posture"></ProjectWindowImage>
+        <ProjectWindowImage linkTo='/TongueInterface' imageSource={[TI4]} title="Tongue Interface" description="Control with your tongue"></ProjectWindowImage>
+        <ProjectWindowImage linkTo='/MIXR' imageSource={[MIXR1]} title="MIXR" description="Guess the singers of popular songs"></ProjectWindowImage>      
+
+{/*         <ProjectWindow linkTo='/SwimSense/' videoSource={SwimSenseVid} title="SwimSense" description="An aid for blind swimmers"></ProjectWindow>
         <ProjectWindow linkTo='/BisexualResourceCenter/' videoSource={BRCVid} title="BRC" description="Find a support group"></ProjectWindow>
         <ProjectWindow linkTo='/SenSit' videoSource={SenSitVid} title="SenSit" description="Combat inactivity and poor posture"></ProjectWindow>
         <ProjectWindow linkTo='/TongueInterface' videoSource={TIVid} title="Tongue Interface" description="Control with your tongue"></ProjectWindow>
-        <ProjectWindow linkTo='/MIXR' videoSource={MIXRVid} title="MIXR" description="Guess the singers of popular songs"></ProjectWindow>
+        <ProjectWindow linkTo='/MIXR' videoSource={MIXRVid} title="MIXR" description="Guess the singers of popular songs"></ProjectWindow> */}
       </ProjectsPanelGrid>
     </Container>
   </Layout>

@@ -6,7 +6,6 @@ import ImageSlideShow from '../components/ImageSlideShow'
 
 import vidTest from '../images/clips/testClip3.mp4'
 import imgTest from '../images/me.png'
-import imgTest2 from '../images/me2.png'
 
 const styles = {
     link: {
@@ -66,7 +65,7 @@ class ProjectWindow extends React.Component {
                         {this.props.title}
                     </h1>
 
-                    <ImageSlideShow imageList={[imgTest, imgTest2]}></ImageSlideShow>
+                    <ImageSlideShow imageList={this.props.imageSource}></ImageSlideShow>
 
 
                     {/* <video muted autoPlay loop width="100%">
@@ -89,8 +88,9 @@ class ProjectWindow extends React.Component {
 
 ProjectWindow.defaultProps = {
     allignmentDir: {},
-    videoSource: vidTest,
-    imageSource: imgTest,
+    // videoSource: vidTest,
+    // imageSource: imgTest,
+    imageSource: [imgTest],
     title: 'title',
     description: 'description',
     linkTo: '/'
