@@ -34,7 +34,8 @@ const styles = {
         width: '100%',
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
+        //justifyContent: 'space-evenly',
+        justifyContent: 'space-between',
         marginTop: 80
     }
 }

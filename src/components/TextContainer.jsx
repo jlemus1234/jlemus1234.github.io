@@ -11,7 +11,8 @@ const styles = {
         //maxWidth: 700,
         maxWidth: 966,
         //maxWidth: 966,
-        margin: '0 auto'
+        margin: '0 auto',
+        whiteSpace: 'pre-wrap'
     }
 }
 
