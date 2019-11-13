@@ -32,7 +32,8 @@ const SenSit = () => (
 
         The following year I decided to recreate the device on my own, in a much less restrictive setting.
         By switching to the ESP32 I was able to shrink down the device tremendously from the original, which
-        used an Arduino and Raspberry Pi. I was also able to improve the companion website for the device.
+        used an Arduino and Raspberry Pi. I was able to add additional features, including an onboard buzzer
+        that serves as an alarm. I was also able to improve the companion website for the device.
         Version 2 came out to be much smaller, more robust, and energy efficient.
         "
 
