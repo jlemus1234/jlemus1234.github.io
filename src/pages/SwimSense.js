@@ -37,7 +37,7 @@ const SwimSense = () => (
         development, and testing.
 
         As the sole computer science member my responsibilities included doing all the programming, purchasing equipment, building the device,
-        and controlling the device during test. 
+        and controlling the device during test.
         "
         
         AdditionalInformation=""
