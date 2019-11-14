@@ -1,14 +1,11 @@
 import React from 'react'
 import ProjectPage from '../components/ProjectPage'
 import Layout from '../components/layout'
-
 // Assets
 import TIVid from '../assets/TongueInterface/TongueInterfaceDemo.mp4'
-
 import TI1 from '../assets/TongueInterface/Tongue1.png'
 import TI2 from '../assets/TongueInterface/Tongue2.png'
 import TI4 from '../assets/TongueInterface/Tongue4.png'
-
 
 class TongueInterface extends React.Component{
     constructor(props){

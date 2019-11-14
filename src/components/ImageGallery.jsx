@@ -1,5 +1,5 @@
 import React from 'react'
-
+// Assets
 import ImageGalleryEntry from '../components/ImageGalleryEntry'
 
 class ImageGallery extends React.Component {

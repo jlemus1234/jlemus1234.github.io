@@ -1,10 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
 import ProjectPage from '../components/ProjectPage'
-
 // Assets
 import SenSitVid from '../assets/SenSit/SenSitDemo2.mp4'
-
 // images
 import SenSit1 from '../assets/SenSit/SenSit1.jpg'
 import SenSit2 from '../assets/SenSit/SenSit2.jpg'

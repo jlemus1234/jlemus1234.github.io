@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import ProjectPage from '../components/ProjectPage'
-
 // Assets
 import MIXRVid from '../assets/MIXR/MIXRDemo.mp4'
 
