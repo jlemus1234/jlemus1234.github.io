@@ -14,7 +14,7 @@ class ImageGalleryEntry extends React.Component{
     render(){
         return(
             <div style={styles.container}>
-                <img style={styles.entry} src={this.props.imgSrc} alt="Gallery Entry"></img>
+                <img style={styles.entry} src={this.props.imgSrc} alt="Gallery Entry"/>
             </div>
         )
     }

@@ -39,7 +39,6 @@ const SenSit = () => (
 
         AdditionalInformation=""
         GalleryImages={[SenSit1, SenSit2, SenSit3, SenSit5]}
-
         />
     </Layout>
 )

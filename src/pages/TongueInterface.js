@@ -38,8 +38,7 @@ class TongueInterface extends React.Component{
 
             AdditionalInformation=""
             GalleryImages = {[TI1, TI2, TI4]}
-            >
-            </ProjectPage>
+            />
             </Layout>
         )
     }

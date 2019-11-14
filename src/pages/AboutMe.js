@@ -9,7 +9,7 @@ import TextContainer from '../components/TextContainer'
 
 const AboutMe = () => (
     <Layout currentPage="/AboutMe">
-        <ImageSlideShow style={{ height: '400px' }} imageList={[collabImg, headshot]}> </ImageSlideShow>
+        <ImageSlideShow style={{ height: '400px' }} imageList={[collabImg, headshot]}/>
         <Container>
             <TextContainer>
                 <h1 style={style.title}>About Me</h1>

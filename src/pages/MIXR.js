@@ -33,9 +33,7 @@ const MIXR = () => (
                     "
 
                     AdditionalInformation=""
-
-        >
-        </ProjectPage>
+        />
     </Layout>
 )
 

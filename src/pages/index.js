@@ -28,8 +28,7 @@ const IndexPage = () => (
     <ImageSlideShow style={{ height: '400px' }} imageList={[headshot, cbImg, cbImg2, cbImg3, cbImg4]}> </ImageSlideShow>
 
     <div style={{ marginBottom: '50px' }}>
-      <ConnectedSites>
-      </ConnectedSites>
+      <ConnectedSites/>
     </div>
 
     <Container>
