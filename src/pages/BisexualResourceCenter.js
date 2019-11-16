@@ -1,13 +1,12 @@
 import React from 'react'
 import Layout from '../components/layout'
 import ProjectPage from '../components/ProjectPage'
-
 // Assets
 import BRCVid from '../assets/BRC/BRCDemo.mp4'
 // Images
 import BRC1 from '../assets/BRC/BRC1.png'
-import BRC3 from '../assets/BRC/BRC3.png'
-
+import BRC6 from '../assets/BRC/BRC6.png'
+import BRC7 from '../assets/BRC/BRC7.png'
 const BisexualResourceCenter = () => (
     <Layout>
         <ProjectPage
@@ -44,6 +43,7 @@ const BisexualResourceCenter = () => (
                     following the team’s design spec. Other team members then worked to stylize the components and tweak 
                     their behavior."
                     AdditionalInformation=""
+                    GalleryImages = {[BRC1, BRC6, BRC7]}
 
         ></ProjectPage>
     </Layout>

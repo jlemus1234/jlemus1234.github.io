@@ -1,10 +1,7 @@
 import React from 'react'
 import Container from '../components/Container'
 import TextContainer from '../components/TextContainer'
-
 import ImageGallery from '../components/ImageGallery'
-import ImageGalleryEntry from '../components/ImageGalleryEntry'
-
 // Assets
 import defaultImage from '../images/me.png'
 import defaultVideo from '../images/clips/testClip2.mp4'
@@ -111,7 +108,6 @@ class ProjectPage extends React.Component {
 
 
 ProjectPage.defaultProps = {
-    // May be better to split these up between more components
     Title: 'Project Title',
     Video: defaultVideo,
     Image: defaultImage,

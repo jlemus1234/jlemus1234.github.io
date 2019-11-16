@@ -1,5 +1,5 @@
 import React from 'react'
-
+// Assets
 import ImageGalleryEntry from '../components/ImageGalleryEntry'
 
 class ImageGallery extends React.Component {
@@ -34,7 +34,8 @@ const styles = {
         width: '100%',
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
+        //justifyContent: 'space-evenly',
+        justifyContent: 'space-between',
         marginTop: 80
     }
 }

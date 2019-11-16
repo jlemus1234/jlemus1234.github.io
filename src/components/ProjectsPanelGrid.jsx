@@ -4,7 +4,8 @@ const styles = {
     ProjectsPanel: {
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'space-evenly'
+        justifyContent: 'space-around',
+        //justifyContent: 'space-evenly',
     }
 }
 
