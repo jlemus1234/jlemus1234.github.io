@@ -6,6 +6,7 @@ import ConnectedSites from '../components/ConnectedSites'
 import ImageSlideShow from '../components/ImageSlideShow'
 import Container from '../components/Container'
 import ProjectsPanelGrid from '../components/ProjectsPanelGrid'
+
 // Assets
 import headshot from './../images/me.png'
 import cbImg from '../assets/SwimSense/SwimSense8.jpg'

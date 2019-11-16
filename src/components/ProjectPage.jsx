@@ -2,7 +2,6 @@ import React from 'react'
 import Container from '../components/Container'
 import TextContainer from '../components/TextContainer'
 import ImageGallery from '../components/ImageGallery'
-
 // Assets
 import defaultImage from '../images/me.png'
 import defaultVideo from '../images/clips/testClip2.mp4'
