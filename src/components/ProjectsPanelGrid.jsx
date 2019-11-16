@@ -6,7 +6,6 @@ const styles = {
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         //justifyContent: 'space-evenly',
-
     }
 }
 

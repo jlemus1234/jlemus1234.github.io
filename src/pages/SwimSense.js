@@ -1,10 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
 import ProjectPage from '../components/ProjectPage'
-
 // Assets
 import finalVideo from '../assets/SwimSense/inclusivedesign.mp4'
-
 // Images
 import posterimg from '../assets/SwimSense/poster.jpg'
 import SwimSense1 from '../assets/SwimSense/SwimSense.jpg'
@@ -37,7 +35,7 @@ const SwimSense = () => (
         development, and testing.
 
         As the sole computer science member my responsibilities included doing all the programming, purchasing equipment, building the device,
-        and controlling the device during test. 
+        and controlling the device during test.
         "
         
         AdditionalInformation=""

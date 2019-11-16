@@ -46,7 +46,7 @@ const Resume = () => (
             </ResumeSection>
 
             <ResumeSection title="Relevant Courses">
-                <p>Introduction to Computer Science; Computational Modeling and Design; Introduction to Computing in Engineering; Data Structures; Discrete Mathematics; Machine Structure and Assembly-Language Programming; Programming Languages; Algorithms; Computational Theory; Web Programming; Operating Systems; Networks; Database Systems; Computer System Security</p>
+                <p>Introduction to Computer Science; Computational Modeling and Design; Introduction to Computing in Engineering; Data Structures; Discrete Mathematics; Machine Structure and Assembly-Language Programming; Programming Languages; Algorithms; Computational Theory; Web Programming; Operating Systems; Networks; Database Systems; Computer System Security; Cyber Security and Cyber Warfare; Introduction to Artificial Intelligence; Concurrent Programming; Human-Computer Interaction; Object-Oriented Programming for GUIs</p>
             </ResumeSection>
 
             <ResumeSection title="Projects">
@@ -82,7 +82,7 @@ const Resume = () => (
 
             <ResumeSection title="Experience">
                 <ResumeJob employer="Lemus Painting" jobTitle="Assistant" city="Mamaroneck" state="NY"
-                    startDate="March 2011" endDate="Present">
+                    startDate="Summer 2011" endDate="Present">
                     <ul>
                         <li>Wrote invoices, scheduled off-site work</li>
                         <li>Translated English and Spanish</li>
