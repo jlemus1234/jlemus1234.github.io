@@ -82,7 +82,7 @@ const Resume = () => (
 
             <ResumeSection title="Experience">
                 <ResumeJob employer="Lemus Painting" jobTitle="Assistant" city="Mamaroneck" state="NY"
-                    startDate="March 2011" endDate="Present">
+                    startDate="Summer 2011" endDate="Present">
                     <ul>
                         <li>Wrote invoices, scheduled off-site work</li>
                         <li>Translated English and Spanish</li>
