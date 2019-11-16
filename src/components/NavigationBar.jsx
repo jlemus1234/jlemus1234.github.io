@@ -36,9 +36,7 @@ class NavigationBar extends React.Component {
                 if (Array.isArray(this.props.pageList[i]) && this.props.pageList[i].length === 2) {
                     return (this.addLinks())
                 }
-                console.log("Problem with inner array")
             }
-            console.log("Problem with outer array")
         }
         console.log("PageList error: Check that prop is passed in correctly")
     }
