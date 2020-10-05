@@ -1,5 +1,8 @@
 import React from 'react'
 
+// A parent component for project windows. 
+// Simply helps space them in a grid format
+
 const styles = {
     ProjectsPanel: {
         display: 'flex',

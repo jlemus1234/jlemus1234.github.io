@@ -15,6 +15,7 @@ const styles = {
 
     bannerImageStyling: {
         maxWidth: '100%',
+        //maxWidth: '2000px',
         maxHeight: '100%',
         marginBottom: '0',
         objectFit: 'contain'
@@ -22,22 +23,15 @@ const styles = {
 
 };
 
-class ImageBanner extends React.Component {
-    constructor(props) {
-        super(props);
+const ImageBanner = ({image, propStyles}) => {
 
-        this.state = {
+    return (
+        <img style={styles.bannerImageStyling} className="bannerImage" src={image} alt="Banner Image"></img>
 
-        };
-    }
-
-    render() {
-        return (
-            <div style={{ ...styles.bannerStyling, ...this.props.style }} className="banner">
-                <img style={styles.bannerImageStyling} className="bannerImage" src={this.props.bannerImage} alt="Banner Image"></img>
-            </div>
-        )
-    }
+/*         <div style={{ ...styles.bannerStyling, ...propStyles}} className="banner">
+            <img style={styles.bannerImageStyling} className="bannerImage" src={image} alt="Banner Image"></img>
+        </div> */
+    )
 }
 
 ImageBanner.defaultProps = {

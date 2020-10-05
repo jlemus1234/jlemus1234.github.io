@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+// A project window where the text is displayed directly on top of the video. 
+// There is no border or overlay surrounding the video
+
 // Assets
 import vidTest from '../images/clips/testClip3.mp4'
 import imgTest from '../images/me.png'
