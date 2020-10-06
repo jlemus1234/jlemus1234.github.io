@@ -2,21 +2,28 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 
-import ImageSlideShow from '../components/ImageSlideShow'
-
-import vidTest from '../images/clips/testClip3.mp4'
-import imgTest from '../images/me.png'
+//import imgTest from '../images/me.png'
 
 const styles = {
-    link: {
+    container: {
+        borderColor: 'black',
+        borderWidth: '15px',
+        background: 'rgb(240,240,240)',
+        //height: '100%',
         width: '60%',
-        display: 'block', // This makes the link's width control width of entire window
+        //height: '500px',
+        display: 'block',
+        marginTop: '50px'
+    },
+    link: {
+        //width: '60%',
+        //display: 'block', // This makes the link's width control width of entire window
         textDecoration: 'none'
     },
-    projectWindow: {
+    projectInfo: {
         display: 'block',
         background: 'rgb(240,240,240)',
-        borderRadius: '25px',
+        //borderRadius: '25px',
         marginBottom: '70px',
 
         fontFamily: 'Arial, sansSerif'
@@ -46,51 +53,49 @@ const styles = {
         fontWeight: 'bold',
 
         marginBottom: '5px',
-    }
+    },
 
+    image: {
+        maxWidth: '100%',
+        maxHeight: '75%',
+        minHeight: '75%',
+        //maxHeight: '300px',
+        marginBottom: '0',
+        objectFit: 'contain',
+        //borderWidth: '50',
+        //borderColor: 'black'
+
+
+
+    }
 }
 
-class ProjectWindow extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        };
-    }
+const ProjectWindow = ({alignmentDir, image, title, description, linkTo}) => {
 
-    render() {
-        return (
-            <Link style={{ ...styles.link, ...this.props.alignmentDir }} to={this.props.linkTo}>
-                <div style={{ ...styles.projectWindow }} id="projectWindow">
+    return (
+        <div style={{...styles.container, ...alignmentDir}}>
+            <Link style={{ ...styles.link}} to={linkTo}>
+                <img style={styles.image} src={image}/>
+                <div style={{ ...styles.projectInfo}} id="projectInfo">
                     <h1 style={styles.headerPara}>
-                        {this.props.title}
+                        {title}
                     </h1>
 
-                    <ImageSlideShow imageList={this.props.imageSource}></ImageSlideShow>
-
-
-                    {/* <video muted autoPlay loop width="100%">
-                        <source src={this.props.videoSource} type="video/mp4"></source>
-                        <img src={this.props.imageSource} alt="Project demo"></img>
-                        Your browser does not support the video tag
-                    </video> */}
-
-
-
                     <p style={styles.descriptionPara}>
-                        {this.props.description}
+                        {description}
                     </p>
                 </div>
             </Link>
-
+        </div>
         )
-    }
-}
+} 
+
 
 ProjectWindow.defaultProps = {
-    allignmentDir: {},
+    alignmentDir: {},
     // videoSource: vidTest,
     // imageSource: imgTest,
-    imageSource: [imgTest],
+    //imagesrc: [imgTest],
     title: 'title',
     description: 'description',
     linkTo: '/'
