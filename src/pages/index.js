@@ -19,11 +19,19 @@ import cbImg3 from '../assets/SwimSense/SwimSense5.jpg'
 import cbImg4 from '../assets/SwimSense/SwimSense2.jpg'
 
 
+const styles = {
+  container: {
+    width: '100%'
+  }
+}
+
 const IndexPage = () => (
   <Layout currentPage='/'>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     {/* <ImageSlideShow style={{ height: '500px' }} imageList={[headshot, cbImg, cbImg2, cbImg3, cbImg4]}> </ImageSlideShow> */}
-    <ImageBanner image={cbImg}/>
+    <div style={styles.container}>
+      <ImageBanner image={cbImg}/>
+    </div>
     <div style={{ marginBottom: '50px' }}>
       <ConnectedSites/>
     </div>

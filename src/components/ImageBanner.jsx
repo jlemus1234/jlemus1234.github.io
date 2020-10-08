@@ -15,6 +15,7 @@ const styles = {
 
     bannerImageStyling: {
         maxWidth: '100%',
+        minWidth: '100%',
         //maxWidth: '2000px',
         maxHeight: '100%',
         marginBottom: '0',

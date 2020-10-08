@@ -16,7 +16,7 @@ import TongueInterface from '../assets/TongueInterface/Tongue4.png'
 
 const ProjectsPage = () => {
     return (
-        <Layout>
+        <Layout currentPage="/projects">
         <Container>
         <ProjectsPanelGrid>
           <ProjectWindow linkTo='/SwimSense/' image={SwimSense} title="SwimSense" description="An aid for blind swimmers"></ProjectWindow>
