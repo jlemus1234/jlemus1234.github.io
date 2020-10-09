@@ -28,6 +28,7 @@ const styles = {
         background: 'rgb(255,255,255)',
         //borderRadius: '25px',
         marginBottom: '70px',
+        marginTop: '0',
 
         fontFamily: 'Arial, sansSerif'
     },
@@ -60,22 +61,25 @@ const styles = {
 
     image: {
         maxWidth: '100%',
-        maxHeight: '75%',
+        //maxHeight: '75%',
         //minHeight: '75%',
         //maxHeight: '300px',
         marginBottom: '0',
         marginTop: '0',
         paddingTop: '0',
-        objectFit: 'contain',
+        objectFit: 'cover',   //contain',
+        borderBottom: '1px solid silver'
+
         //borderWidth: '50',
         //borderColor: 'black'
 
     },
-    imageSpacer: {
-        minHeight: '75%',
-        maxHeight: '75%',
-        borderBottom: '1px solid silver'
-    }
+
+    /*imageSpacer: {
+        //minHeight: '75%',
+        //maxHeight: '75%',
+        marginBottom: '0',
+    }*/
 }
 
 const ProjectWindow = ({alignmentDir, image, title, description, linkTo}) => {
@@ -83,10 +87,10 @@ const ProjectWindow = ({alignmentDir, image, title, description, linkTo}) => {
     return (
         <div style={{...styles.container, ...alignmentDir}}>
             <Link style={styles.link} to={linkTo}>
-                <div style={styles.imageSpacer}>
+                <div style={styles.imageSpacer} class="imageSpacer">
                     <img style={styles.image} src={image}/>
                 </div>
-                <div style={{ ...styles.projectInfo}} id="projectInfo">
+                <div style={{ ...styles.projectInfo}} class="projectInfo">
                     <h1 style={styles.headerPara}>
                         {title}
                     </h1>

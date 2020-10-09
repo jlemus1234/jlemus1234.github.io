@@ -19,7 +19,7 @@ const styles = {
         //maxWidth: '2000px',
         maxHeight: '100%',
         marginBottom: '0',
-        objectFit: 'contain'
+        objectFit:'contain' //'cover'
     }
 
 };
