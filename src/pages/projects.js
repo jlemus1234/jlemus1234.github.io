@@ -8,7 +8,8 @@ import ProjectWindow from '../components/ProjectWindowImage'
 
 
 // Videos
-import BRC from '../assets/BRC/BRC3.png'
+//import BRC from '../assets/BRC/BRC3.png'
+import BRC from '../assets/BRC/BRC1.png'
 import SwimSense from '../assets/SwimSense/SwimSense.jpg'
 import SenSit from '../assets/SenSit/SenSit3.jpg'
 import MIXR from '../assets/MIXR/MIXR1.png'

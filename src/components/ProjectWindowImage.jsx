@@ -10,7 +10,7 @@ const styles = {
         //background: 'rgb(240,240,240)',
         background: 'rgb(255,255,255)',
         //height: '100%',
-        width: '60%',
+        //width: '60%',
         //height: '500px',
         display: 'block',
         marginTop: '50px',
@@ -28,7 +28,7 @@ const styles = {
         background: 'rgb(255,255,255)',
         //borderRadius: '25px',
         marginBottom: '70px',
-        marginTop: '0',
+        marginTop: '10px',
 
         fontFamily: 'Arial, sansSerif'
     },
@@ -61,7 +61,8 @@ const styles = {
 
     image: {
         maxWidth: '100%',
-        //maxHeight: '75%',
+        minHeight: '75%',
+        maxHeight: '75%',
         //minHeight: '75%',
         //maxHeight: '300px',
         marginBottom: '0',
@@ -75,11 +76,12 @@ const styles = {
 
     },
 
-    /*imageSpacer: {
-        //minHeight: '75%',
-        //maxHeight: '75%',
-        marginBottom: '0',
-    }*/
+/*    imageSpacer: {
+        minHeight: '75%',
+        maxHeight: '75%',
+        //marginBottom: '0',
+    }
+    */
 }
 
 const ProjectWindow = ({alignmentDir, image, title, description, linkTo}) => {
@@ -87,10 +89,10 @@ const ProjectWindow = ({alignmentDir, image, title, description, linkTo}) => {
     return (
         <div style={{...styles.container, ...alignmentDir}}>
             <Link style={styles.link} to={linkTo}>
-                <div style={styles.imageSpacer} class="imageSpacer">
+                {/* <div style={styles.imageSpacer} className="imageSpacer"> */}
                     <img style={styles.image} src={image}/>
-                </div>
-                <div style={{ ...styles.projectInfo}} class="projectInfo">
+                {/* </div> */}
+                <div style={{ ...styles.projectInfo}} className="projectInfo">
                     <h1 style={styles.headerPara}>
                         {title}
                     </h1>
