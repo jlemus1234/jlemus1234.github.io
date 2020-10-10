@@ -10,6 +10,7 @@ import Container from '../components/Container'
 import ProjectsPanelGrid from '../components/ProjectsPanelGrid'
 
 import ImageBanner from '../components/ImageBanner'
+import ImageCircle from '../components/ImageCircle'
 
 // Assets
 import headshot from './../images/me.png'
@@ -32,6 +33,7 @@ const IndexPage = () => (
     <div style={styles.container}>
       <ImageBanner image={cbImg}/>
     </div>
+    <ImageCircle/>
     <div style={{ marginBottom: '50px' }}>
       <ConnectedSites/>
     </div>
