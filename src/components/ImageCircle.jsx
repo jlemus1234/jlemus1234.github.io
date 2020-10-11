@@ -1,18 +1,18 @@
 import React from 'react'
 
 
-import headshot from './../images/me.png'
+import headshot from '../images/me.png'
 
 const styles = {
     circle: {
-        height: '500px',
-        borderRadius: '10'
+        //height: '30%',
+        borderRadius: '55%'
     }
 }
 
 const ImageCircle = () => {
     return(
-        <img source={headshot} style={styles.circle}></img>
+        <img src={headshot} style={styles.circle}></img>
     )
 }
 
