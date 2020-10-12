@@ -10,11 +10,14 @@ const styles = {
     }
 }
 
-const ImageCircle = () => {
+const ImageCircle = ({image, style}) => {
     return(
-        <img src={headshot} style={styles.circle}></img>
+        <img src={image} style={{...styles.circle, ...style}}></img>
     )
 }
 
+ImageCircle.defaultProps = {
+    image: headshot
+}
 
 export default ImageCircle;

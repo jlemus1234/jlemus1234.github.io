@@ -72,8 +72,8 @@ const IndexPage = () => (
       </Container>
 
       <MenuCardPanel>
-        <MenuCard linkTo={"/projects"} title={"Projects"} text={"My projects"} image={cbImg}/>
-        <MenuCard linkTo={"/resume"} title={"Experience"} text={"My past exeriences"} image={cbImg2}/>
+        <MenuCard linkTo={"/projects"} title={"Projects"} text={"My projects"} image={cbImg2}/>
+        <MenuCard linkTo={"/resume"} title={"Experience"} text={"My past exeriences"} image={cbImg}/>
         <MenuCard linkTo={"/writing"} title={"Writing"} text={"My thoughts"}/>
       </MenuCardPanel>
 

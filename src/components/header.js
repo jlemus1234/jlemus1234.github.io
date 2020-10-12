@@ -39,7 +39,7 @@ const Header = ({ siteTitle, currentPage }) => (
       </h1>
 
       <NavigationBar
-        pageList={[["Home", "/"], ["Projects", "/projects"] ,["About", "/AboutMe"], ["Resume", "/resume"]]}
+        pageList={[["Home", "/"], ["Projects", "/projects"], ["Writing", "/writing"], ["Resume", "/resume"], ["About", "/AboutMe"]]}
         currentPage={currentPage}
       />
     </div>
