@@ -18,8 +18,12 @@ const styles = {
         minWidth: '100%',
         //maxHeight: '30%',
         //maxHeight: '30%',
-        maxHeight: 500,
-        minHeight: 200,
+        
+    
+        maxHeight: 500,     // these seemed to work?
+        //minHeight: 200,
+        
+        
         //minHeight: '30%',
         //maxHeight: '100%',
         marginBottom: '0',

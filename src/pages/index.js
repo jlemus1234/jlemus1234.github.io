@@ -3,15 +3,18 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import ProjectWindow from '../components/ProjectWindow'
 import ConnectedSites from '../components/ConnectedSites'
 import ImageSlideShow from '../components/ImageSlideShow'
 import Container from '../components/Container'
+
 import ProjectsPanelGrid from '../components/ProjectsPanelGrid'
+import ProjectWindow from '../components/ProjectWindow'
 
 import ImageBanner from '../components/ImageBanner'
 import ImageCircle from '../components/ImageCircle'
 
+import MenuCardPanel from '../components/MenuCardPanel'
+import MenuCard from '../components/MenuCard'
 // Assets
 import headshot from './../images/me.png'
 import cbImg from '../assets/SwimSense/SwimSense8.jpg'
@@ -43,13 +46,7 @@ const styles = {
     height: '70%'
   },
 
-  cardMenu: {
-    minHeight: '30%',
-    maxHeight: '30%',
-//    height: '500px',
-    backgroundColor: 'black',
-    display: 'flex'
-  }
+
 }
 
 const IndexPage = () => (
@@ -72,11 +69,15 @@ const IndexPage = () => (
         </div>
       </div>
 
-      <div id="cardMenu" style={styles.cardMenu}>
-        <span></span>
-      </div>
+      </Container>
 
-    </Container>
+      <MenuCardPanel>
+        <MenuCard linkTo={"/projects"} title={"Projects"} text={"My projects"} image={cbImg}/>
+        <MenuCard linkTo={"/resume"} title={"Experience"} text={"My past exeriences"} image={cbImg2}/>
+        <MenuCard linkTo={"/writing"} title={"Writing"} text={"My thoughts"}/>
+      </MenuCardPanel>
+
+
 
   </Layout>
 )

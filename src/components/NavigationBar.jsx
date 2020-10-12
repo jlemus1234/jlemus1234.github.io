@@ -55,7 +55,8 @@ class NavigationBar extends React.Component {
 const style = {
     links: {
         color: 'black',
-        textDecoration: 'none'
+        textDecoration: 'none',
+        fontFamily: 'bahnschrift'
     },
 
     linkPMargin: {

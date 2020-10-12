@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Container = ({ children }) => (
-    <div className="Container" style={styles.container}>
+const Container = ({ children, style }) => (
+    <div className="Container" style={{...styles.container, ...style}}>
         {children}
     </div>
 )
@@ -11,7 +11,7 @@ const styles = {
         maxWidth: 1366,
         //maxWidth: 966,
         margin: '0 auto',
-        marginBottom: '100px'
+        //marginBottom: '100px'
     }
 }
 
