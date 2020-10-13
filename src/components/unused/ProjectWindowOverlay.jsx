@@ -5,8 +5,8 @@ import { Link } from 'gatsby'
 // There is no border or overlay surrounding the video
 
 // Assets
-import vidTest from '../images/clips/testClip3.mp4'
-import imgTest from '../images/me.png'
+import vidTest from '../../images/clips/testClip3.mp4'
+import imgTest from '../../images/me.png'
 
 const styles = {
     projectWindowStyle: {

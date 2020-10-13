@@ -8,7 +8,7 @@ import ImageSlideShow from '../components/ImageSlideShow'
 import Container from '../components/Container'
 
 import ProjectsPanelGrid from '../components/ProjectsPanelGrid'
-import ProjectWindow from '../components/ProjectWindow'
+import ProjectWindow from '../components/unused/ProjectWindow'
 
 import ImageBanner from '../components/ImageBanner'
 import ImageCircle from '../components/ImageCircle'

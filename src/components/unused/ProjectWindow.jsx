@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 
-import vidTest from '../images/clips/testClip3.mp4'
-import imgTest from '../images/me.png'
+import vidTest from '../../images/clips/testClip3.mp4'
+import imgTest from '../../images/me.png'
 
 
 // A project window where any text is displayed below the video in a separate
