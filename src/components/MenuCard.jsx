@@ -11,7 +11,7 @@ const styles = {
         marginBottom: '0',
         //overflow: 'hide'
         height: '500px',
-        border: '1px solid gray',
+        //border: '1px solid gray',
         boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' // requires a border
         //color: 'rgb(0, 0, 0)',
         //display: 'flex'
