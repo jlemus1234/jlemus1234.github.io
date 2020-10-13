@@ -43,7 +43,7 @@ const MenuCardPanel = ({ children }) => {
 
     return (
         <div className="menuCardPanel" style={styles.panel}>
-            <Container style={{marginBottom: 0, minWidth: '1366px'}}>
+            <Container style={{marginBottom: 0, width: '100%'/*minWidth: '1366px'*/}}>
             <div className="menuCardContainer" style={styles.menuCardContainer}>
                 {children}
             </div>
