@@ -16,7 +16,7 @@ class TongueInterface extends React.Component{
 
     render(){
         return(
-            <Layout>
+            <Layout currentPage='/projects'>
             <ProjectPage
             Title = "Tongue Interface"
             Caption = ""

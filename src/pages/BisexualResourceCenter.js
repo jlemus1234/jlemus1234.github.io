@@ -8,7 +8,7 @@ import BRC1 from '../assets/BRC/BRC1.png'
 import BRC6 from '../assets/BRC/BRC6.png'
 import BRC7 from '../assets/BRC/BRC7.png'
 const BisexualResourceCenter = () => (
-    <Layout>
+    <Layout currentPage='/projects'>
         <ProjectPage
                     Title = "Bisexual Resource Center"
                     Caption = ""

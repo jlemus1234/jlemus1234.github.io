@@ -11,7 +11,7 @@ import SwimSense3 from '../assets/SwimSense/SwimSense3.jpg'
 import SwimSense11 from '../assets/SwimSense/SwimSense11.png'
 import SwimSense14 from '../assets/SwimSense/SwimSense14.jpg'
 const SwimSense = () => (
-    <Layout>
+    <Layout currentPage='/projects'>
         <ProjectPage
         Title="SwimSense"
         Video={finalVideo}

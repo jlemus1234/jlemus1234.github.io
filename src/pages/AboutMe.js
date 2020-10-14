@@ -13,7 +13,7 @@ const AboutMe = () => (
         {/* <ImageSlideShow style={{ height: '400px' }} imageList={[collabImg, headshot]}/> */}
         <Container style = {styles.container}>
             <ImageCircle image={collabImg} style={styles.image}/>
-            <TextContainer>
+            <TextContainer style={styles.textContainer}>
                 <h1 style={styles.title}>About Me</h1>
                 <div style={styles.description}>
                     <p>
@@ -36,13 +36,16 @@ const styles = {
 
     },
     image: {
-        width: '30%'
+        //width: '40%'
     },
     container: {
         display: 'flex',
         marginBottom: '100px',
         marginTop: '100px'
 
+    },
+    textContainer: {
+        width: '60%'
     }
 
 

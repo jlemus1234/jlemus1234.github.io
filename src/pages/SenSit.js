@@ -10,7 +10,7 @@ import SenSit3 from '../assets/SenSit/SenSit3.jpg'
 import SenSit5 from '../assets/SenSit/SenSit5.jpg'
 
 const SenSit = () => (
-    <Layout>
+    <Layout currentPage='/projects'>
         <ProjectPage 
         Title="SenSit"
         Caption=""

@@ -4,7 +4,7 @@ import WritingPage from '../components/WritingPage'
 // Assets
 
 const McDonaldsWriting = () => (
-    <Layout>
+    <Layout currentPage='/writing'>
         <WritingPage
                     Title = "MIXR"
                     Caption = ""

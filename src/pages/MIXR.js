@@ -5,7 +5,7 @@ import ProjectPage from '../components/ProjectPage'
 import MIXRVid from '../assets/MIXR/MIXRDemo.mp4'
 
 const MIXR = () => (
-    <Layout>
+    <Layout currentPage='/projects'>
         <ProjectPage
                     Title = "MIXR"
                     Caption = ""
