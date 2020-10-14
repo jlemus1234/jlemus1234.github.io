@@ -60,17 +60,29 @@ const styles = {
         width: '30%',
         height: '100%',
 
-        textAlign: 'center'
-    },
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        //textAlign: 'center',
 
+    },
+    title:{
+        marginBottom: 0
+    },
     descriptionBox: {
         //backgroundColor: 'blue',
         backgroundColor: 'rgba(204, 204, 204, 0.7)',
         width: '35%',
         height: '100%',
 
-        textAlign: 'center'
+        //textAlign: 'center'
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
 
+    },
+    description: {
+        marginBottom: 0
     },
     link: {
         textDecoration: 'none',
@@ -86,10 +98,10 @@ const HorizontalCard = ({title, description, image, linkTo}) => {
             <img style={styles.image} src={image}/>
             <div className="Overlay" style={styles.overlay}>
                 <div className="TitleBox" style={styles.titleBox}>
-                    <h1>{title}</h1>
+                    <h1 style={styles.title}>{title}</h1>
                 </div>
                 <div className="DescBox" style={styles.descriptionBox}>
-                    <p>{description}</p>
+                    <p style={styles.description}>{description}</p>
                 </div>
             </div>
             </Link>

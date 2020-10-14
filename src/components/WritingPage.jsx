@@ -51,14 +51,15 @@ const WritingPage = ({Title, Image, Caption, GalleryImages, Collaborators, Summa
             <div style={styles.writingPage}>
                 <h1 style={styles.title}>{Title}</h1>
                 <p style={styles.date}>{Date}</p>
-                <h2 style={styles.collaborators}>{Collaborators}</h2>
+                <p style={styles.collaborators}>{Collaborators}</p>
 
-                <img style={styles.image} src={Image}/>
+                {Image ? <img style={styles.image} src={Image}/> : null}
+                {Image ? <p>{Caption}</p> : null}
                 <TextContainer>
-                    <h3 style={styles.subsectionTitle}>Summary</h3>
-                    <h3>{Summary}</h3>
+                    {Summary ? <h3 style={styles.subsectionTitle}>Summary</h3> : null}
+                    {Summary ? <h3>{Summary}</h3> : null}
 
-                    <h3 style={styles.mainText}>{MainText}</h3>
+                    <p style={styles.mainText}>{MainText}</p>
 
                 </TextContainer>
             </div>
@@ -69,10 +70,10 @@ const WritingPage = ({Title, Image, Caption, GalleryImages, Collaborators, Summa
 WritingPage.defaultProps = {
     Title: 'Title',
     Image: testImage,
-    Caption: 'Caption',
+    //Caption: 'Caption',
     GalleryImages: [],
     Collaborators: 'Collaborators',
-    Summary: 'Summary',
+    //Summary: 'Summary',
     Date: 'Date',
     MainText: 'Essay goes here'
 
