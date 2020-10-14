@@ -9,18 +9,15 @@ const MIXR = () => (
         <ProjectPage
                     Title = "MIXR"
                     Caption = ""
-                    Collaborators ="
-                    Jose Lemus, Emily Sim, Sophia Wang, Maddie Payne, Ian Mao
+                    Collaborators ="Jose Lemus, Emily Sim, Sophia Wang, Maddie Payne, Ian Mao
                     "
 
                     Video={MIXRVid}
 
-                    Abstract ="
-                    MIXR was a website created with the intent of being a multiplayer game where you guessed songs and their artists.
+                    Abstract ="MIXR was a website created with the intent of being a multiplayer game where you guessed songs and their artists.
                     It is a way for users to explore music with their friends.
                     "
-                    Description ="
-                    The MIXR website was a multiplayer game. Users hear a 30 second clip of an unknown song,and then are able to
+                    Description ="The MIXR website was a multiplayer game. Users hear a 30 second clip of an unknown song,and then are able to
                     select from 4 multiple-choice options what they think the song is. Once the user has guessed, the correct answer
                     is revealed allowing them to find out more about the song or artist. Another song is then loaded and the game
                     continues. Both players are presented with multiple songs to guess, and the user with the most correct at the

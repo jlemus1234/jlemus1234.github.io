@@ -12,8 +12,7 @@ const BisexualResourceCenter = () => (
         <ProjectPage
                     Title = "Bisexual Resource Center"
                     Caption = ""
-                    Collaborators ="
-                    Steph Xu,
+                    Collaborators ="Steph Xu,
                     Jose Lemus,
                     Claire Boals,
                     Sam Chung,
@@ -30,8 +29,7 @@ const BisexualResourceCenter = () => (
                     Abstract ="A simple website that displays resource centers for bisexuals around the United States. 
                     It helps a marginalized group of people find support and other individuals they can socialize and 
                     interact with, or reach out to for help."
-                    Description ="
-                    This project was undertaken as part of the JumboCode club at Tufts University.
+                    Description ="This project was undertaken as part of the JumboCode club at Tufts University.
                     The goal was to create a tool for the Bisexual Resource Center that could help individuals more 
                     easily find organizations such as itself. Information gathered by BRC was used to create a database
                     of resource centers. A website was created that contained a list of resource centers, separated by 

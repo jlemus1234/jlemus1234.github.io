@@ -56,8 +56,8 @@ const styles = {
 
 
         //backgroundColor: 'green',
-        backgroundColor: 'rgba(204, 204, 204, 0.5)',
-        width: '20%',
+        backgroundColor: 'rgba(204, 204, 204, 0.7)',
+        width: '30%',
         height: '100%',
 
         textAlign: 'center'
@@ -65,7 +65,7 @@ const styles = {
 
     descriptionBox: {
         //backgroundColor: 'blue',
-        backgroundColor: 'rgba(204, 204, 204, 0.5)',
+        backgroundColor: 'rgba(204, 204, 204, 0.7)',
         width: '35%',
         height: '100%',
 

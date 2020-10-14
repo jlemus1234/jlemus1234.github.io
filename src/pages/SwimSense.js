@@ -18,11 +18,9 @@ const SwimSense = () => (
         Caption=""
         Image={posterimg}
         Collaborators="Jose Lemus, Tara Mackenzie, Samantha Levy, and Tommaso Lombardo in collaboration with HRC"
-        Abstract="
-        A device that uses haptic feedback to guide blind swimmers in a pool. 
+        Abstract="A device that uses haptic feedback to guide blind swimmers in a pool. 
         "
-        Description="
-        SwimSense was an interdisciplinary, undergraduate capstone project that I worked on, alongside three Engineering Psychology students.
+        Description="SwimSense was an interdisciplinary, undergraduate capstone project that I worked on, alongside three Engineering Psychology students.
 
         The project was to create a device that could be used to alert blind swimmers to obstacles in the water, such as walls.
         One of the main goals was to eliminate the need for tappers, which are individuals who stand at the end of a pool lane

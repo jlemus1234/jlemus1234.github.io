@@ -15,10 +15,17 @@ import SenSit from '../assets/SenSit/SenSit3.jpg'
 import MIXR from '../assets/MIXR/MIXR1.png'
 import TongueInterface from '../assets/TongueInterface/Tongue4.png'
 
+
+const styles = {
+  container: {
+    marginBottom: '50px'
+  }
+}
+
 const ProjectsPage = () => {
     return (
         <Layout currentPage="/projects">
-        <Container>
+        <Container style={styles.container}>
         <ProjectsPanelGrid>
           <ProjectWindow linkTo='/SwimSense/' image={SwimSense} title="SwimSense" description="An aid for blind swimmers"></ProjectWindow>
           <ProjectWindow linkTo='/BisexualResourceCenter/' image={BRC} title="BRC" description="Find a support group"></ProjectWindow>
