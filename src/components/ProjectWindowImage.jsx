@@ -2,22 +2,35 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 
-import ImageSlideShow from '../components/ImageSlideShow'
-
-import vidTest from '../images/clips/testClip3.mp4'
-import imgTest from '../images/me.png'
+//import imgTest from '../images/me.png'
 
 const styles = {
-    link: {
-        width: '60%',
-        display: 'block', // This makes the link's width control width of entire window
-        textDecoration: 'none'
-    },
-    projectWindow: {
+    container: {
+        border: '1px solid silver',
+        //background: 'rgb(240,240,240)',
+        background: 'rgb(255,255,255)',
+        //height: '100%',
+        //width: '60%',
+        //height: '500px',
         display: 'block',
-        background: 'rgb(240,240,240)',
-        borderRadius: '25px',
+        marginTop: '50px',
+        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' // requires a border
+
+        //boxShadow: '5px 10px'
+
+    },
+    link: {
+        //width: '60%',
+        //display: 'block', // This makes the link's width control width of entire window
+        textDecoration: 'none',
+    },
+    projectInfo: {
+        display: 'block',
+        //background: 'rgb(240,240,240)',
+        background: 'rgb(255,255,255)',
+        //borderRadius: '25px',
         marginBottom: '70px',
+        marginTop: '10px',
 
         fontFamily: 'Arial, sansSerif'
     },
@@ -46,51 +59,61 @@ const styles = {
         fontWeight: 'bold',
 
         marginBottom: '5px',
-    }
+    },
 
+    image: {
+        maxWidth: '100%',
+        minHeight: '75%',
+        maxHeight: '75%',
+        //minHeight: '75%',
+        //maxHeight: '300px',
+        marginBottom: '0',
+        marginTop: '0',
+        paddingTop: '0',
+        objectFit: 'cover',   //contain',
+        borderBottom: '1px solid silver',
+
+        //borderWidth: '50',
+        //borderColor: 'black'
+
+    },
+
+/*    imageSpacer: {
+        minHeight: '75%',
+        maxHeight: '75%',
+        //marginBottom: '0',
+    }
+    */
 }
 
-class ProjectWindow extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        };
-    }
+const ProjectWindow = ({alignmentDir, image, title, description, linkTo}) => {
 
-    render() {
-        return (
-            <Link style={{ ...styles.link, ...this.props.alignmentDir }} to={this.props.linkTo}>
-                <div style={{ ...styles.projectWindow }} id="projectWindow">
+    return (
+        <div style={{...styles.container, ...alignmentDir}}>
+            <Link style={styles.link} to={linkTo}>
+                {/* <div style={styles.imageSpacer} className="imageSpacer"> */}
+                    <img style={styles.image} src={image}/>
+                {/* </div> */}
+                <div style={{ ...styles.projectInfo}} className="projectInfo">
                     <h1 style={styles.headerPara}>
-                        {this.props.title}
+                        {title}
                     </h1>
 
-                    <ImageSlideShow imageList={this.props.imageSource}></ImageSlideShow>
-
-
-                    {/* <video muted autoPlay loop width="100%">
-                        <source src={this.props.videoSource} type="video/mp4"></source>
-                        <img src={this.props.imageSource} alt="Project demo"></img>
-                        Your browser does not support the video tag
-                    </video> */}
-
-
-
                     <p style={styles.descriptionPara}>
-                        {this.props.description}
+                        {description}
                     </p>
                 </div>
             </Link>
-
+        </div>
         )
-    }
-}
+} 
+
 
 ProjectWindow.defaultProps = {
-    allignmentDir: {},
+    alignmentDir: {},
     // videoSource: vidTest,
     // imageSource: imgTest,
-    imageSource: [imgTest],
+    //imagesrc: [imgTest],
     title: 'title',
     description: 'description',
     linkTo: '/'

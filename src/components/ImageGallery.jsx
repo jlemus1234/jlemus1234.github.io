@@ -10,7 +10,6 @@ class ImageGallery extends React.Component {
     }
 
     renderChildren(){
-        console.log("In Image Gallery")
         let images = []
         for (var i = 0; i < this.props.imgList.length; i++) {
             images.push(

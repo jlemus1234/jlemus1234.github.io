@@ -2,8 +2,15 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 
-import vidTest from '../images/clips/testClip3.mp4'
-import imgTest from '../images/me.png'
+import vidTest from '../../images/clips/testClip3.mp4'
+import imgTest from '../../images/me.png'
+
+
+// A project window where any text is displayed below the video in a separate
+// overlay.
+// The entire window functions as a link and the overlay includes a border
+// around the text and video.
+
 
 const styles = {
     link: {
@@ -48,11 +55,11 @@ const styles = {
 
 }
 
+
 class ProjectWindow extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-        };
+
     }
 
     render() {
@@ -83,6 +90,6 @@ ProjectWindow.defaultProps = {
     imageSource: imgTest,
     title: 'title',
     description: 'description',
-    linkTo: '/'
+    linkTo: '/',
 }
 export default ProjectWindow;

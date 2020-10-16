@@ -7,13 +7,14 @@ import NavigationBar from '../components/NavigationBar'
 const Header = ({ siteTitle, currentPage }) => (
   <div
     style={{
-      background: 'rgb(240,240,240)',
+      //background: 'rgb(240,240,240)',
       // marginBottom: `1.45rem`,
+      borderBottom: '1px solid silver'
     }}
   >
     <div
       style={{
-        // margin: `0 auto`,
+        //margin: `0 auto`,
         // maxWidth: 960, // this is set here, and also in the layout component
         padding: `1.45rem 1.0875rem`,
         //adding
@@ -38,7 +39,7 @@ const Header = ({ siteTitle, currentPage }) => (
       </h1>
 
       <NavigationBar
-        pageList={[["Home", "/"], ["About Me", "/AboutMe"], ["Resume", "/resume"]]}
+        pageList={[["Home", "/"], ["Projects", "/projects"], ["Writing", "/writing"], ["Resume", "/resume"], ["About", "/AboutMe"]]}
         currentPage={currentPage}
       />
     </div>

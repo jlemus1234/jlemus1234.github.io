@@ -5,19 +5,20 @@ import ImageGallery from '../components/ImageGallery'
 // Assets
 import defaultImage from '../images/me.png'
 import defaultVideo from '../images/clips/testClip2.mp4'
-const fonts = 'Arial, sansSerif'
 
+
+const fonts = 'Bahnschrift, Arial, sansSerif'
 const styles = {
     ProjectPage: {
         fontFamily: fonts,
-        marginTop: '10px',
-        marginBottom: '10px'
+        marginTop: '30px',
+        marginBottom: '20px'
     },
 
     Title: {
         fontFamily: fonts,
         textAlign: 'center',
-        marginBottom: '10px',
+        marginBottom: '20px',
     },
 
     Collaborators: {
@@ -52,6 +53,9 @@ const styles = {
 
     ContentBuffer: {
         margin: '30px'
+    },
+    Caption: {
+        //minHeight: '10px',
     }
 }
 
@@ -79,7 +83,7 @@ class ProjectPage extends React.Component {
                                 <img src={this.props.Image} alt="Project demo"></img>
                             </video>
                         </div>
-                        <div><p>{this.props.Caption}</p></div>
+                        <div style={styles.Caption}><p>{this.props.Caption}</p></div>
                     </div>
 
                     <TextContainer>

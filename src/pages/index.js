@@ -1,41 +1,81 @@
 import React from 'react'
+
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import ProjectWindow from '../components/ProjectWindow'
-import ConnectedSites from '../components/ConnectedSites'
-import ImageSlideShow from '../components/ImageSlideShow'
-import Container from '../components/Container'
-import ProjectsPanelGrid from '../components/ProjectsPanelGrid'
 
+import ConnectedSites from '../components/ConnectedSites'
+import Container from '../components/Container'
+
+import ImageBanner from '../components/ImageBanner'
+import ImageCircle from '../components/ImageCircle'
+
+import MenuCardPanel from '../components/MenuCardPanel'
+import MenuCard from '../components/MenuCard'
 // Assets
-import headshot from './../images/me.png'
-import cbImg from '../assets/SwimSense/SwimSense8.jpg'
+import cbImg from '../assets/SwimSense/SwimSense15.jpg'
 import cbImg2 from '../assets/SwimSense/SwimSense7.jpg'
-import cbImg3 from '../assets/SwimSense/SwimSense5.jpg'
-import cbImg4 from '../assets/SwimSense/SwimSense2.jpg'
-// Videos
-import BRCVid from '../assets/BRC/BRCDemo.mp4'
-import SwimSenseVid from '../assets/SwimSense/SwimDemo2.mp4'
-import SenSitVid from '../assets/SenSit/SenSitDemo2.mp4'
-import MIXRVid from '../assets/MIXR/MIXRDemo2.mp4'
-import TIVid from '../assets/TongueInterface/TongueDemo.mp4'
+import img1 from '../assets/misc/IMG1.jpg'
+import img5 from '../assets/misc/IMG5.jpg'
+import img6 from '../assets/misc/IMG8.jpg'
+
+
+const styles = {
+  bannerImage: {
+    //width: '100%',
+    //maxHeight: '500',
+    //    objectFit: 'cover'
+  },
+
+  aboutSection: {
+    marginTop: '5%',
+    marginBottom: '5%',
+    height: '20%',
+    display: 'flex',
+    justifyContent: 'space-around'
+  },
+
+  myInfo: {
+    marginBottom: '50px',
+    width: '50%'
+  },
+  myDescription: {
+    height: '70%'
+  },
+
+
+}
 
 const IndexPage = () => (
   <Layout currentPage='/'>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <ImageSlideShow style={{ height: '400px' }} imageList={[headshot, cbImg, cbImg2, cbImg3, cbImg4]}> </ImageSlideShow>
-    <div style={{ marginBottom: '50px' }}>
-      <ConnectedSites/>
-    </div>
+    {/* <ImageSlideShow style={{ height: '500px' }} imageList={[headshot, cbImg, cbImg2, cbImg3, cbImg4]}> </ImageSlideShow> */}
+    {/* <div style={styles.bannerImage} className="imageBannerDiv">
+    </div> */}
+
+    <ImageBanner image={cbImg} />
+
+
     <Container>
-      <ProjectsPanelGrid>
-        <ProjectWindow linkTo='/SwimSense/' videoSource={SwimSenseVid} title="SwimSense" description="An aid for blind swimmers"></ProjectWindow>
-        <ProjectWindow linkTo='/BisexualResourceCenter/' videoSource={BRCVid} title="BRC" description="Find a support group"></ProjectWindow>
-        <ProjectWindow linkTo='/SenSit' videoSource={SenSitVid} title="SenSit" description="Combat inactivity and poor posture"></ProjectWindow>
-        <ProjectWindow linkTo='/TongueInterface' videoSource={TIVid} title="Tongue Interface" description="Control with your tongue"></ProjectWindow>
-        <ProjectWindow linkTo='/MIXR' videoSource={MIXRVid} title="MIXR" description="Guess the singers of popular songs"></ProjectWindow>
-      </ProjectsPanelGrid>
-    </Container>
+      <div id="aboutSection" style={styles.aboutSection}>
+        <ImageCircle image={img6}/>
+        <div id="myInfo" style={styles.myInfo}>
+          <h1>About me</h1>
+          <p style={styles.myDescription}>Hello I'm Jose. I'm a computer science graduate currently looking for employment.
+          Feel free to contact me.</p>
+          <ConnectedSites />
+        </div>
+      </div>
+
+      </Container>
+
+      <MenuCardPanel>
+        <MenuCard linkTo={"/projects"} title={"Projects"} text={"Past projects I have worked on"} image={cbImg2}/>
+        <MenuCard linkTo={"/resume"} title={"Experience"} text={"Work experience and education"} image={img5}/>
+        <MenuCard linkTo={"/writing"} title={"Writing"} text={"Stories and thoughts on my past experiences"} image={img1}/>
+      </MenuCardPanel>
+
+
+
   </Layout>
 )
 

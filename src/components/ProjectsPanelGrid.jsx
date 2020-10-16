@@ -1,5 +1,8 @@
 import React from 'react'
 
+// A parent component for project windows. 
+// Simply helps space them in a grid format
+
 const styles = {
     ProjectsPanel: {
         display: 'flex',
@@ -19,7 +22,7 @@ class ProjectsPanelGrid extends React.Component {
     renderChildren() {
         return React.Children.map(this.props.children, (child, i) => {
             return (
-                React.cloneElement(child, { alignmentDir: { width: 500, margin: '' } })
+                React.cloneElement(child, { alignmentDir: { width: '45%' /*width: 500*/ /*margin: ''*/ } })
             )
         })
     }

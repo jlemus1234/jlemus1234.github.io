@@ -29,7 +29,7 @@ const Layout = ({ children, currentPage }) => (
         >
           {children}
           <footer>
-            © 2018, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
+            © 2020, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </div>
       </>

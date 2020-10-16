@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Parent component for projectwindows,
+// Works differently from ProjectsPanelGrid by using float instead 
+
 const styles = {
     ProjectsPanel: {
         display: 'inline-block',

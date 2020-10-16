@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Container = ({ children }) => (
-    <div style={styles.container}>
+const Container = ({ children, style }) => (
+    <div style={{...styles.container, ...style}}>
         {children}
     </div>
 )
