@@ -17,10 +17,10 @@ import MenuCardPanel from '../components/MenuCardPanel'
 import MenuCard from '../components/MenuCard'
 // Assets
 import headshot from './../images/me.png'
-import cbImg from '../assets/SwimSense/SwimSense8.jpg'
+import cbImg from '../assets/SwimSense/SwimSense15.jpg'
 import cbImg2 from '../assets/SwimSense/SwimSense7.jpg'
-import cbImg3 from '../assets/SwimSense/SwimSense5.jpg'
-import cbImg4 from '../assets/SwimSense/SwimSense2.jpg'
+import img1 from '../assets/misc/IMG1.jpg'
+import img5 from '../assets/misc/IMG5.jpg'
 
 
 const styles = {
@@ -72,9 +72,9 @@ const IndexPage = () => (
       </Container>
 
       <MenuCardPanel>
-        <MenuCard linkTo={"/projects"} title={"Projects"} text={"My projects"} image={cbImg2}/>
-        <MenuCard linkTo={"/resume"} title={"Experience"} text={"My past exeriences"} image={cbImg}/>
-        <MenuCard linkTo={"/writing"} title={"Writing"} text={"My thoughts"}/>
+        <MenuCard linkTo={"/projects"} title={"Projects"} text={"Past projects I have worked on"} image={cbImg2}/>
+        <MenuCard linkTo={"/resume"} title={"Experience"} text={"Work experience and education"} image={img5}/>
+        <MenuCard linkTo={"/writing"} title={"Writing"} text={"Stories and thoughts on my past experiences"} image={img1}/>
       </MenuCardPanel>
 
 

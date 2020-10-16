@@ -8,8 +8,8 @@ import HorizontalCardPanel from '../components/HorizontalCardPanel'
 
 
 import img1 from '../assets/SenSit/Sensit1.jpg'
-import img2 from '../assets/SenSit/Sensit2.jpg'
-import img3 from '../assets/SwimSense/SwimSense.jpg'
+import img2 from '../assets/misc/IMG4.jpg'
+import img3 from '../assets/misc/IMG9.jpg'
 
 
 const WritingPage = () => {
@@ -18,7 +18,7 @@ const WritingPage = () => {
             <Container>
                 <HorizontalCardPanel>
                     <HorizontalCard title="McDonalds" description="My time at McDonalds" linkTo="/McDonaldsWriting" image={img1}/>
-                    <HorizontalCard title="Graduation" description="What it felt like graduating" linkTo="/writing" image={img2}/>
+                    <HorizontalCard title="Graduation" description="Becoming the first person in my family to go to college" linkTo="/writing" image={img2}/>
                     <HorizontalCard title="Hobbies" description="Writing on what I like to do" linkTo="/writing" image={img3}/>
                 </HorizontalCardPanel>
             </Container>

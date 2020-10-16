@@ -20,7 +20,7 @@ const styles = {
     textContainer: {
         //background: '',
         marginTop: '0',
-        color: 'rgb(0, 0, 0)'
+        color: 'rgb(0, 0, 0)',
 
     },
     image: {
@@ -53,7 +53,7 @@ const MenuCard = ({image, title, text, linkTo}) => {
             <img style={styles.image} src={image}></img>
             <div style={styles.textContainer}>
                 <h1 style={styles.title}>{title}</h1>
-                <p style={styles.description}>{text}</p>
+                {text ? <p style={styles.description}>{text}</p> : null}
             </div>
             </Link>
         </div>
@@ -62,7 +62,7 @@ const MenuCard = ({image, title, text, linkTo}) => {
 
 MenuCard.defaultProps = {
     title: "Title",
-    text: "Text",
+    //text: "Text",
     image: testImg,
     linkTo: '/'
 
