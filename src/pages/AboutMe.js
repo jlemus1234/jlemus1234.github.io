@@ -41,7 +41,7 @@ const styles = {
     container: {
         display: 'flex',
         marginBottom: '100px',
-        marginTop: '100px'
+        marginTop: '100px',
 
     },
     textContainer: {

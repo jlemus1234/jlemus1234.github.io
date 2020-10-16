@@ -10,14 +10,21 @@ const styles = {
 
         //width: '100%',
         marginBottom: '0',
+        width: '100%',
+        height: 'auto'
         //height: '100%'
     }, 
     coveringDiv: {
         //width: '40%',
+        position: 'relative',
         borderRadius: '50%',
         overflow: 'hidden',
         marginBottom: '0',
-        height: '100%'
+        width: '300px',
+        height: '300px'
+
+        
+        //height: '100%'
     }
 }
 
