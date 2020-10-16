@@ -1,20 +1,16 @@
 import React from 'react';
 import Layout from '../components/layout'
-import ImageSlideShow from '../components/ImageSlideShow'
 import ImageCircle from '../components/ImageCircle'
 // Assets
-import headshot from './../images/me.png'
-import collabImg from '../assets/SwimSense/SwimSense8.jpg'
-import testimg from '../assets/misc/IMG.jpg'
+import img1 from '../assets/misc/IMG.jpg'
 
 import Container from '../components/Container'
 import TextContainer from '../components/TextContainer'
 
 const AboutMe = () => (
     <Layout currentPage="/AboutMe">
-        {/* <ImageSlideShow style={{ height: '400px' }} imageList={[collabImg, headshot]}/> */}
         <Container style = {styles.container}>
-            <ImageCircle image={testimg} style={styles.image}/>
+            <ImageCircle image={img1} style={styles.image}/>
             <TextContainer style={styles.textContainer}>
                 <h1 style={styles.title}>About Me</h1>
                 <div style={styles.description}>

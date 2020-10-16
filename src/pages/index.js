@@ -4,11 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import ConnectedSites from '../components/ConnectedSites'
-import ImageSlideShow from '../components/ImageSlideShow'
 import Container from '../components/Container'
-
-import ProjectsPanelGrid from '../components/ProjectsPanelGrid'
-import ProjectWindow from '../components/unused/ProjectWindow'
 
 import ImageBanner from '../components/ImageBanner'
 import ImageCircle from '../components/ImageCircle'
@@ -16,11 +12,11 @@ import ImageCircle from '../components/ImageCircle'
 import MenuCardPanel from '../components/MenuCardPanel'
 import MenuCard from '../components/MenuCard'
 // Assets
-import headshot from './../images/me.png'
 import cbImg from '../assets/SwimSense/SwimSense15.jpg'
 import cbImg2 from '../assets/SwimSense/SwimSense7.jpg'
 import img1 from '../assets/misc/IMG1.jpg'
 import img5 from '../assets/misc/IMG5.jpg'
+import img6 from '../assets/misc/IMG8.jpg'
 
 
 const styles = {
@@ -61,7 +57,7 @@ const IndexPage = () => (
 
     <Container>
       <div id="aboutSection" style={styles.aboutSection}>
-        <ImageCircle />
+        <ImageCircle image={img6}/>
         <div id="myInfo" style={styles.myInfo}>
           <h1>About me</h1>
           <p style={styles.myDescription}>Hello I'm Jose. I'm a computer science graduate currently looking for employment.

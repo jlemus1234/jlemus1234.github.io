@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from '../components/Container'
 import TextContainer from '../components/TextContainer'
-import ImageGallery from '../components/ImageGallery'
 
 import testImage from '../images/me.png'
 

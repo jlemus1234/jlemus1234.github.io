@@ -7,7 +7,6 @@ import HorizontalCard from '../components/HorizontalCard'
 import HorizontalCardPanel from '../components/HorizontalCardPanel'
 
 
-import img1 from '../assets/SenSit/Sensit1.jpg'
 import img2 from '../assets/misc/IMG4.jpg'
 import img3 from '../assets/misc/IMG9.jpg'
 

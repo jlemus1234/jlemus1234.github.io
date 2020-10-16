@@ -1,7 +1,4 @@
 import React from 'react'
-import Container from '../components/HorizontalCardPanel'
-
-import testImg from '../images/me.png'
 import { Link } from 'gatsby'
 const styles = {
     card: {

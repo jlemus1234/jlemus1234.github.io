@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Container from '../components/Container'
-
 const styles = {
     panel: {
         marginTop: '50px',
