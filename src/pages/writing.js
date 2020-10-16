@@ -17,9 +17,9 @@ const WritingPage = () => {
         <Layout currentPage="/writing">
             <Container>
                 <HorizontalCardPanel>
-                    <HorizontalCard title="McDonalds" description="My time at McDonalds" linkTo="/McDonaldsWriting" image={img1}/>
-                    <HorizontalCard title="Graduation" description="Becoming the first person in my family to go to college" linkTo="/writing" image={img2}/>
-                    <HorizontalCard title="Hobbies" description="Writing on what I like to do" linkTo="/writing" image={img3}/>
+                    <HorizontalCard title="McDonalds" description="My time at McDonalds" linkTo="/McDonalds"  noImgStyle={{backgroundColor: 'rgb(218,41,28)'}}/>
+                    <HorizontalCard title="Graduation" description="Becoming the first person in my family to go to college" linkTo="/Graduation" image={img2}/>
+                    <HorizontalCard title="Hobbies" description="Writing on what I like to do" linkTo="/Hobbies" image={img3}/>
                 </HorizontalCardPanel>
             </Container>
         </Layout>

@@ -91,11 +91,11 @@ const styles = {
 
 }
 
-const HorizontalCard = ({title, description, image, linkTo}) => {
+const HorizontalCard = ({title, description, image, linkTo, noImgStyle}) => {
     return(
         <div className="HorizontalCard" style={styles.card}>
             <Link style={styles.link} to={linkTo}>
-            <img style={styles.image} src={image}/>
+            {image ? <img style={styles.image} src={image}/>: <div style={{...styles.image, ...noImgStyle}}/> }
             <div className="Overlay" style={styles.overlay}>
                 <div className="TitleBox" style={styles.titleBox}>
                     <h1 style={styles.title}>{title}</h1>
@@ -110,7 +110,7 @@ const HorizontalCard = ({title, description, image, linkTo}) => {
 }
 
 HorizontalCard.defaultProps = {
-    image: testImg,
+    //image: testImg,
     title: 'Title',
     description: 'My description',
     linkTo: '/'

@@ -64,7 +64,8 @@ const IndexPage = () => (
         <ImageCircle />
         <div id="myInfo" style={styles.myInfo}>
           <h1>About me</h1>
-          <p style={styles.myDescription}>Hello this is information on me</p>
+          <p style={styles.myDescription}>Hello I'm Jose. I'm a computer science graduate currently looking for employment.
+          Feel free to contact me.</p>
           <ConnectedSites />
         </div>
       </div>
