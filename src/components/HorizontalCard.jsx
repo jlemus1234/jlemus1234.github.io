@@ -52,7 +52,7 @@ const styles = {
 
         //backgroundColor: 'green',
         backgroundColor: 'rgba(204, 204, 204, 0.7)',
-        width: '30%',
+        width: '35%',
         height: '100%',
 
         display: 'flex',
@@ -63,12 +63,12 @@ const styles = {
     },
     title:{
         marginBottom: 0,
-        fontWeight: 'bold'
+        //fontWeight: 'bold'
     },
     descriptionBox: {
         //backgroundColor: 'blue',
         backgroundColor: 'rgba(204, 204, 204, 0.7)',
-        width: '35%',
+        width: '40%',
         height: '100%',
 
         //textAlign: 'center'
@@ -94,7 +94,7 @@ const HorizontalCard = ({title, description, image, linkTo, noImgStyle}) => {
             {image ? <img style={styles.image} src={image}/>: <div style={{...styles.image, ...noImgStyle}}/> }
             <div className="Overlay" style={styles.overlay}>
                 <div className="TitleBox" style={styles.titleBox}>
-                    <p style={styles.title}>{title}</p>
+                    <h3 style={styles.title}>{title}</h3>
                 </div>
                 <div className="DescBox" style={styles.descriptionBox}>
                     <p style={styles.description}>{description}</p>

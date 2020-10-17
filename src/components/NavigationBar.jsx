@@ -69,7 +69,8 @@ const style = {
 
     container: {
         display: 'flex',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        marginLeft: '10px'
     }
 }
 

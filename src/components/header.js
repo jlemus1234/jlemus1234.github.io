@@ -22,7 +22,7 @@ const Header = ({ siteTitle, currentPage }) => (
         justifyContent: 'space-between'
       }}
     >
-      <h1 style={{
+      <h3 style={{
         margin: 0,
         // adding 
         display: 'inline-block'
@@ -36,7 +36,7 @@ const Header = ({ siteTitle, currentPage }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h3>
 
       <NavigationBar
         pageList={[/*["Home", "/"]*/ ["Projects", "/projects"], ["Writing", "/writing"], ["Resume", "/resume"], ["About", "/AboutMe"]]}
