@@ -95,9 +95,9 @@ const ProjectWindow = ({alignmentDir, image, title, description, linkTo}) => {
                     <img style={styles.image} src={image}/>
                 {/* </div> */}
                 <div style={{ ...styles.projectInfo}} className="projectInfo">
-                    <h1 style={styles.headerPara}>
+                    <h2 style={styles.headerPara}>
                         {title}
-                    </h1>
+                    </h2>
 
                     <p style={styles.descriptionPara}>
                         {description}
