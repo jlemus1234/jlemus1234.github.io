@@ -45,7 +45,7 @@ const styles = {
     otherSitesStyle: {
         display: 'flex',
         justifyContent: 'space-between',
-        width: '50%',
+        width: '70%',
         maxWidth: 960,
         marginBottom: '0'
     },

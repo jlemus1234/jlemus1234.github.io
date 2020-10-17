@@ -2,10 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 const styles = {
     card: {
-
+        fontFamily: 'bahnschrift',
         position: 'relative',
-
-
         color: 'black',
         marginTop: '50px',
 
@@ -64,7 +62,8 @@ const styles = {
 
     },
     title:{
-        marginBottom: 0
+        marginBottom: 0,
+        fontWeight: 'bold'
     },
     descriptionBox: {
         //backgroundColor: 'blue',
@@ -95,7 +94,7 @@ const HorizontalCard = ({title, description, image, linkTo, noImgStyle}) => {
             {image ? <img style={styles.image} src={image}/>: <div style={{...styles.image, ...noImgStyle}}/> }
             <div className="Overlay" style={styles.overlay}>
                 <div className="TitleBox" style={styles.titleBox}>
-                    <h1 style={styles.title}>{title}</h1>
+                    <p style={styles.title}>{title}</p>
                 </div>
                 <div className="DescBox" style={styles.descriptionBox}>
                     <p style={styles.description}>{description}</p>

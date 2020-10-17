@@ -13,7 +13,7 @@ const styles = {
         //width: '60%',
         //height: '500px',
         display: 'block',
-        marginTop: '50px',
+        marginTop: '75px',
         boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' // requires a border
 
         //boxShadow: '5px 10px'

@@ -39,7 +39,8 @@ const styles = {
     width: '50%'
   },
   myDescription: {
-    height: '70%'
+    maxHeight: '70%',
+    marginBottom: '30px'
   },
 
 
