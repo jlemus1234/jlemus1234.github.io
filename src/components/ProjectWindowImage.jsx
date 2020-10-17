@@ -13,7 +13,7 @@ const styles = {
         //width: '60%',
         //height: '500px',
         display: 'block',
-        marginTop: '50px',
+        marginTop: '75px',
         boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' // requires a border
 
         //boxShadow: '5px 10px'
@@ -95,9 +95,9 @@ const ProjectWindow = ({alignmentDir, image, title, description, linkTo}) => {
                     <img style={styles.image} src={image}/>
                 {/* </div> */}
                 <div style={{ ...styles.projectInfo}} className="projectInfo">
-                    <h1 style={styles.headerPara}>
+                    <h2 style={styles.headerPara}>
                         {title}
-                    </h1>
+                    </h2>
 
                     <p style={styles.descriptionPara}>
                         {description}

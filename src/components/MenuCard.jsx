@@ -6,9 +6,14 @@ const styles = {
 
     menuCard: {
         background: 'white',
+        
+        
         width: '30%',
+        minWidth: '300px',
+        
+        
         margin: 'auto',
-        marginBottom: '0',
+        marginBottom: '50px',
         //overflow: 'hide'
         height: '500px',
         //border: '1px solid gray',

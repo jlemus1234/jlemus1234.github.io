@@ -8,6 +8,7 @@ const styles = {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-around',
+        flexFlow: 'row wrap',
         //justifyContent: 'space-evenly',
     }
 }
@@ -22,7 +23,7 @@ class ProjectsPanelGrid extends React.Component {
     renderChildren() {
         return React.Children.map(this.props.children, (child, i) => {
             return (
-                React.cloneElement(child, { alignmentDir: { width: '45%' /*width: 500*/ /*margin: ''*/ } })
+                React.cloneElement(child, { alignmentDir: { width: '45%', minWidth:'300px' /*width: 500*/ /*margin: ''*/ } })
             )
         })
     }

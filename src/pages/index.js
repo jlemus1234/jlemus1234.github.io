@@ -39,7 +39,12 @@ const styles = {
     width: '50%'
   },
   myDescription: {
+<<<<<<< HEAD
     height: '70%'
+=======
+    maxHeight: '70%',
+    marginBottom: '30px'
+>>>>>>> dev
   },
 
 
@@ -60,7 +65,11 @@ const IndexPage = () => (
         <ImageCircle image={img6}/>
         <div id="myInfo" style={styles.myInfo}>
           <h1>About me</h1>
+<<<<<<< HEAD
           <p style={styles.myDescription}>Hello I'm Jose. I'm a computer science graduate currently looking for employment.
+=======
+          <p style={styles.myDescription}>Hello I'm Jose, a computer science graduate currently looking for employment.
+>>>>>>> dev
           Feel free to contact me.</p>
           <ConnectedSites />
         </div>
