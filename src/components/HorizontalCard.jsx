@@ -6,14 +6,7 @@ const styles = {
         position: 'relative',
         color: 'black',
         marginTop: '50px',
-
         height: '300px',
-        
-        
-        //backgroundColor: '',
-
-        //overflow: 'hidden',
-
         border: '1px solid silver',
         boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' // requires a border
 
@@ -25,57 +18,35 @@ const styles = {
         maxHeight: '100%',        
         objectFit: 'cover',
         margin: '0'
-
-
     }, 
     overlay: {
-        //display: 'inline-block',
         position: 'absolute',
         top: '33%', //top: '50%'
         right: '0',
 
         width: '100%',
         height: '33%',
-
         display: 'flex',
         justifyContent: 'space-between'
-        //flexDirection: 'column',
-
-        //float: 'left'
     },
-
     titleBox: {
-        //position: 'absolute',
-        //top: '0',
-        //right: '0',
-
-
-        //backgroundColor: 'green',
         backgroundColor: 'rgba(204, 204, 204, 0.7)',
         width: '35%',
         height: '100%',
-
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        //textAlign: 'center',
-
     },
     title:{
         marginBottom: 0,
-        //fontWeight: 'bold'
     },
     descriptionBox: {
-        //backgroundColor: 'blue',
         backgroundColor: 'rgba(204, 204, 204, 0.7)',
         width: '40%',
         height: '100%',
-
-        //textAlign: 'center'
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-
     },
     description: {
         marginBottom: 0

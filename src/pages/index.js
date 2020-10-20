@@ -20,12 +20,6 @@ import img6 from '../assets/misc/IMG8.jpg'
 
 
 const styles = {
-  bannerImage: {
-    //width: '100%',
-    //maxHeight: '500',
-    //    objectFit: 'cover'
-  },
-
   aboutSection: {
     marginTop: '5%',
     marginBottom: '5%',
@@ -49,10 +43,6 @@ const styles = {
 const IndexPage = () => (
   <Layout currentPage='/'>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    {/* <ImageSlideShow style={{ height: '500px' }} imageList={[headshot, cbImg, cbImg2, cbImg3, cbImg4]}> </ImageSlideShow> */}
-    {/* <div style={styles.bannerImage} className="imageBannerDiv">
-    </div> */}
-
     <ImageBanner image={cbImg} />
 
 

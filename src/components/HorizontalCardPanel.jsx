@@ -5,12 +5,6 @@ const styles = {
         marginTop: '50px',
         marginBottom: '50px'
     },
-
-    container: {
-        
-    },
-
-
 }
 
 
@@ -20,7 +14,6 @@ const HorizontalCardPanel = ({children}) => {
             {children}
         </div>
     )
-
 }
 
 export default HorizontalCardPanel;

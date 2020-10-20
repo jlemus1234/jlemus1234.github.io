@@ -5,8 +5,6 @@ import Container from '../components/Container'
 import ProjectsPanelGrid from '../components/ProjectsPanelGrid'
 import ProjectWindow from '../components/ProjectWindowImage'
 
-
-
 // Videos
 //import BRC from '../assets/BRC/BRC3.png'
 import BRC from '../assets/BRC/BRC1.png'
