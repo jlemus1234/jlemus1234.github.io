@@ -9,7 +9,6 @@ const styles = {
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         flexFlow: 'row wrap',
-        //justifyContent: 'space-evenly',
     }
 }
 

@@ -15,7 +15,7 @@ const Header = ({ siteTitle, currentPage }) => (
     <div
       style={{
         //margin: `0 auto`,
-        // maxWidth: 960, // this is set here, and also in the layout component
+        //maxWidth: 960, // this is set here, and also in the layout component
         padding: `1.45rem 1.0875rem`,
         //adding
         display: 'flex',

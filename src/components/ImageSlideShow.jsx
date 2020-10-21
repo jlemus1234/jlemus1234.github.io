@@ -3,11 +3,9 @@ import React from 'react'
 const styles = {
     bannerStyling: {
         background: 'black',
-        //background: 'rgb(181, 188, 199)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        // borderRadius: '10px 10px 0 0',
         marginBottom: '0'
 
     },

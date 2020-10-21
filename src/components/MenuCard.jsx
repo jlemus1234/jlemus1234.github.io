@@ -6,24 +6,14 @@ const styles = {
 
     menuCard: {
         background: 'white',
-        
-        
         width: '30%',
         minWidth: '300px',
-        
-        
         margin: 'auto',
         marginBottom: '50px',
-        //overflow: 'hide'
         height: '500px',
-        //border: '1px solid gray',
         boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' // requires a border
-        //color: 'rgb(0, 0, 0)',
-        //display: 'flex'
-
     },
     textContainer: {
-        //background: '',
         marginTop: '0',
         color: 'rgb(0, 0, 0)',
 
@@ -43,7 +33,6 @@ const styles = {
 
     description:{
         textAlign: 'center'
-
     },
     link: {
         textDecoration: 'none',
@@ -67,7 +56,6 @@ const MenuCard = ({image, title, text, linkTo}) => {
 
 MenuCard.defaultProps = {
     title: "Title",
-    //text: "Text",
     image: testImg,
     linkTo: '/'
 

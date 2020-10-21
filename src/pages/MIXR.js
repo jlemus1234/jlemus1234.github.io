@@ -11,7 +11,6 @@ const MIXR = () => (
                     Caption = ""
                     Collaborators ="Jose Lemus, Emily Sim, Sophia Wang, Maddie Payne, Ian Mao
                     "
-
                     Video={MIXRVid}
 
                     Abstract ="MIXR was a website created with the intent of being a multiplayer game where you guessed songs and their artists.

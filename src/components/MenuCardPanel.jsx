@@ -5,45 +5,19 @@ const styles = {
     panel: {
         width: '100%',
         backgroundColor: 'gray',
-        //minHeight: '30%',
-        
-        //height: '30%',
-        
         display: 'flex',
         justifyContent: 'center',
         marginBottom: '50px'
-
-        //        margin: '0, auto'
     },
 
     menuCardContainer: {
         width: '100%',
-        //width: '1336px',
-        //height: '80%',
-        
-        //minHeight: '80%',
-        //maxHeight: '80%',
-       
         marginTop: '50px',
-        //marginBottom: '50px',
-        //    height: '500px',
-        //backgroundColor: 'black',
         display: 'flex',
         flexFlow: 'row wrap',
-        //flexDirection: 'column',
         justifyContent: 'space-between'
     }
 }
-
-/*
-function renderChildren(){
-    return React.Children.map(this.props.children, (child, i) => {
-        return(
-            React.cloneElement(child, {alignmentDir: {width: '20%'}})
-        )
-    })
-}
-*/
 
 const MenuCardPanel = ({ children }) => {
 
