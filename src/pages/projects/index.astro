@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import MenuCard from '../../components/MenuCard.astro';
+import MenuCardPanel from '../../components/MenuCardPanel.astro';
+
+const projectOrder = ['swimsense', 'tongue-interface', 'sensit', 'bisexual-resource-center', 'mixr'];
+
+const projects = (await getCollection('projects')).sort(
+  (a, b) => projectOrder.indexOf(a.id) - projectOrder.indexOf(b.id),
+);
+---
+
+<Layout title="Projects" description="Past projects I have worked on.">
+  <h1 class="text-2xl font-bold text-ink">Projects</h1>
+  <MenuCardPanel>
+    {projects.map((project) => (
+      <MenuCard
+        href={`/projects/${project.id}`}
+        title={project.data.shortTitle ?? project.data.title}
+        text={project.data.tagline ?? project.data.abstract}
+        image={project.data.image}
+      />
+    ))}
+  </MenuCardPanel>
+</Layout>

@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import githubLogo from '../images/Icons/github.svg';
+import linkedinLogo from '../images/Icons/linkedin.svg';
+import emailLogo from '../images/Icons/gmail.svg';
+
+const links = [
+  { href: 'https://github.com/jlemus1234', src: githubLogo, alt: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/jose-lemus-404328157/', src: linkedinLogo, alt: 'LinkedIn' },
+  { href: 'mailto:jlemus1234@gmail.com', src: emailLogo, alt: 'Email' },
+];
+---
+
+<div class="flex justify-center gap-6 rounded-lg bg-neutral-100 py-3">
+  {links.map((link) => (
+    <a href={link.href}>
+      <Image src={link.src} alt={link.alt} width={24} height={24} />
+    </a>
+  ))}
+</div>

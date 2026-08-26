@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const entries = await getCollection('writing', ({ data }) => !data.draft);
+---
+
+<Layout title="Writing" description="Stories and thoughts on my past experiences.">
+  <h1 class="text-2xl font-bold text-ink">Writing</h1>
+  <div class="mt-6 divide-y divide-border">
+    {entries.map((entry) => (
+      <a
+        href={`/writing/${entry.id}`}
+        class="block py-5 no-underline first:pt-0"
+      >
+        <h2 class="text-lg font-semibold text-ink hover:text-accent">{entry.data.title}</h2>
+        <p class="mt-1 text-ink-muted">{entry.data.description}</p>
+      </a>
+    ))}
+  </div>
+</Layout>
