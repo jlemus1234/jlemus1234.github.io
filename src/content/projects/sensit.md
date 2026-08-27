@@ -4,7 +4,7 @@ collaborators:
   - Jose Lemus
 tagline: Combat inactivity and poor posture
 videos:
-  - dQw4w9WgXcQ
+  - i9-5WyQnZTw
 image: ../../assets/SenSit/SenSit3.jpg
 gallery:
   - ../../assets/SenSit/SenSit1.jpg
