@@ -4,10 +4,8 @@ import Layout from '../../layouts/Layout.astro';
 import MenuCard from '../../components/MenuCard.astro';
 import MenuCardPanel from '../../components/MenuCardPanel.astro';
 
-const projectOrder = ['swimsense', 'tongue-interface', 'sensit', 'bisexual-resource-center', 'mixr'];
-
 const projects = (await getCollection('projects')).sort(
-  (a, b) => projectOrder.indexOf(a.id) - projectOrder.indexOf(b.id),
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
 ---
 

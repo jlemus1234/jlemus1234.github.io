@@ -1,5 +1,6 @@
 ---
 title: MIXR
+date: 2017-06-01
 collaborators:
   - Jose Lemus
   - Emily Sim

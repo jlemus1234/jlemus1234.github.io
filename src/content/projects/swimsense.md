@@ -1,5 +1,6 @@
 ---
 title: SwimSense
+date: 2019-05-01
 collaborators:
   - Jose Lemus
   - Tara Mackenzie

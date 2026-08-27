@@ -8,6 +8,7 @@ const projects = defineCollection({
       title: z.string(),
       shortTitle: z.string().optional(),
       tagline: z.string().optional(),
+      date: z.coerce.date(),
       collaborators: z.array(z.string()).default([]),
       videos: z.array(z.string()).default([]),
       image: image(),

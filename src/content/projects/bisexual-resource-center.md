@@ -2,6 +2,7 @@
 title: Bisexual Resource Center
 shortTitle: BRC
 tagline: Find a support group
+date: 2018-01-01
 collaborators:
   - Steph Xu
   - Jose Lemus

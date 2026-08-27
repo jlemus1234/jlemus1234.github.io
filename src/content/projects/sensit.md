@@ -1,5 +1,6 @@
 ---
 title: SenSit
+date: 2018-06-01
 collaborators:
   - Jose Lemus
 tagline: Combat inactivity and poor posture
