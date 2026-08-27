@@ -17,7 +17,7 @@ collaborators:
   - Camile Calabrese
   - Eragon Ma
 videos:
-  - dQw4w9WgXcQ
+  - 11grsrV3ZPI
 image: ../../assets/BRC/BRC1.png
 gallery:
   - ../../assets/BRC/BRC1.png
