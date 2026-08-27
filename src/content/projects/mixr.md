@@ -8,7 +8,7 @@ collaborators:
   - Ian Mao
 tagline: Guess the singers of popular songs
 videos:
-  - dQw4w9WgXcQ
+  - EXYloLCcsNE
 image: ../../assets/MIXR/MIXR1.png
 gallery:
   - ../../assets/MIXR/MIXR1.png
