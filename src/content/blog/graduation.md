@@ -1,6 +1,8 @@
 ---
 title: Graduation
 description: First in the family to graduate
+publishDate: 2026-08-27
+tags: []
 draft: true
 ---
 

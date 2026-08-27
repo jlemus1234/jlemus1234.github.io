@@ -1,6 +1,8 @@
 ---
 title: Hobbies
 description: Developing fun skills
+publishDate: 2026-08-27
+tags: []
 draft: true
 ---
 

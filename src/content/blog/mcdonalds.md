@@ -1,6 +1,8 @@
 ---
 title: McDonald's
 description: My worst day at McDonald's
+publishDate: 2026-08-27
+tags: []
 draft: true
 ---
 
