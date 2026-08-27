@@ -7,7 +7,7 @@ collaborators:
   - Tommaso Lombardo
 tagline: An aid for blind swimmers
 videos:
-  - dQw4w9WgXcQ
+  - xPIfCWryyaQ
 image: ../../assets/SwimSense/poster.jpg
 gallery:
   - ../../assets/SwimSense/poster.jpg
