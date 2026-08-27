@@ -7,9 +7,11 @@ interface Props {
   title: string;
   text?: string;
   href: string;
+  loading?: 'eager' | 'lazy';
+  fetchpriority?: 'high' | 'low' | 'auto';
 }
 
-const { image, title, text, href } = Astro.props;
+const { image, title, text, href, loading = 'lazy', fetchpriority = 'auto' } = Astro.props;
 ---
 
 <a
@@ -17,7 +19,14 @@ const { image, title, text, href } = Astro.props;
   class="block w-full max-w-sm overflow-hidden rounded-lg border border-border shadow-sm no-underline transition hover:shadow-md"
 >
   <div class="h-56 w-full overflow-hidden">
-    <Image src={image} alt={title} width={800} class="h-full w-full object-cover" />
+    <Image
+      src={image}
+      alt={title}
+      width={800}
+      loading={loading}
+      fetchpriority={fetchpriority}
+      class="h-full w-full object-cover"
+    />
   </div>
   <div class="p-4 text-center">
     <h2 class="text-lg font-semibold text-ink">{title}</h2>
