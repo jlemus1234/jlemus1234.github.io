@@ -27,6 +27,8 @@ const socialImageURL = new URL(optimizedImage.src, Astro.site);
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
     <link rel="alternate" type="application/rss+xml" title="Jose Lemus Ortiz — Blog" href="/rss.xml" />
     <title>{pageTitle}</title>
 

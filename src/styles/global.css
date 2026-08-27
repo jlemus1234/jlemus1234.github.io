@@ -8,3 +8,18 @@
   --color-accent-hover: #1d4ed8;
   --color-border: #e4e4e7;
 }
+
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-ink: #f4f4f5;
+    --color-ink-muted: #a1a1aa;
+    --color-surface: #09090b;
+    --color-accent: #60a5fa;
+    --color-accent-hover: #93c5fd;
+    --color-border: #27272a;
+  }
+}
