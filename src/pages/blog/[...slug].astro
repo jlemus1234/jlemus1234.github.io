@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
-  const entries = await getCollection('writing', ({ data }) => !data.draft);
+  const entries = await getCollection('blog', ({ data }) => !data.draft);
   return entries.map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
@@ -11,13 +11,25 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { title, description } = entry.data;
+const { title, description, publishDate, tags } = entry.data;
 const { Content } = await render(entry);
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' });
 ---
 
 <Layout title={title} description={description}>
   <h1 class="text-2xl font-bold text-ink">{title}</h1>
+  {publishDate && (
+    <p class="mt-1 text-sm text-ink-muted">{dateFormatter.format(publishDate)}</p>
+  )}
   <div class="mt-6 max-w-2xl space-y-4 text-ink-muted [&_em]:text-sm [&_p]:leading-relaxed">
     <Content />
   </div>
+  {tags.length > 0 && (
+    <div class="mt-8 flex flex-wrap gap-2">
+      {tags.map((tag) => (
+        <span class="rounded-full bg-border px-3 py-1 text-xs text-ink-muted">{tag}</span>
+      ))}
+    </div>
+  )}
 </Layout>

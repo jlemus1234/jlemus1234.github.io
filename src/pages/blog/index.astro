@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const entries = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => (b.data.publishDate?.valueOf() ?? 0) - (a.data.publishDate?.valueOf() ?? 0),
+);
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' });
+---
+
+<Layout title="Blog" description="Stories and thoughts on my past experiences.">
+  <h1 class="text-2xl font-bold text-ink">Blog</h1>
+  {entries.length === 0 ? (
+    <p class="mt-6 text-ink-muted">No posts yet — check back soon.</p>
+  ) : (
+    <div class="mt-6 divide-y divide-border">
+      {entries.map((entry) => (
+        <a
+          href={`/blog/${entry.id}`}
+          class="block py-5 no-underline first:pt-0"
+        >
+          <h2 class="text-lg font-semibold text-ink hover:text-accent">{entry.data.title}</h2>
+          {entry.data.publishDate && (
+            <p class="mt-1 text-xs text-ink-muted">{dateFormatter.format(entry.data.publishDate)}</p>
+          )}
+          <p class="mt-1 text-ink-muted">{entry.data.description}</p>
+        </a>
+      ))}
+    </div>
+  )}
+</Layout>
