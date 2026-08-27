@@ -5,7 +5,7 @@ collaborators:
   - Woodbury Shortbridge
 tagline: Control with your tongue
 videos:
-  - dQw4w9WgXcQ
+  - 0eQMrNtdyxY
 image: ../../assets/TongueInterface/Tongue1.png
 gallery:
   - ../../assets/TongueInterface/Tongue1.png
