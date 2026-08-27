@@ -13,10 +13,10 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
-const { title, collaborators, videos, gallery, abstract, description } = project.data;
+const { title, collaborators, videos, gallery, abstract, description, image } = project.data;
 ---
 
-<Layout title={title} description={abstract}>
+<Layout title={title} description={abstract} image={image}>
   <h1 class="text-center text-2xl font-bold text-ink">{title}</h1>
   {collaborators.length > 0 && (
     <p class="mt-1 text-center text-sm text-ink-muted">{collaborators.join(', ')}</p>

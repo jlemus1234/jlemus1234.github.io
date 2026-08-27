@@ -2,13 +2,21 @@
 import '../styles/global.css';
 import NavBar from '../components/NavBar.astro';
 import Footer from '../components/Footer.astro';
+import { getImage } from 'astro:assets';
+import defaultShareImage from '../assets/SwimSense/SwimSense15.jpg';
 
 interface Props {
   title: string;
   description?: string;
+  image?: ImageMetadata;
 }
 
-const { title, description = 'Portfolio of Jose Lemus Ortiz.' } = Astro.props;
+const { title, description = 'Portfolio of Jose Lemus Ortiz.', image = defaultShareImage } = Astro.props;
+const pageTitle = `${title} · Jose Lemus Ortiz`;
+
+const optimizedImage = await getImage({ src: image, width: 1200, height: 630, format: 'jpeg' });
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const socialImageURL = new URL(optimizedImage.src, Astro.site);
 ---
 
 <html lang="en">
@@ -17,9 +25,21 @@ const { title, description = 'Portfolio of Jose Lemus Ortiz.' } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="alternate" type="application/rss+xml" title="Jose Lemus Ortiz — Blog" href="/rss.xml" />
-    <title>{title} · Jose Lemus Ortiz</title>
+    <title>{pageTitle}</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={socialImageURL} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageURL} />
   </head>
   <body class="flex min-h-screen flex-col bg-surface text-ink">
     <NavBar />
