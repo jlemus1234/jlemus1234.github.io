@@ -9,13 +9,13 @@ collaborators:
 tagline: An aid for blind swimmers
 videos:
   - xPIfCWryyaQ
-image: ../../assets/SwimSense/poster.jpg
+image: ../../assets/SwimSense/poster.webp
 gallery:
-  - ../../assets/SwimSense/poster.jpg
+  - ../../assets/SwimSense/poster.webp
   - ../../assets/SwimSense/SwimSense.jpg
   - ../../assets/SwimSense/SwimSense2.jpg
   - ../../assets/SwimSense/SwimSense3.jpg
-  - ../../assets/SwimSense/SwimSense11.png
+  - ../../assets/SwimSense/SwimSense11.webp
   - ../../assets/SwimSense/SwimSense14.jpg
 abstract: A device that uses haptic feedback to guide blind swimmers in a pool.
 description: >

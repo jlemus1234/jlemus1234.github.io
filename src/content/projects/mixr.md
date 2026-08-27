@@ -10,13 +10,13 @@ collaborators:
 tagline: Guess the singers of popular songs
 videos:
   - EXYloLCcsNE
-image: ../../assets/MIXR/MIXR1.png
+image: ../../assets/MIXR/MIXR1.webp
 gallery:
-  - ../../assets/MIXR/MIXR1.png
-  - ../../assets/MIXR/MIXR2.png
-  - ../../assets/MIXR/MIXR3.png
-  - ../../assets/MIXR/MIXR4.png
-  - ../../assets/MIXR/MIXR5.png
+  - ../../assets/MIXR/MIXR1.webp
+  - ../../assets/MIXR/MIXR2.webp
+  - ../../assets/MIXR/MIXR3.webp
+  - ../../assets/MIXR/MIXR4.webp
+  - ../../assets/MIXR/MIXR5.webp
 abstract: >
   MIXR was a website created with the intent of being a multiplayer game where you guessed songs and their
   artists. It is a way for users to explore music with their friends.

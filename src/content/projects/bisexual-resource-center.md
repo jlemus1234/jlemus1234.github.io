@@ -19,11 +19,11 @@ collaborators:
   - Eragon Ma
 videos:
   - 11grsrV3ZPI
-image: ../../assets/BRC/BRC1.png
+image: ../../assets/BRC/BRC1.webp
 gallery:
-  - ../../assets/BRC/BRC1.png
-  - ../../assets/BRC/BRC6.png
-  - ../../assets/BRC/BRC7.png
+  - ../../assets/BRC/BRC1.webp
+  - ../../assets/BRC/BRC6.webp
+  - ../../assets/BRC/BRC7.webp
 abstract: >
   A resource-finder site built pro bono for a nonprofit advocacy organization through Tufts' JumboCode
   club, letting visitors search and filter support centers by state and view them on an interactive map.

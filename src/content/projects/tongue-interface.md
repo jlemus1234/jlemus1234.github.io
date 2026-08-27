@@ -7,11 +7,11 @@ collaborators:
 tagline: Control with your tongue
 videos:
   - 0eQMrNtdyxY
-image: ../../assets/TongueInterface/Tongue1.png
+image: ../../assets/TongueInterface/Tongue1.webp
 gallery:
-  - ../../assets/TongueInterface/Tongue1.png
-  - ../../assets/TongueInterface/Tongue2.png
-  - ../../assets/TongueInterface/Tongue4.png
+  - ../../assets/TongueInterface/Tongue1.webp
+  - ../../assets/TongueInterface/Tongue2.webp
+  - ../../assets/TongueInterface/Tongue4.webp
 abstract: >
   Object recognition used to create a tongue-based interface. By moving your tongue either left or right,
   you play a simple game and try to dodge obstacles for as long as possible.
