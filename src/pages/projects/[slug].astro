@@ -17,7 +17,7 @@ const { title, collaborators, videos, gallery, abstract, description, image } = 
 ---
 
 <Layout title={title} description={abstract} image={image}>
-  <h1 class="text-center text-2xl font-bold text-ink">{title}</h1>
+  <h1 class="text-center text-2xl text-ink">{title}</h1>
   {collaborators.length > 0 && (
     <p class="mt-1 text-center text-sm text-ink-muted">{collaborators.join(', ')}</p>
   )}
