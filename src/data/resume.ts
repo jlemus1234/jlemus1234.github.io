@@ -47,14 +47,14 @@ export const skills = {
 
 export const experience: Job[] = [
   {
-    employer: 'Power Innovations Partners L.P.',
-    location: 'New York City, NY',
+    employer: 'Power Innovation Partners',
+    location: 'New York, NY',
     title: 'Independent Consultant',
     startDate: 'August 2026',
     endDate: 'Present',
     bullets: [
-      'Engaged as a consultant on software development and AI adoption, advising on project management and technical decisions, and delivering a presentation with live demos on integrating Claude with third-party services and using Claude Code in a development workflow.',
-      'Serving as on-site technical advisor during the company’s hackathon, guiding teams through implementation approach and technical decisions.',
+      'Engaged as a consultant on software development and AI adoption, delivering a presentation with live demos on integrating AI platforms including Claude with third-party services and using Claude Code in a development workflow.',
+      'Served as on-site technical advisor during the company’s hackathon, guiding teams through implementation approach and technical decisions.',
     ],
   },
   {
