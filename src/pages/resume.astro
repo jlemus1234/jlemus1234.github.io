@@ -10,7 +10,7 @@ import { contact, summary, skills, experience, education } from '../data/resume'
       <p class="mt-2 max-w-2xl text-ink-muted">{summary}</p>
     </div>
     <a
-      href="/Resume.pdf"
+      href="/JoseLemusOrtizResume.pdf"
       target="_blank"
       rel="noopener noreferrer"
       class="inline-flex shrink-0 items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-semibold text-ink no-underline hover:border-accent hover:text-accent"
@@ -25,6 +25,7 @@ import { contact, summary, skills, experience, education } from '../data/resume'
   <div class="mt-6 flex flex-wrap gap-x-6 gap-y-1 text-sm text-ink-muted">
     <span>{contact.location}</span>
     <a href={`mailto:${contact.email}`} class="text-ink-muted hover:text-accent">{contact.email}</a>
+    <a href={contact.website} class="text-ink-muted hover:text-accent">{contact.website.replace(/^https?:\/\//, '')}</a>
     <a href={contact.github} class="text-ink-muted hover:text-accent">{contact.github}</a>
   </div>
 
