@@ -25,6 +25,7 @@ import { contact, summary, skills, experience, education } from '../data/resume'
   <div class="mt-6 flex flex-wrap gap-x-6 gap-y-1 text-sm text-ink-muted">
     <span>{contact.location}</span>
     <a href={`mailto:${contact.email}`} class="text-ink-muted hover:text-accent">{contact.email}</a>
+    <a href={contact.website} class="text-ink-muted hover:text-accent">{contact.website.replace(/^https?:\/\//, '')}</a>
     <a href={contact.github} class="text-ink-muted hover:text-accent">{contact.github}</a>
   </div>
 

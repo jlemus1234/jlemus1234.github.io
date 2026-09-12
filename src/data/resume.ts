@@ -2,6 +2,7 @@ export interface Contact {
   location: string;
   email: string;
   github: string;
+  website: string;
 }
 
 export interface Job {
@@ -24,13 +25,14 @@ export const contact: Contact = {
   location: 'White Plains, NY',
   email: 'Jose.A.LemusOrtiz@gmail.com',
   github: 'https://github.com/jlemus1234',
+  website: 'https://joselemus.me',
 };
 
 export const summary =
   'Software Engineer · Full-Stack · Building production platforms, from backend services and marketplaces to AI-driven features.';
 
 export const skills = {
-  'Programming Languages': ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'SQL', 'Python'],
+  'Programming Languages': ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'SQL'],
   Technologies: [
     'Next.js',
     'React',
@@ -59,7 +61,7 @@ export const experience: Job[] = [
   },
   {
     employer: 'Wix.com',
-    location: 'New York City, NY',
+    location: 'New York, NY',
     title: 'Software Engineer',
     startDate: 'April 2022',
     endDate: 'June 2026',
@@ -73,12 +75,12 @@ export const experience: Job[] = [
   },
   {
     employer: 'Exactera',
-    location: 'New York City, NY',
+    location: 'New York, NY',
     title: 'Full Stack Engineer',
     startDate: 'November 2020',
     endDate: 'March 2022',
     bullets: [
-      'Delivered multiple features across a new multi-tenant tax provision SaaS product and a transfer pricing product, including an Amazon Lex chatbot implementation and entity completion status spanning UI, APIs, database, and permissions across 4 stacks.',
+      'Delivered multiple features across a new tax provision SaaS product and a transfer pricing product, including an Amazon Lex chatbot implementation and entity completion status spanning UI, APIs, database, and permissions across 4 stacks.',
       'Solely designed and implemented tax and exchange rate management across the full stack, building UI components, REST APIs, and database migrations spanning three repositories.',
       "Architected and stood up a service from scratch using AWS Lambda, SQS, and Terraform, including IAM roles and secrets configuration across four infrastructure stacks that allowed users to roll relevant data into subsequent years' reports.",
       "Migrated a legacy product's Angular frontend to React, aligning coding standards across company repositories.",
@@ -97,7 +99,7 @@ export const experience: Job[] = [
   },
   {
     employer: 'OpenWeb',
-    location: 'New York City, NY',
+    location: 'New York, NY',
     title: 'Research and Development Intern',
     startDate: 'July 2018',
     endDate: 'August 2018',
